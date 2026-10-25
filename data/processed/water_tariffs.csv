@@ -1,0 +1,3 @@
+tariff_category,consumption_block,tariff_before_gst,tariff_after_gst,wbf_before_gst,wbf_after_gst,as_of
+NEWater,All Units,1.28,1.369,0.92,0.984,2021 (data.gov.sg); add 2024-25 increases from PUB 2023 release
+Industrial Water,All Units,0.66,0.706,0.92,0.984,2021 (data.gov.sg); add 2024-25 increases from PUB 2023 release

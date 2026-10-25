@@ -1,0 +1,392 @@
+series,year,gwh
+Electricity Generation,2025,60410.4
+Electricity Generation,2024,59616.1
+Electricity Consumption,2024,57639.7
+Industrial-Related,2024,22704.0
+Manufacturing,2024,20630.5
+Construction,2024,440.0
+Utilities,2024,1569.4
+Other Industrial-Related,2024,64.1
+Commerce And Service-Related,2024,23195.0
+Wholesale And Retail Trade,2024,2272.5
+Accommodation And Food Services,2024,1650.4
+Information And Communications,2024,6072.0
+Financial And Insurance Activities,2024,2411.1
+Real Estate Activities,2024,4719.0
+"Professional, Scientific & Technical, Administration & Support Activities",2024,1105.2
+Other Commerce And Service-Related,2024,4964.8
+Transport-Related,2024,3199.8
+Households,2024,8422.3
+Others,2024,118.6
+Electricity Generation,2023,57384.2
+Electricity Consumption,2023,55426.4
+Industrial-Related,2023,22103.0
+Manufacturing,2023,20171.2
+Construction,2023,421.6
+Utilities,2023,1451.2
+Other Industrial-Related,2023,59.0
+Commerce And Service-Related,2023,22092.7
+Wholesale And Retail Trade,2023,2221.9
+Accommodation And Food Services,2023,1587.4
+Information And Communications,2023,5408.5
+Financial And Insurance Activities,2023,2376.0
+Real Estate Activities,2023,4728.5
+"Professional, Scientific & Technical, Administration & Support Activities",2023,974.3
+Other Commerce And Service-Related,2023,4796.1
+Transport-Related,2023,3030.2
+Households,2023,8042.3
+Others,2023,158.1
+Electricity Generation,2022,57113.7
+Electricity Consumption,2022,54910.6
+Industrial-Related,2022,22693.9
+Manufacturing,2022,20682.1
+Construction,2022,464.5
+Utilities,2022,1490.7
+Other Industrial-Related,2022,56.6
+Commerce And Service-Related,2022,21187.3
+Wholesale And Retail Trade,2022,2253.5
+Accommodation And Food Services,2022,1441.5
+Information And Communications,2022,4852.4
+Financial And Insurance Activities,2022,2341.7
+Real Estate Activities,2022,4714.6
+"Professional, Scientific & Technical, Administration & Support Activities",2022,949.4
+Other Commerce And Service-Related,2022,4634.2
+Transport-Related,2022,2899.7
+Households,2022,7936.7
+Others,2022,193.0
+Electricity Generation,2021,55788.3
+Electricity Consumption,2021,53495.6
+Industrial-Related,2021,22293.1
+Manufacturing,2021,20284.8
+Construction,2021,472.0
+Utilities,2021,1482.1
+Other Industrial-Related,2021,54.2
+Commerce And Service-Related,2021,19837.1
+Wholesale And Retail Trade,2021,2226.8
+Accommodation And Food Services,2021,1328.1
+Information And Communications,2021,4029.0
+Financial And Insurance Activities,2021,2271.9
+Real Estate Activities,2021,4616.3
+"Professional, Scientific & Technical, Administration & Support Activities",2021,823.1
+Other Commerce And Service-Related,2021,4541.9
+Transport-Related,2021,2844.7
+Households,2021,8290.0
+Others,2021,230.8
+Electricity Generation,2020,53071.6
+Electricity Consumption,2020,50789.7
+Industrial-Related,2020,20978.9
+Manufacturing,2020,19121.3
+Construction,2020,387.0
+Utilities,2020,1418.7
+Other Industrial-Related,2020,51.9
+Commerce And Service-Related,2020,18517.6
+Wholesale And Retail Trade,2020,2180.9
+Accommodation And Food Services,2020,1289.1
+Information And Communications,2020,3086.2
+Financial And Insurance Activities,2020,2152.4
+Real Estate Activities,2020,4546.7
+"Professional, Scientific & Technical, Administration & Support Activities",2020,798.2
+Other Commerce And Service-Related,2020,4464.2
+Transport-Related,2020,2809.2
+Households,2020,8254.6
+Others,2020,229.3
+Electricity Generation,2019,54142.3
+Electricity Consumption,2019,51736.7
+Industrial-Related,2019,21463.9
+Manufacturing,2019,19439.4
+Construction,2019,397.1
+Utilities,2019,1574.5
+Other Industrial-Related,2019,53.0
+Commerce And Service-Related,2019,19318.9
+Wholesale And Retail Trade,2019,2265.4
+Accommodation And Food Services,2019,1523.3
+Information And Communications,2019,2494.8
+Financial And Insurance Activities,2019,2380.7
+Real Estate Activities,2019,4864.7
+"Professional, Scientific & Technical, Administration & Support Activities",2019,805.3
+Other Commerce And Service-Related,2019,4984.6
+Transport-Related,2019,3019.3
+Households,2019,7688.0
+Others,2019,246.8
+Electricity Generation,2018,52904.8
+Electricity Consumption,2018,50466.9
+Industrial-Related,2018,21441.8
+Manufacturing,2018,19441.0
+Construction,2018,431.5
+Utilities,2018,1522.0
+Other Industrial-Related,2018,47.3
+Commerce And Service-Related,2018,18582.3
+Wholesale And Retail Trade,2018,2316.5
+Accommodation And Food Services,2018,1465.2
+Information And Communications,2018,2229.9
+Financial And Insurance Activities,2018,2321.1
+Real Estate Activities,2018,4672.4
+"Professional, Scientific & Technical, Administration & Support Activities",2018,720.2
+Other Commerce And Service-Related,2018,4857.1
+Transport-Related,2018,2947.0
+Households,2018,7237.4
+Others,2018,258.4
+Electricity Generation,2017,52225.8
+Electricity Consumption,2017,49643.7
+Industrial-Related,2017,21240.6
+Manufacturing,2017,19306.8
+Construction,2017,485.5
+Utilities,2017,1402.1
+Other Industrial-Related,2017,46.2
+Commerce And Service-Related,2017,18059.9
+Wholesale And Retail Trade,2017,2282.5
+Accommodation And Food Services,2017,1406.2
+Information And Communications,2017,1862.5
+Financial And Insurance Activities,2017,2408.4
+Real Estate Activities,2017,4668.7
+"Professional, Scientific & Technical, Administration & Support Activities",2017,688.4
+Other Commerce And Service-Related,2017,4743.2
+Transport-Related,2017,2771.1
+Households,2017,7295.6
+Others,2017,276.5
+Electricity Generation,2016,51586.6
+Electricity Consumption,2016,48626.6
+Industrial-Related,2016,20418.5
+Manufacturing,2016,18365.3
+Construction,2016,554.2
+Utilities,2016,1453.3
+Other Industrial-Related,2016,45.7
+Commerce And Service-Related,2016,17699.5
+Wholesale And Retail Trade,2016,2073.3
+Accommodation And Food Services,2016,1453.1
+Information And Communications,2016,1851.2
+Financial And Insurance Activities,2016,2361.1
+Real Estate Activities,2016,4496.4
+"Professional, Scientific & Technical, Administration & Support Activities",2016,681.3
+Other Commerce And Service-Related,2016,4783.2
+Transport-Related,2016,2639.0
+Households,2016,7589.5
+Others,2016,280.0
+Electricity Generation,2015,50271.6
+Electricity Consumption,2015,47513.9
+Industrial-Related,2015,20087.8
+Manufacturing,2015,18274.8
+Construction,2015,533.8
+Utilities,2015,1237.2
+Other Industrial-Related,2015,42.0
+Commerce And Service-Related,2015,17481.2
+Wholesale And Retail Trade,2015,2107.4
+Accommodation And Food Services,2015,1350.2
+Information And Communications,2015,1430.1
+Financial And Insurance Activities,2015,2718.1
+Real Estate Activities,2015,4454.6
+"Professional, Scientific & Technical, Administration & Support Activities",2015,710.3
+Other Commerce And Service-Related,2015,4710.5
+Transport-Related,2015,2444.8
+Households,2015,7220.9
+Others,2015,279.1
+Electricity Generation,2014,49309.7
+Electricity Consumption,2014,46403.0
+Industrial-Related,2014,19753.1
+Manufacturing,2014,17986.4
+Construction,2014,529.4
+Utilities,2014,1198.2
+Other Industrial-Related,2014,39.1
+Commerce And Service-Related,2014,17046.7
+Wholesale And Retail Trade,2014,2020.5
+Accommodation And Food Services,2014,1332.3
+Information And Communications,2014,1298.2
+Financial And Insurance Activities,2014,2574.1
+Real Estate Activities,2014,4485.7
+"Professional, Scientific & Technical, Administration & Support Activities",2014,677.4
+Other Commerce And Service-Related,2014,4658.6
+Transport-Related,2014,2441.0
+Households,2014,6924.4
+Others,2014,237.7
+Electricity Generation,2013,47963.5
+Electricity Consumption,2013,44948.8
+Industrial-Related,2013,18842.8
+Manufacturing,2013,17234.5
+Construction,2013,493.1
+Utilities,2013,1075.1
+Other Industrial-Related,2013,40.0
+Commerce And Service-Related,2013,16718.7
+Wholesale And Retail Trade,2013,1967.1
+Accommodation And Food Services,2013,1326.6
+Information And Communications,2013,1153.0
+Financial And Insurance Activities,2013,2257.9
+Real Estate Activities,2013,4532.4
+"Professional, Scientific & Technical, Administration & Support Activities",2013,928.9
+Other Commerce And Service-Related,2013,4552.8
+Transport-Related,2013,2369.1
+Households,2013,6754.9
+Others,2013,263.4
+Electricity Generation,2012,46936.2
+Electricity Consumption,2012,44200.7
+Industrial-Related,2012,18572.5
+Manufacturing,2012,17109.2
+Construction,2012,446.5
+Utilities,2012,979.3
+Other Industrial-Related,2012,37.5
+Commerce And Service-Related,2012,16366.1
+Wholesale And Retail Trade,2012,1909.4
+Accommodation And Food Services,2012,1275.1
+Information And Communications,2012,1088.2
+Financial And Insurance Activities,2012,2204.2
+Real Estate Activities,2012,4522.6
+"Professional, Scientific & Technical, Administration & Support Activities",2012,927.0
+Other Commerce And Service-Related,2012,4439.6
+Transport-Related,2012,2328.6
+Households,2012,6629.5
+Others,2012,304.0
+Electricity Generation,2011,45999.4
+Electricity Consumption,2011,43007.1
+Industrial-Related,2011,18077.5
+Manufacturing,2011,16749.6
+Construction,2011,365.1
+Utilities,2011,929.2
+Other Industrial-Related,2011,33.6
+Commerce And Service-Related,2011,15876.3
+Wholesale And Retail Trade,2011,1898.8
+Accommodation And Food Services,2011,1251.4
+Information And Communications,2011,992.5
+Financial And Insurance Activities,2011,2003.2
+Real Estate Activities,2011,4454.7
+"Professional, Scientific & Technical, Administration & Support Activities",2011,930.3
+Other Commerce And Service-Related,2011,4345.5
+Transport-Related,2011,2224.2
+Households,2011,6482.7
+Others,2011,346.5
+Electricity Generation,2010,45366.5
+Electricity Consumption,2010,42251.8
+Industrial-Related,2010,17662.6
+Manufacturing,2010,16448.0
+Construction,2010,337.8
+Utilities,2010,843.4
+Other Industrial-Related,2010,33.3
+Commerce And Service-Related,2010,15469.7
+Wholesale And Retail Trade,2010,1923.0
+Accommodation And Food Services,2010,1219.6
+Information And Communications,2010,925.5
+Financial And Insurance Activities,2010,1927.0
+Real Estate Activities,2010,4346.2
+"Professional, Scientific & Technical, Administration & Support Activities",2010,885.8
+Other Commerce And Service-Related,2010,4242.7
+Transport-Related,2010,2098.7
+Households,2010,6636.0
+Others,2010,384.8
+Electricity Generation,2009,41800.6
+Electricity Consumption,2009,38822.9
+Industrial-Related,2009,15570.3
+Manufacturing,2009,14539.7
+Construction,2009,308.3
+Utilities,2009,691.9
+Other Industrial-Related,2009,30.4
+Commerce And Service-Related,2009,14800.1
+Wholesale And Retail Trade,2009,1821.4
+Accommodation And Food Services,2009,1169.2
+Information And Communications,2009,866.0
+Financial And Insurance Activities,2009,1865.4
+Real Estate Activities,2009,4050.8
+"Professional, Scientific & Technical, Administration & Support Activities",2009,778.4
+Other Commerce And Service-Related,2009,4248.8
+Transport-Related,2009,1607.8
+Households,2009,6430.8
+Others,2009,413.9
+Electricity Generation,2008,41669.6
+Electricity Consumption,2008,38986.9
+Industrial-Related,2008,16030.9
+Manufacturing,2008,15032.7
+Construction,2008,300.9
+Utilities,2008,668.4
+Other Industrial-Related,2008,29.0
+Commerce And Service-Related,2008,15004.6
+Wholesale And Retail Trade,2008,1924.7
+Accommodation And Food Services,2008,1171.7
+Information And Communications,2008,844.5
+Financial And Insurance Activities,2008,2014.9
+Real Estate Activities,2008,3931.2
+"Professional, Scientific & Technical, Administration & Support Activities",2008,842.0
+Other Commerce And Service-Related,2008,4275.7
+Transport-Related,2008,1399.8
+Households,2008,6094.0
+Others,2008,457.6
+Electricity Generation,2007,41134.4
+Electricity Consumption,2007,38304.9
+Industrial-Related,2007,15819.0
+Manufacturing,2007,14943.2
+Construction,2007,279.1
+Utilities,2007,569.2
+Other Industrial-Related,2007,27.5
+Commerce And Service-Related,2007,14520.6
+Wholesale And Retail Trade,2007,1891.9
+Accommodation And Food Services,2007,1131.5
+Information And Communications,2007,761.2
+Financial And Insurance Activities,2007,2014.6
+Real Estate Activities,2007,3810.0
+"Professional, Scientific & Technical, Administration & Support Activities",2007,834.2
+Other Commerce And Service-Related,2007,4077.2
+Transport-Related,2007,1300.2
+Households,2007,6163.7
+Others,2007,501.5
+Electricity Generation,2006,39480.1
+Electricity Consumption,2006,36801.8
+Industrial-Related,2006,15115.4
+Manufacturing,2006,14397.2
+Construction,2006,250.5
+Utilities,2006,441.8
+Other Industrial-Related,2006,25.9
+Commerce And Service-Related,2006,13785.7
+Wholesale And Retail Trade,2006,1977.2
+Accommodation And Food Services,2006,1087.0
+Information And Communications,2006,708.7
+Financial And Insurance Activities,2006,1659.7
+Real Estate Activities,2006,3780.8
+"Professional, Scientific & Technical, Administration & Support Activities",2006,740.5
+Other Commerce And Service-Related,2006,3831.8
+Transport-Related,2006,1245.4
+Households,2006,6109.1
+Others,2006,546.2
+Electricity Generation,2005,38212.7
+Electricity Consumption,2005,35489.3
+Industrial-Related,2005,14509.0
+Manufacturing,2005,13836.1
+Construction,2005,234.8
+Utilities,2005,411.0
+Other Industrial-Related,2005,27.2
+Commerce And Service-Related,2005,13075.6
+Wholesale And Retail Trade,2005,2109.8
+Accommodation And Food Services,2005,1031.3
+Information And Communications,2005,667.2
+Financial And Insurance Activities,2005,1291.9
+Real Estate Activities,2005,3712.4
+"Professional, Scientific & Technical, Administration & Support Activities",2005,650.2
+Other Commerce And Service-Related,2005,3612.7
+Transport-Related,2005,1200.0
+Households,2005,6092.5
+Others,2005,612.1
+Electricity Generation,2004,36809.5
+Electricity Generation,2003,35281.5
+Electricity Generation,2002,34664.5
+Electricity Generation,2001,33061.0
+Electricity Generation,2000,31665.0
+Electricity Generation,1999,29520.1
+Electricity Generation,1998,28374.8
+Electricity Generation,1997,26709.4
+Electricity Generation,1996,23909.4
+Electricity Generation,1995,22057.4
+Electricity Generation,1994,20675.4
+Electricity Generation,1993,18962.4
+Electricity Generation,1992,17543.1
+Electricity Generation,1991,16596.6
+Electricity Generation,1990,15617.6
+Electricity Generation,1989,14038.9
+Electricity Generation,1988,13017.5
+Electricity Generation,1987,11813.8
+Electricity Generation,1986,10576.5
+Electricity Generation,1985,9876.3
+Electricity Generation,1984,9420.7
+Electricity Generation,1983,8625.9
+Electricity Generation,1982,7859.5
+Electricity Generation,1981,7441.9
+Electricity Generation,1980,6940.5
+Electricity Generation,1979,6447.8
+Electricity Generation,1978,5897.9
+Electricity Generation,1977,5114.7
+Electricity Generation,1976,4604.9
+Electricity Generation,1975,4175.7

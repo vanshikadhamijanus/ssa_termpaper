@@ -1,0 +1,51 @@
+id,module,parameter,unit,low,base,high,dist,source,status,notes
+cap_cfa2,demand,DC-CFA2 provisionally allocated capacity,MW,200,200,200,fixed,EDB & IMDA (2026) DC-CFA2 fact sheet,verified,4 x 50 MW (Digital Realty; Equinix; Keppel DC; STT GDC) on Jurong Island
+cap_roadmap,demand,Additional near-term capacity under Green DC Roadmap (efficiency-unlocked),MW,0,300,300,scenario,IMDA (2024) Green DC Roadmap,verified,Scenario S2 adds this; mostly freed up inside existing sites so water impact may be partly within existing envelope
+cap_future_cfa,demand,Further Call-for-Application capacity by 2035,MW,0,200,500,scenario,EDB (2026) says next CFA reviewed in 18-24 months,team-judgement,Scenario S3 (high AI growth)
+mw_basis_it_share,demand,Share of allocated MW that is IT load (1/PUE if MW = facility power),fraction,0.80,0.80,1.00,tri,Team assumption - confirm wording of DC-CFA2 'MW of DC capacity',to-verify,Key ambiguity; state explicitly in paper
+pue_new,demand,PUE of new DC-CFA2 facilities (annualised),-,1.15,1.22,1.25,tri,DC-CFA2 requires PUE <= 1.25 at 100% IT load,to-verify,
+util,demand,Average IT utilisation (energy-weighted load factor),fraction,0.50,0.70,0.85,tri,Literature (LBNL 2024; Uptime Institute surveys),to-verify,
+ramp_years,demand,Years from first operation to full load,years,2,3,5,tri,Team assumption,team-judgement,First operation assumed 2027 (CFA2) / 2029 (future CFA)
+wue_base,demand,WUE baseline - evaporative cooling towers (SG median),m3/MWh_IT,2.0,2.1,2.2,tri,PUB Sectoral Water Efficiency Benchmark (Dec 2025) = 2.1; IMDA 2021 median = 2.2,verified,Singapore WUE is per MWh of IT energy
+wue_roadmap,demand,WUE at Green DC Roadmap target,m3/MWh_IT,1.8,2.0,2.0,tri,IMDA (2024) Green DC Roadmap target <= 2.0 within 10 years,verified,
+wue_hicoc,demand,WUE - high cycles-of-concentration + blowdown recovery (on-site reuse),m3/MWh_IT,1.0,1.4,1.7,tri,Heat-balance model (02_build_inputs) + operator reports (AWS electro-oxidation case in IMDA roadmap),to-verify,Derive from CoC 6-10 and blowdown recovery 50-80%
+wue_liquid_dry,demand,WUE - direct-to-chip liquid cooling with dry/adiabatic heat rejection,m3/MWh_IT,0.05,0.30,0.60,tri,SS 726:2026 media release; IMDA roadmap (adiabatic coolers); Mytton 2021,to-verify,Residual water for trim/adiabatic on hot hours - derive hours above dry-cooler approach from weather data
+latent_heat,demand,Latent heat of vaporisation at ~30 C,MJ/kg,2.42,2.43,2.44,fixed,Engineering tables,verified,
+heat_reject_factor,demand,Heat rejected at cooling tower per kWh IT (IT + chiller work + losses),kWh/kWh_IT,1.15,1.22,1.30,tri,Heat balance; consistent with PUE 1.2-1.3,team-judgement,
+evap_fraction,demand,Fraction of tower heat rejected by evaporation (vs sensible) in humid tropics,fraction,0.75,0.85,0.95,tri,Cooling tower engineering literature,to-verify,Can be refined monthly from wet-bulb / dry-bulb data
+coc_current,demand,Cycles of concentration - typical,-,2.5,3,4,tri,IMDA (2024) Green DC Roadmap discussion of CoC,to-verify,
+coc_best,demand,Cycles of concentration - best practice with advanced treatment,-,6,8,12,tri,Electro-oxidation / side-stream treatment literature,to-verify,
+dpue_liquid,demand,Change in PUE: liquid cooling vs air cooling,-,-0.15,-0.10,-0.05,tri,EDB/ESG 2026: liquid cooling cuts DC energy >30%,to-verify,Energy side of the water-energy trade-off
+dpue_dry,demand,Change in PUE: dry/adiabatic vs evaporative heat rejection (Singapore climate),-,0.02,0.05,0.10,tri,Literature + weather-driven estimate,to-verify,The 'water saved costs energy' penalty
+sec_desal,lca,Specific energy - seawater RO desalination incl. intake/pre-treatment,kWh/m3,2.0,3.5,4.0,tri,PUB (2023) decarbonisation strategy: ~3.5 now; target <2,verified,Low value = PUB target
+sec_newater,lca,Specific energy - NEWater (MF/UF + RO + UV),kWh/m3,0.6,0.7,1.0,tri,Changi NEWater study 0.6-0.8; RVO (2017) ~0.7,to-verify,Boundary: marginal advanced treatment only (used-water treatment needed anyway)
+sec_distrib,lca,Conveyance/distribution pumping to Jurong Island,kWh/m3,0.2,0.3,0.5,tri,Literature,to-verify,Same for both supply options unless pipeline differs
+sec_hicoc,lca,Energy for side-stream treatment / blowdown RO per m3 recovered,kWh/m3,0.5,1.0,2.0,tri,Vendor/literature,to-verify,
+ghg_desal_nonenergy,lca,Embodied infrastructure + chemicals - desalination,kgCO2e/m3,0.05,0.15,0.40,tri,SWRO LCA literature (to collect via NUS Libraries),to-verify,
+ghg_newater_nonenergy,lca,Embodied infrastructure + chemicals - NEWater,kgCO2e/m3,0.03,0.08,0.20,tri,Water reuse LCA literature,to-verify,
+ef_grid_2024,lca,Grid emission factor (Average Operating Margin) 2024,kgCO2/kWh,0.402,0.402,0.402,fixed,EMA Singapore Energy Statistics 2025 Ch.2,verified,
+ef_grid_2035_bau,lca,Grid emission factor 2035 - business as usual,kgCO2/kWh,0.36,0.38,0.40,tri,Extrapolation of EMA series 2005-2024,team-judgement,
+ef_grid_2035_lowc,lca,Grid emission factor 2035 - low-carbon grid case (imports + solar + H2),kgCO2/kWh,0.15,0.25,0.30,tri,EMA target of up to 6 GW low-carbon imports by 2035,to-verify,Proposal's 'low-carbon-grid case'
+dc_green_share,lca,Share of DC-CFA2 DC electricity from green pathways,fraction,0.50,0.50,0.80,tri,DC-CFA2 requirement >= 50%,verified,Applies to DC-side energy penalty only (water plants are on the grid)
+capex_desal,lcc,Desalination capital cost per unit daily capacity,SGD per m3/d,1300,1600,2500,tri,Tuas Desalination Plant S$217m for 137000 m3/d (2018),to-verify,Escalate to 2026 SGD with CPI/construction index
+capex_newater,lcc,NEWater capital cost per unit daily capacity,SGD per m3/d,700,1000,1500,tri,PUB/PPP project disclosures,to-verify,
+opex_desal_nonenergy,lcc,Desal O&M excl. electricity,SGD/m3,0.10,0.20,0.30,tri,Literature/PPP,to-verify,
+opex_newater_nonenergy,lcc,NEWater O&M excl. electricity,SGD/m3,0.05,0.10,0.20,tri,Literature/PPP,to-verify,
+ppp_price_desal,lcc,Top-down check: desal PPP first-year price (KMEDP 2020-2045),SGD/m3,0.45,1.08,1.08,fixed,Keppel Marina East bid S$1.07867/m3; Tuaspring S$0.45 (2013),to-verify,Triangulate with bottom-up LCOW
+ppp_price_newater,lcc,Top-down check: NEWater PPP first-year price,SGD/m3,0.276,0.30,0.30,fixed,Changi NEWater (BESIN-UEN) S$0.276; Sembcorp (2008) S$0.30,to-verify,
+tariff_potable_nd,lcc,Potable water price to non-domestic user (2025),SGD/m3,3.04,3.24,3.24,fixed,PUB (2023): S$2.74 + 0.20 (Apr 2024) + 0.30 (Apr 2025),to-verify,Confirm tariff vs WCT split for non-domestic
+tariff_newater,lcc,NEWater price to user (2025),SGD/m3,1.28,1.45,1.45,fixed,data.gov.sg NEWater tariff 1.28 (2021) + 0.17 (PUB 2023),to-verify,
+fee_waterborne,lcc,Waterborne fee on discharged used water (blowdown),SGD/m3,0.92,0.92,1.10,tri,data.gov.sg tariff tables (2021),to-verify,Demand-side measures also cut blowdown discharge fees
+price_elec,lcc,Electricity price for water plants / DCs,SGD/kWh,0.20,0.25,0.30,tri,SingStat electricity tariff (LT 27.82 c/kWh 2025); USEP for contestable users,to-verify,
+capex_hicoc,lcc,Capex: side-stream treatment + blowdown recovery,SGD per MW_IT,30000,60000,120000,tri,Vendor/literature,to-verify,
+capex_liquid_premium,lcc,Capex premium: liquid cooling + dry coolers vs air + towers,SGD per MW_IT,100000,300000,600000,tri,Industry reports,to-verify,Most of this is driven by AI density not water - consider allocating only heat-rejection share
+life_plant,lcc,Life of water plants,years,20,25,30,tri,PPP contract terms (25 y),verified,
+life_dc_cooling,lcc,Life of DC cooling equipment,years,10,15,20,tri,Industry practice,team-judgement,
+disc_social,lcc,Discount rate - public/social perspective,%/yr,2,3,5,tri,Lecture eLCC example uses 3%,team-judgement,
+disc_private,lcc,Discount rate - operator WACC,%/yr,6,8,10,tri,Lecture LCOE case uses 10% WACC,team-judgement,
+carbon_tax_2026,lcc,Singapore carbon tax 2026-2027,SGD/tCO2e,45,45,45,fixed,NCCS,verified,
+carbon_tax_2030,lcc,Singapore carbon tax 2030 onwards,SGD/tCO2e,50,65,80,tri,NCCS (S$50-80 by 2030),verified,
+ecocost_gwp,lcc,Eco-cost of GWP100 (externality monetisation),per kgCO2e,0.123,0.163,0.20,tri,DSS5202 LCC lecture (eco-costs),verified,Currency per lecture (EUR in eco-costs dataset) - convert
+fx_usd_sgd,lcc,FX USD to SGD,SGD/USD,1.28,1.32,1.36,tri,MAS,to-verify,For literature in USD
+horizon_start,general,Study horizon start,year,2027,2027,2027,fixed,Proposal,verified,
+horizon_end,general,Study horizon end,year,2035,2035,2035,fixed,Proposal,verified,

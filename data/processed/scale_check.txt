@@ -1,0 +1,5 @@
+National water sales 2025: 669.3 million m3/yr (potable + NEWater)
+DC-CFA2 200 MW @ wue_base=2.1: 2.06 million m3/yr = 0.31% of national sales, 5,645 m3/day
+DC-CFA2 200 MW @ wue_roadmap=2.0: 1.96 million m3/yr = 0.29% of national sales, 5,376 m3/day
+DC-CFA2 200 MW @ wue_hicoc=1.4: 1.37 million m3/yr = 0.21% of national sales, 3,763 m3/day
+DC-CFA2 200 MW @ wue_liquid_dry=0.3: 0.29 million m3/yr = 0.04% of national sales, 806 m3/day

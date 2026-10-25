@@ -1,0 +1,239 @@
+tariff,year,cents_per_kwh
+Low Tension Supplies - Domestic,2025,27.82
+Low Tension Supplies - Non-Domestic,2025,27.82
+High Tension Small Supplies - Contracted Capacity Charge,2025,15.4
+High Tension Small Supplies - Uncontracted Capacity Charge,2025,23.1
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2025,24.92
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2025,15.99
+High Tension Small Supplies - Reactive Power Charge,2025,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2025,15.4
+High Tension Large Supplies - Uncontracted Capacity Charge,2025,23.1
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2025,24.7
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2025,15.98
+High Tension Large Supplies - Reactive Power Charge,2025,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2025,12.34
+Extra High Tension Supplies - Uncontracted Capacity Charge,2025,18.51
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2025,23.78
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2025,15.88
+Extra High Tension Supplies - Reactive Power Charge,2025,0.48
+Low Tension Supplies - Domestic,2024,29.67
+Low Tension Supplies - Non-Domestic,2024,29.67
+High Tension Small Supplies - Contracted Capacity Charge,2024,16.06
+High Tension Small Supplies - Uncontracted Capacity Charge,2024,24.09
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2024,27.07
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2024,16.74
+High Tension Small Supplies - Reactive Power Charge,2024,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2024,16.06
+High Tension Large Supplies - Uncontracted Capacity Charge,2024,24.09
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2024,26.85
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2024,16.73
+High Tension Large Supplies - Reactive Power Charge,2024,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2024,12.71
+Extra High Tension Supplies - Uncontracted Capacity Charge,2024,19.06
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2024,25.88
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2024,16.63
+Extra High Tension Supplies - Reactive Power Charge,2024,0.48
+Low Tension Supplies - Domestic,2023,28.21
+Low Tension Supplies - Non-Domestic,2023,28.21
+High Tension Small Supplies - Contracted Capacity Charge,2023,13.08
+High Tension Small Supplies - Uncontracted Capacity Charge,2023,19.62
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2023,25.81
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2023,15.0
+High Tension Small Supplies - Reactive Power Charge,2023,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2023,13.08
+High Tension Large Supplies - Uncontracted Capacity Charge,2023,19.62
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2023,25.59
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2023,14.99
+High Tension Large Supplies - Reactive Power Charge,2023,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2023,10.82
+Extra High Tension Supplies - Uncontracted Capacity Charge,2023,16.24
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2023,24.61
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2023,14.88
+Extra High Tension Supplies - Reactive Power Charge,2023,0.48
+Low Tension Supplies - Domestic,2022,28.32
+Low Tension Supplies - Non-Domestic,2022,28.32
+High Tension Small Supplies - Contracted Capacity Charge,2022,11.43
+High Tension Small Supplies - Uncontracted Capacity Charge,2022,17.14
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2022,25.87
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2022,15.37
+High Tension Small Supplies - Reactive Power Charge,2022,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2022,11.43
+High Tension Large Supplies - Uncontracted Capacity Charge,2022,17.14
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2022,25.65
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2022,15.36
+High Tension Large Supplies - Reactive Power Charge,2022,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2022,9.71
+Extra High Tension Supplies - Uncontracted Capacity Charge,2022,14.57
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2022,24.66
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2022,15.24
+Extra High Tension Supplies - Reactive Power Charge,2022,0.48
+Low Tension Supplies - Domestic,2021,22.7
+Low Tension Supplies - Non-Domestic,2021,22.7
+High Tension Small Supplies - Contracted Capacity Charge,2021,10.4
+High Tension Small Supplies - Uncontracted Capacity Charge,2021,15.6
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2021,19.78
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2021,12.14
+High Tension Small Supplies - Reactive Power Charge,2021,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2021,10.4
+High Tension Large Supplies - Uncontracted Capacity Charge,2021,15.6
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2021,19.56
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2021,12.13
+High Tension Large Supplies - Reactive Power Charge,2021,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2021,8.97
+Extra High Tension Supplies - Uncontracted Capacity Charge,2021,13.45
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2021,18.66
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2021,12.04
+Extra High Tension Supplies - Reactive Power Charge,2021,0.48
+Low Tension Supplies - Domestic,2020,22.07
+Low Tension Supplies - Non-Domestic,2020,22.07
+High Tension Small Supplies - Contracted Capacity Charge,2020,8.9
+High Tension Small Supplies - Uncontracted Capacity Charge,2020,13.35
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2020,19.36
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2020,12.0
+High Tension Small Supplies - Reactive Power Charge,2020,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2020,8.9
+High Tension Large Supplies - Uncontracted Capacity Charge,2020,13.35
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2020,19.14
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2020,11.99
+High Tension Large Supplies - Reactive Power Charge,2020,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2020,7.87
+Extra High Tension Supplies - Uncontracted Capacity Charge,2020,11.81
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2020,18.26
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2020,11.9
+Extra High Tension Supplies - Reactive Power Charge,2020,0.48
+Low Tension Supplies - Domestic,2019,23.57
+Low Tension Supplies - Non-Domestic,2019,23.57
+High Tension Small Supplies - Contracted Capacity Charge,2019,8.82
+High Tension Small Supplies - Uncontracted Capacity Charge,2019,13.23
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2019,21.04
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2019,12.84
+High Tension Small Supplies - Reactive Power Charge,2019,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2019,8.82
+High Tension Large Supplies - Uncontracted Capacity Charge,2019,13.23
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2019,20.82
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2019,12.83
+High Tension Large Supplies - Reactive Power Charge,2019,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2019,7.82
+Extra High Tension Supplies - Uncontracted Capacity Charge,2019,11.74
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2019,19.9
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2019,12.72
+Extra High Tension Supplies - Reactive Power Charge,2019,0.48
+Low Tension Supplies - Domestic,2018,22.87
+Low Tension Supplies - Non-Domestic,2018,22.87
+High Tension Small Supplies - Contracted Capacity Charge,2018,8.53
+High Tension Small Supplies - Uncontracted Capacity Charge,2018,12.79
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2018,20.36
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2018,12.27
+High Tension Small Supplies - Reactive Power Charge,2018,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2018,8.53
+High Tension Large Supplies - Uncontracted Capacity Charge,2018,12.79
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2018,20.14
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2018,12.26
+High Tension Large Supplies - Reactive Power Charge,2018,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2018,7.65
+Extra High Tension Supplies - Uncontracted Capacity Charge,2018,11.47
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2018,19.23
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2018,12.15
+Extra High Tension Supplies - Reactive Power Charge,2018,0.48
+Low Tension Supplies - Domestic,2017,20.65
+Low Tension Supplies - Non-Domestic,2017,20.65
+High Tension Small Supplies - Contracted Capacity Charge,2017,8.36
+High Tension Small Supplies - Uncontracted Capacity Charge,2017,12.54
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2017,17.84
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2017,10.8
+High Tension Small Supplies - Reactive Power Charge,2017,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2017,8.36
+High Tension Large Supplies - Uncontracted Capacity Charge,2017,12.54
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2017,17.62
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2017,10.79
+High Tension Large Supplies - Reactive Power Charge,2017,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2017,7.54
+Extra High Tension Supplies - Uncontracted Capacity Charge,2017,11.31
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2017,16.74
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2017,10.7
+Extra High Tension Supplies - Reactive Power Charge,2017,0.48
+Low Tension Supplies - Domestic,2016,18.9
+Low Tension Supplies - Non-Domestic,2016,18.9
+High Tension Small Supplies - Contracted Capacity Charge,2016,8.31
+High Tension Small Supplies - Uncontracted Capacity Charge,2016,12.46
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2016,15.85
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2016,9.66
+High Tension Small Supplies - Reactive Power Charge,2016,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2016,8.31
+High Tension Large Supplies - Uncontracted Capacity Charge,2016,12.46
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2016,15.63
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2016,9.65
+High Tension Large Supplies - Reactive Power Charge,2016,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2016,7.5
+Extra High Tension Supplies - Uncontracted Capacity Charge,2016,11.25
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2016,14.79
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2016,9.56
+Extra High Tension Supplies - Reactive Power Charge,2016,0.48
+Low Tension Supplies - Domestic,2015,21.73
+Low Tension Supplies - Non-Domestic,2015,21.73
+High Tension Small Supplies - Contracted Capacity Charge,2015,7.99
+High Tension Small Supplies - Uncontracted Capacity Charge,2015,11.98
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2015,19.09
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2015,11.69
+High Tension Small Supplies - Reactive Power Charge,2015,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2015,7.99
+High Tension Large Supplies - Uncontracted Capacity Charge,2015,11.98
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2015,18.87
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2015,11.68
+High Tension Large Supplies - Reactive Power Charge,2015,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2015,7.26
+Extra High Tension Supplies - Uncontracted Capacity Charge,2015,10.89
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2015,17.99
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2015,11.59
+Extra High Tension Supplies - Reactive Power Charge,2015,0.48
+Low Tension Supplies - Domestic,2014,25.59
+Low Tension Supplies - Non-Domestic,2014,25.59
+High Tension Small Supplies - Contracted Capacity Charge,2014,7.49
+High Tension Small Supplies - Uncontracted Capacity Charge,2014,11.24
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2014,23.58
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2014,14.35
+High Tension Small Supplies - Reactive Power Charge,2014,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2014,7.49
+High Tension Large Supplies - Uncontracted Capacity Charge,2014,11.24
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2014,23.36
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2014,14.34
+High Tension Large Supplies - Reactive Power Charge,2014,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2014,6.9
+Extra High Tension Supplies - Uncontracted Capacity Charge,2014,10.35
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2014,22.41
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2014,14.23
+Extra High Tension Supplies - Reactive Power Charge,2014,0.48
+Low Tension Supplies - Domestic,2013,26.25
+Low Tension Supplies - Non-Domestic,2013,26.25
+High Tension Small Supplies - Contracted Capacity Charge,2013,7.36
+High Tension Small Supplies - Uncontracted Capacity Charge,2013,11.04
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2013,24.39
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2013,14.96
+High Tension Small Supplies - Reactive Power Charge,2013,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2013,7.36
+High Tension Large Supplies - Uncontracted Capacity Charge,2013,11.04
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2013,24.17
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2013,14.95
+High Tension Large Supplies - Reactive Power Charge,2013,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2013,6.81
+Extra High Tension Supplies - Uncontracted Capacity Charge,2013,10.21
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2013,23.22
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2013,14.84
+Extra High Tension Supplies - Reactive Power Charge,2013,0.48
+Low Tension Supplies - Domestic,2012,27.93
+Low Tension Supplies - Non-Domestic,2012,27.93
+High Tension Small Supplies - Contracted Capacity Charge,2012,6.96
+High Tension Small Supplies - Uncontracted Capacity Charge,2012,10.44
+High Tension Small Supplies - Peak Period (7.00 AM To 11.00 PM),2012,26.54
+High Tension Small Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2012,16.25
+High Tension Small Supplies - Reactive Power Charge,2012,0.59
+High Tension Large Supplies - Contracted Capacity Charge,2012,6.96
+High Tension Large Supplies - Uncontracted Capacity Charge,2012,10.44
+High Tension Large Supplies - Peak Period (7.00 AM To 11.00 PM),2012,26.32
+High Tension Large Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2012,16.24
+High Tension Large Supplies - Reactive Power Charge,2012,0.59
+Extra High Tension Supplies - Contracted Capacity Charge,2012,6.52
+Extra High Tension Supplies - Uncontracted Capacity Charge,2012,9.78
+Extra High Tension Supplies - Peak Period (7.00 AM To 11.00 PM),2012,25.36
+Extra High Tension Supplies - Off-Peak Period (11.00 PM To 7.00 AM),2012,16.14
+Extra High Tension Supplies - Reactive Power Charge,2012,0.48
