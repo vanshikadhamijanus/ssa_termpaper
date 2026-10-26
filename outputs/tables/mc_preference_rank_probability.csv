@@ -1,0 +1,17 @@
+mode,hierarchy,strategy,p_rank1,mean_score,n_draws,seed
+preferences_only,Full hierarchy,A1,0.0035,0.23106175039608376,2000,2901
+preferences_only,Full hierarchy,A2,0.0205,0.24874017035454238,2000,2901
+preferences_only,Full hierarchy,A3,0.777,0.2973746857205827,2000,2901
+preferences_only,Full hierarchy,A4,0.199,0.22282339352879116,2000,2901
+preferences_only,Reduced overlap,A1,0.006,0.2193996134235003,2000,2901
+preferences_only,Reduced overlap,A2,0.0805,0.24967022841769118,2000,2901
+preferences_only,Reduced overlap,A3,0.67,0.3036472248890102,2000,2901
+preferences_only,Reduced overlap,A4,0.2435,0.22728293326979826,2000,2901
+parameters_and_preferences,Full hierarchy,A1,0.005,0.23301889627443798,2000,2901
+parameters_and_preferences,Full hierarchy,A2,0.036,0.2490196234507687,2000,2901
+parameters_and_preferences,Full hierarchy,A3,0.7615,0.29594343869805334,2000,2901
+parameters_and_preferences,Full hierarchy,A4,0.1975,0.22201804157674007,2000,2901
+parameters_and_preferences,Reduced overlap,A1,0.007,0.2215682764077953,2000,2901
+parameters_and_preferences,Reduced overlap,A2,0.101,0.249338880705457,2000,2901
+parameters_and_preferences,Reduced overlap,A3,0.6525,0.30240264221184776,2000,2901
+parameters_and_preferences,Reduced overlap,A4,0.2395,0.22669020067489992,2000,2901

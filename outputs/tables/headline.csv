@@ -1,0 +1,5 @@
+strategy,name,wue,water_2035_S1_Mm3,water_2035_S3_Mm3,kwh_per_mwh,gwp_kg_per_mwh,gwp_water_only,social_cost_sgd_per_mwh,social_elcc_sgd_per_mwh,operator_sgd_per_mwh,npc_social_S1_Msgd,ahp_W1,ahp_rank_W1,p_rank1_mc
+A1,Wet + desal,2.1,2.58,9.01,8.0,3.42,3.42,2.6,3.35,6.8,21.79,0.231,3,0.0
+A2,Wet + NEWater,2.1,2.58,9.01,2.1,0.99,0.99,1.0,1.21,5.25,8.35,0.25,2,0.0
+A3,High-CoC + reuse,1.46,1.79,6.27,1.6,0.74,0.74,1.54,1.7,4.83,13.86,0.299,1,1.0
+A4,Dry + trim,0.5,0.61,2.13,50.5,19.71,0.23,11.6,15.89,15.64,98.71,0.22,4,0.0

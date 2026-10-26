@@ -91,7 +91,7 @@ def fetch_datagovsg(rows, force):
 
 
 def fetch_weather(rows, force):
-    """Hourly ERA5-based reanalysis for Jurong Island from Open-Meteo (free, no key)."""
+    """Hourly Open-Meteo archive for Jurong Island (model selection not pinned)."""
     out = RAW / "weather"
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"openmeteo_{S.SITE['name'].replace(' ', '_').lower()}_hourly_{min(S.WEATHER_YEARS)}_{max(S.WEATHER_YEARS)}.csv"
@@ -156,10 +156,21 @@ def fetch_documents(rows, force):
 
 def check_manual(rows):
     MANUAL_DIR.mkdir(parents=True, exist_ok=True)
+    recorded = set()
     for title, url, pattern, note in S.MANUAL:
         hits = sorted(MANUAL_DIR.glob(pattern))
         status = "present" if hits else "MANUAL - not yet downloaded"
-        record(rows, "manual", title, url, hits[0] if hits else None, status, note)
+        if not hits:
+            record(rows, "manual", title, url, None, status, note)
+        for path in hits:
+            record(rows, "manual", title, url, path, status, note)
+            recorded.add(path)
+    # A downloaded file must not disappear from the inventory merely because
+    # an old registry pattern missed it. Leave provenance explicitly unknown.
+    for path in sorted(MANUAL_DIR.iterdir()):
+        if path.is_file() and path.suffix.lower() in {".pdf", ".xlsx", ".csv"} and path not in recorded:
+            record(rows, "manual", path.name, "", path, "present - registry mapping needed",
+                   "Local source exists; exact source URL not established by this registry")
 
 
 STEPS = {"datagovsg": fetch_datagovsg, "weather": fetch_weather, "csv": fetch_csv, "docs": fetch_documents}

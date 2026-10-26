@@ -1,0 +1,15 @@
+matrix,CR,ok
+Main criteria (W1 Balanced),0.0,True
+Main criteria (W2 PUB / water security),0.007637107133077644,True
+Main criteria (W3 Operator / economic),0.0038381119410738998,True
+"Main criteria (W4 Climate (EMA, NGOs))",0.016970105370908314,True
+"Main criteria (W5 Growth (IMDA, EDB))",0.007637107133075341,True
+Sub-criteria under C1 Economic,0.0,True
+Sub-criteria under C2 Environmental,0.007933373029552273,True
+Sub-criteria under C3 Water security,0.0,True
+Sub-criteria under C4 Implementation,0.0,True
+Alternatives wrt C3b Weather resilience,0.0,True
+Alternatives wrt C3c Dependence on used-water feedstock,0.021975107885486886,True
+Alternatives wrt C4a Technical maturity in the tropics,0.0,True
+Alternatives wrt C4b Policy alignment & enforceability,0.003838111941075216,True
+Alternatives wrt C4c Effect on other water users,0.017911414055513417,True

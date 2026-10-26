@@ -1,0 +1,5 @@
+strategy,p_rank1_ahp_W1,p_lowest_social_cost,p_lowest_operator_cost,p_lowest_gwp,n_draws,seed,p_A3_cheaper_than_A2_operator,p_A3_cheaper_than_A2_social,p_A4_cheaper_than_A2_social,p_A3_lower_gwp_than_A2
+A1,0.0,0.0,0.0,0.0,10000,29,0.605,0.0,0.0,1.0
+A2,0.0,1.0,0.395,0.0,10000,29,0.605,0.0,0.0,1.0
+A3,1.0,0.0,0.605,1.0,10000,29,0.605,0.0,0.0,1.0
+A4,0.0,0.0,0.0,0.0,10000,29,0.605,0.0,0.0,1.0

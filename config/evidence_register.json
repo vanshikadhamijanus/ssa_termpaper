@@ -1,0 +1,297 @@
+{
+  "reviewed_on": "2026-10-25",
+  "timezone": "Asia/Singapore",
+  "purpose": "Evidence supporting corrected model choices and limits on what the sources establish",
+  "entries": [
+    {
+      "id": "cfa2_it_capacity",
+      "model_keys": [
+        "cap_cfa2",
+        "mw_basis_it_share"
+      ],
+      "status": "verified-primary",
+      "value": {
+        "capacity_mw_it": 200,
+        "it_share": 1.0
+      },
+      "source": "MDDI closing speech, 7 October 2026",
+      "url": "https://www.mddi.gov.sg/newsroom/closing-speech-by-sms-tan-kiat-how-for-the-second-reading-of-the-digital-infrastructure-bill/",
+      "locator": "Paragraph 28, first and second bullets",
+      "scope": "The national maximum IT-load figure includes CFA2's 200 MW. The separate 700 MW Jurong Island park figure is total electricity demand and overlaps with CFA2."
+    },
+    {
+      "id": "cfa2_common_liquid_cooling",
+      "model_keys": [
+        "dpue_dry",
+        "capex_dry_premium"
+      ],
+      "status": "verified-policy-not-performance",
+      "value": "Liquid cooling is shared by the compared configurations",
+      "source": "EDB and IMDA fact sheet, 21 August 2026",
+      "url": "https://www.edb.gov.sg/en/about-edb/media-releases-publications/four-data-centre-proposals-selected-as-part-of-second-data-centre.html",
+      "locator": "Linked fact sheet, paragraphs 2, 4, 5(d) and 6",
+      "local_file": "data/raw/docs/edb_imda_2026_dc_cfa2_factsheet.pdf",
+      "scope": "Confirms four allocations of 50 MW, liquid-cooling adoption and Jurong Island location; does not establish heat-rejection equipment costs or an incremental dry-cooling PUE."
+    },
+    {
+      "id": "newater_customer_price",
+      "model_keys": [
+        "tariff_newater"
+      ],
+      "status": "verified-primary",
+      "value": {
+        "sgd_per_m3_before_gst": 2.5,
+        "tariff": 1.28,
+        "water_conservation_tax": 0.13,
+        "waterborne_tax": 1.09
+      },
+      "source": "PUB water-price announcement, 27 September 2023",
+      "url": "https://www.pub.gov.sg/Resources/News-Room/PressReleases/2023/09/Water-price-to-rise-from-April-2024-Government-to-provide-support",
+      "locator": "Annex B, NEWater, From 1 April 2025 column",
+      "scope": "Operator bill components; not a marginal resource-cost estimate. The live official page was checked; downloaded snapshots were not rewritten."
+    },
+    {
+      "id": "potable_customer_price",
+      "model_keys": [
+        "tariff_potable_nd"
+      ],
+      "status": "verified-primary",
+      "value": {
+        "sgd_per_m3_before_gst": 3.24
+      },
+      "source": "PUB water-price announcement, 27 September 2023",
+      "url": "https://www.pub.gov.sg/Resources/News-Room/PressReleases/2023/09/Water-price-to-rise-from-April-2024-Government-to-provide-support",
+      "locator": "Annex A, Non-Domestic Potable Water Prices, From 1 April 2025 column",
+      "scope": "Operator tariff; does not prove desalination's marginal resource cost."
+    },
+    {
+      "id": "roadmap_capacity",
+      "model_keys": [
+        "cap_roadmap",
+        "cap_future_cfa"
+      ],
+      "status": "policy-context-with-model-scenarios",
+      "value": {
+        "published_near_term_ambition_mw_at_least": 300,
+        "model_s2_total_mw_it": 500,
+        "model_s3_total_mw_it": 700
+      },
+      "source": "IMDA Green Data Centre Roadmap, 2024",
+      "url": "https://www.imda.gov.sg/-/media/imda/files/how-we-can-help/green-dc-roadmap/green-dc-roadmap.pdf",
+      "locator": "Printed pages 4 and 7, additional near-term capacity; page 16, water efficiency",
+      "local_file": "data/raw/docs/imda_2024_green_dc_roadmap.pdf",
+      "scope": "The roadmap does not establish an additional 300 MW tranche beyond CFA2. S2 and S3 are team-defined nonoverlapping growth scenarios, not published allocations."
+    },
+    {
+      "id": "wet_rejection_benchmark",
+      "model_keys": [
+        "wue_base"
+      ],
+      "status": "verified-benchmark-proxy-transfer",
+      "value": {
+        "median_m3_per_mwh_it": 2.1
+      },
+      "source": "PUB sectoral water efficiency benchmark, December 2025",
+      "url": "https://www.pub.gov.sg/Public/WaterLoop/Water-Conservation/Resources-on-Water-Efficiency-Measures/Sectoral-Water-Efficiency-Benchmark",
+      "locator": "Sectoral Water Efficiency Benchmarks table, Data Centres row; WUE denominator defined in IMDA roadmap page 16 footnote 9",
+      "scope": "Existing-fleet benchmark, transferred to new wet-rejection sites as a proxy. It is not a measured CFA2 design performance."
+    },
+    {
+      "id": "grid_emission_factor",
+      "model_keys": [
+        "ef_grid_2024",
+        "grid_ef_2025_start"
+      ],
+      "status": "verified-primary-rounded",
+      "value": {
+        "2024_raw_kgco2_per_kwh": 0.40090748398891,
+        "2024_rounded": 0.401,
+        "2025_raw_kgco2_per_kwh": 0.40441726074088236,
+        "2025_model_start": 0.404
+      },
+      "source": "EMA Singapore Energy Statistics 2026",
+      "url": "https://www.ema.gov.sg/resources/singapore-energy-statistics/chapter2",
+      "locator": "Tabular Data workbook, T2.3!U6 (2024), T2.3!V6 (2025), note in row 12",
+      "local_file": "data/manual/ema_ses2026_all_chapters.xlsx",
+      "scope": "Generation-weighted operational CO2 factor, not a complete lifecycle electricity factor. Future grid paths are team scenarios."
+    },
+    {
+      "id": "low_carbon_pathways",
+      "model_keys": [
+        "dc_green_share",
+        "dc_green_share_scenario",
+        "dc_green_ef_scenario"
+      ],
+      "status": "verified-policy-with-illustrative-intensities",
+      "value": {
+        "policy_low_carbon_share_more_than": 0.5,
+        "tested_intensities_kgco2e_per_kwh": [
+          0.05,
+          0.15,
+          0.3
+        ]
+      },
+      "source": "METI parliamentary answer, 10 September 2026",
+      "url": "https://www.meti.gov.sg/newsroom/written-reply-to-pq-on-electricity-demand-from-grid-versus-on-site-generation-and-proportion-of-green-energy-commitment-from-local-renewable-generation-versus-imported-sources-for-dc-cfa2/",
+      "locator": "Answer paragraphs 1 to 3",
+      "scope": "Lists domestic photovoltaics and fuels including biomethane, ammonia and hydrogen. No zero-emission factor follows from the policy share. Tested intensities are illustrative; the primary result uses full grid intensity."
+    },
+    {
+      "id": "desalination_specific_energy",
+      "model_keys": [
+        "sec_desal"
+      ],
+      "status": "verified-historical-reference-and-target",
+      "value": {
+        "reference_kwh_per_m3": 3.5,
+        "published_target_below_kwh_per_m3": 2
+      },
+      "source": "PUB decarbonisation strategy, March 2023",
+      "url": "https://www.pub.gov.sg/Resources/News-Room/PressReleases/2023/03/PUB-decarbonisation-strategy",
+      "locator": "Reduce subsection, paragraph on scaling and validating desalination technologies",
+      "scope": "The lower value was a technology target, not evidence that all plants achieved it. No claim is made that 3.5 is a measured 2026 Jurong Island plant value."
+    },
+    {
+      "id": "lbnl_wue_context",
+      "model_keys": [
+        "wue_liquid_dry"
+      ],
+      "status": "context-not-a4-validation",
+      "value": {
+        "reported_l_per_kwh_range": [
+          0.1,
+          0.3
+        ]
+      },
+      "source": "Shehabi et al., 2024 US Data Center Energy Usage Report",
+      "url": "https://doi.org/10.71468/P1WC7Q",
+      "locator": "Printed page 47, paragraph preceding Figure 4.5",
+      "local_file": "data/manual/lbnl_2024_dc_energy_report.pdf",
+      "scope": "Range refers to reported airside-economizer and adiabatic systems with air-cooled chillers; system details are uncertain. It does not validate tropical liquid/dry-rejection WUE. Retained register entry is contextual only."
+    },
+    {
+      "id": "weather_archive",
+      "model_keys": [
+        "trim_threshold",
+        "liquid_heat_share"
+      ],
+      "status": "archived-data-with-simulation-assumptions",
+      "value": {
+        "latitude": 1.265,
+        "longitude": 103.699,
+        "years": [
+          2015,
+          2025
+        ],
+        "base_threshold_c": 30
+      },
+      "source": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "locator": "Hourly variables and weather-model selection documentation; local file time and temperature_2m columns",
+      "local_file": "data/raw/weather/openmeteo_jurong_island_hourly_2015_2025.csv",
+      "scope": "Exact temperature exceedance is recomputed from retained hourly records. Original request does not pin a model; do not call this an ERA5-only record. Threshold and heat share are engineering assumptions. No independent station comparison or future climate adjustment was performed."
+    },
+    {
+      "id": "carbon_valuation",
+      "model_keys": [
+        "carbon_tax_2026",
+        "carbon_tax_2030"
+      ],
+      "status": "verified-policy-with-scenario-midpoint",
+      "value": {
+        "2026_2027_sgd_per_tco2e": 45,
+        "2030_policy_range": [
+          50,
+          80
+        ],
+        "model_2030_midpoint": 65
+      },
+      "source": "NCCS Carbon tax, updated 9 July 2026",
+      "url": "https://www.nccs.gov.sg/singapores-climate-action/mitigation-efforts/carbontax/",
+      "locator": "Key Updates to Singapore's Carbon Tax from 2024",
+      "scope": "65 is a midpoint assumption, not an announced fixed rate. Valuation sensitivities are separate from resource cost and do not represent incremental tax bills."
+    },
+    {
+      "id": "equipment_and_nonenergy_assumptions",
+      "model_keys": [
+        "dpue_dry",
+        "capex_dry_premium",
+        "capex_hicoc",
+        "ghg_desal_nonenergy",
+        "ghg_newater_nonenergy",
+        "sec_newater",
+        "cost_discharge_treatment"
+      ],
+      "status": "screening-assumptions-not-primary-measurements",
+      "value": {
+        "dry_dpue_base": 0.05,
+        "dry_capital_base_sgd_per_mw_it": 100000,
+        "recovery_capital_base_sgd_per_mw_it": 60000,
+        "discharge_resource_cost_primary": 0
+      },
+      "source": "Team assumptions in config/assumptions.csv",
+      "url": null,
+      "locator": "Rows identified by model_keys; structural_sensitivity.csv and cooling_thresholds.csv",
+      "scope": "These inputs lack site-specific calibration or complete source support. Zero discharge treatment cost means omitted from the primary accounting, not free treatment. Cost years are not harmonised to verified 2026 procurement quotes. Sensitivity ranges do not constitute validation."
+    },
+    {
+      "id": "historical_newater_concession",
+      "model_keys": [
+        "ppp_price_newater"
+      ],
+      "status": "verified-historical-context",
+      "value": {
+        "first_year_sgd_per_m3": 0.276,
+        "award_year": 2014,
+        "context_plot_approximation": 0.3
+      },
+      "source": "PUB BESIN-UEN consortium press release, 18 September 2014",
+      "url": "https://www.nas.gov.sg/archivesonline/data/pdfdoc/20140925002/pr20140918_2nd_changi_newater_plant_award_press_release_sally.pdf",
+      "locator": "PDF page 1, third paragraph: first-year price and 25-year supply period",
+      "scope": "Historical first-year concession price, not a 2026 marginal cost. The model contextual plot retains an approximate 0.30 reference; resource costs are calculated separately."
+    },
+    {
+      "id": "economic_and_calendar_assumptions",
+      "model_keys": [
+        "price_elec",
+        "life_plant",
+        "horizon_start",
+        "horizon_end",
+        "latent_heat"
+      ],
+      "status": "selected-proxies-and-study-assumptions",
+      "value": {
+        "operator_electricity_sgd_per_kwh": 0.25,
+        "water_plant_economic_life_years": 25,
+        "horizon": [
+          2027,
+          2035
+        ],
+        "latent_heat_mj_per_kg": 2.43
+      },
+      "source": "Team model choices; proposal horizon; historical concession context",
+      "url": null,
+      "locator": "config/assumptions.csv rows identified by model_keys",
+      "scope": "Retail tariffs do not establish a DC electricity contract; a concession term does not measure asset life. Calendar bounds are study choices. The latent-heat value is a calibration-check assumption without a retained specific table reference. Numeric values are unchanged; they are not classified as verified observations."
+    },
+    {
+      "id": "ecocost_valuation_scenario",
+      "model_keys": [
+        "ecocost_gwp",
+        "fx_eur_sgd"
+      ],
+      "status": "source-factor-used-in-valuation-scenario",
+      "value": {
+        "model_eur_per_kgco2e": 0.15,
+        "retained_workbook_co2_eur_per_kg": 0.15,
+        "sensitivity_low": 0.123,
+        "sensitivity_high": 0.2
+      },
+      "source": "Sustainability Impact Metrics eco-cost workbook; team valuation scenario",
+      "url": "https://www.ecocostsvalue.com/EVR/img/Ecocosts2026_midpoint_tables.xlsx",
+      "locator": "Retained workbook sheet 'ecocosts emissions 2025', row 139, Carbon dioxide, columns I and K",
+      "local_file": "data/manual/ecocosts_2026.xlsx",
+      "scope": "The adopted central factor matches the retained workbook CO2 entry. Its use for this assessment is a valuation scenario, not measured environmental damage. Sensitivity bounds and currency conversion are assumptions. The factor is excluded from primary resource cost and AHP; it affects separately labelled eco-cost valuation outputs."
+    }
+  ]
+}

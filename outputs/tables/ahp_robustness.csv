@@ -1,0 +1,1309 @@
+case,kind,value,strategy,score,rank
+Full hierarchy; floor=0.01,proxy and score floor,0.01,A1,0.22474977065082558,3
+Full hierarchy; floor=0.01,proxy and score floor,0.01,A2,0.24895154885152515,2
+Full hierarchy; floor=0.01,proxy and score floor,0.01,A3,0.30529901291772393,1
+Full hierarchy; floor=0.01,proxy and score floor,0.01,A4,0.22099966757992534,4
+No electricity overlap; floor=0.01,proxy and score floor,0.01,A1,0.22034375690737357,4
+No electricity overlap; floor=0.01,proxy and score floor,0.01,A2,0.24756764476654797,2
+No electricity overlap; floor=0.01,proxy and score floor,0.01,A3,0.3055091868287161,1
+No electricity overlap; floor=0.01,proxy and score floor,0.01,A4,0.22657941149736233,3
+No discharge-volume proxy; floor=0.01,proxy and score floor,0.01,A1,0.24685110993817738,3
+No discharge-volume proxy; floor=0.01,proxy and score floor,0.01,A2,0.2561681557085272,2
+No discharge-volume proxy; floor=0.01,proxy and score floor,0.01,A3,0.3045408965546569,1
+No discharge-volume proxy; floor=0.01,proxy and score floor,0.01,A4,0.19243983779863852,4
+Reduced overlap; floor=0.01,proxy and score floor,0.01,A1,0.21059743712683138,4
+Reduced overlap; floor=0.01,proxy and score floor,0.01,A2,0.2447691345695629,2
+Reduced overlap; floor=0.01,proxy and score floor,0.01,A3,0.31217195959972055,1
+Reduced overlap; floor=0.01,proxy and score floor,0.01,A4,0.23246146870388518,3
+Full hierarchy; floor=0.1,proxy and score floor,0.1,A1,0.2306902281203877,3
+Full hierarchy; floor=0.1,proxy and score floor,0.1,A2,0.25036085664535324,2
+Full hierarchy; floor=0.1,proxy and score floor,0.1,A3,0.29874110821901456,1
+Full hierarchy; floor=0.1,proxy and score floor,0.1,A4,0.2202078070152444,4
+No electricity overlap; floor=0.1,proxy and score floor,0.1,A1,0.22680981626019003,3
+No electricity overlap; floor=0.1,proxy and score floor,0.1,A2,0.24912893056275903,2
+No electricity overlap; floor=0.1,proxy and score floor,0.1,A3,0.29890917978837805,1
+No electricity overlap; floor=0.1,proxy and score floor,0.1,A4,0.22515207338867282,4
+No discharge-volume proxy; floor=0.1,proxy and score floor,0.1,A1,0.2501464818774932,3
+No discharge-volume proxy; floor=0.1,proxy and score floor,0.1,A2,0.25677630695471854,2
+No discharge-volume proxy; floor=0.1,proxy and score floor,0.1,A3,0.29815445705655197,1
+No discharge-volume proxy; floor=0.1,proxy and score floor,0.1,A4,0.19492275411123616,4
+Reduced overlap; floor=0.1,proxy and score floor,0.1,A1,0.21998661213120105,4
+Reduced overlap; floor=0.1,proxy and score floor,0.1,A2,0.2514502920754255,2
+Reduced overlap; floor=0.1,proxy and score floor,0.1,A3,0.30491746311562684,1
+Reduced overlap; floor=0.1,proxy and score floor,0.1,A4,0.2236456326777465,3
+Full hierarchy; floor=0.3,proxy and score floor,0.3,A1,0.2378546937986198,3
+Full hierarchy; floor=0.3,proxy and score floor,0.3,A2,0.2504623013856642,2
+Full hierarchy; floor=0.3,proxy and score floor,0.3,A3,0.28872244348562415,1
+Full hierarchy; floor=0.3,proxy and score floor,0.3,A4,0.22296056133009173,4
+No electricity overlap; floor=0.3,proxy and score floor,0.3,A1,0.23478706336881947,3
+No electricity overlap; floor=0.3,proxy and score floor,0.3,A2,0.24947203165912818,2
+No electricity overlap; floor=0.3,proxy and score floor,0.3,A3,0.2888340346585495,1
+No electricity overlap; floor=0.3,proxy and score floor,0.3,A4,0.22690687031350282,4
+No discharge-volume proxy; floor=0.3,proxy and score floor,0.3,A1,0.2532248278533302,3
+No discharge-volume proxy; floor=0.3,proxy and score floor,0.3,A2,0.2556082976900627,2
+No discharge-volume proxy; floor=0.3,proxy and score floor,0.3,A3,0.2883595723586836,1
+No discharge-volume proxy; floor=0.3,proxy and score floor,0.3,A4,0.20280730209792341,4
+Reduced overlap; floor=0.3,proxy and score floor,0.3,A1,0.2305680531212146,3
+Reduced overlap; floor=0.3,proxy and score floor,0.3,A2,0.2577529873833459,2
+Reduced overlap; floor=0.3,proxy and score floor,0.3,A3,0.2940511969024445,1
+Reduced overlap; floor=0.3,proxy and score floor,0.3,A4,0.21762776259299493,4
+C1 Economic,main weight,0.0,A1,0.21003908491974604,4
+C1 Economic,main weight,0.0,A2,0.22083624654630424,3
+C1 Economic,main weight,0.0,A3,0.28597094093310477,1
+C1 Economic,main weight,0.0,A4,0.2831537276008449,2
+C1 Economic,main weight,0.05,A1,0.21416931355987434,4
+C1 Economic,main weight,0.05,A2,0.226741168566114,3
+C1 Economic,main weight,0.05,A3,0.2885249743902866,1
+C1 Economic,main weight,0.05,A4,0.2705645434837247,2
+C1 Economic,main weight,0.1,A1,0.21829954220000272,4
+C1 Economic,main weight,0.1,A2,0.23264609058592384,3
+C1 Economic,main weight,0.1,A3,0.2910790078474687,1
+C1 Economic,main weight,0.1,A4,0.25797535936660465,2
+C1 Economic,main weight,0.15000000000000002,A1,0.22242977084013105,4
+C1 Economic,main weight,0.15000000000000002,A2,0.23855101260573366,3
+C1 Economic,main weight,0.15000000000000002,A3,0.29363304130465057,1
+C1 Economic,main weight,0.15000000000000002,A4,0.24538617524948456,2
+C1 Economic,main weight,0.2,A1,0.2265599994802594,4
+C1 Economic,main weight,0.2,A2,0.24445593462554346,2
+C1 Economic,main weight,0.2,A3,0.2961870747618326,1
+C1 Economic,main weight,0.2,A4,0.23279699113236452,3
+C1 Economic,main weight,0.25,A1,0.2306902281203877,3
+C1 Economic,main weight,0.25,A2,0.25036085664535324,2
+C1 Economic,main weight,0.25,A3,0.29874110821901456,1
+C1 Economic,main weight,0.25,A4,0.2202078070152444,4
+C1 Economic,main weight,0.30000000000000004,A1,0.23482045676051608,3
+C1 Economic,main weight,0.30000000000000004,A2,0.25626577866516304,2
+C1 Economic,main weight,0.30000000000000004,A3,0.30129514167619653,1
+C1 Economic,main weight,0.30000000000000004,A4,0.20761862289812427,4
+C1 Economic,main weight,0.35000000000000003,A1,0.23895068540064435,3
+C1 Economic,main weight,0.35000000000000003,A2,0.26217070068497283,2
+C1 Economic,main weight,0.35000000000000003,A3,0.3038491751333785,1
+C1 Economic,main weight,0.35000000000000003,A4,0.19502943878100415,4
+C1 Economic,main weight,0.4,A1,0.2430809140407727,3
+C1 Economic,main weight,0.4,A2,0.26807562270478263,2
+C1 Economic,main weight,0.4,A3,0.3064032085905604,1
+C1 Economic,main weight,0.4,A4,0.18244025466388408,4
+C1 Economic,main weight,0.45,A1,0.24721114268090105,3
+C1 Economic,main weight,0.45,A2,0.2739805447245925,2
+C1 Economic,main weight,0.45,A3,0.30895724204774244,1
+C1 Economic,main weight,0.45,A4,0.16985107054676402,4
+C1 Economic,main weight,0.5,A1,0.25134137132102935,3
+C1 Economic,main weight,0.5,A2,0.2798854667444023,2
+C1 Economic,main weight,0.5,A3,0.3115112755049244,1
+C1 Economic,main weight,0.5,A4,0.15726188642964392,4
+C1 Economic,main weight,0.55,A1,0.2554715999611577,3
+C1 Economic,main weight,0.55,A2,0.28579038876421203,2
+C1 Economic,main weight,0.55,A3,0.3140653089621064,1
+C1 Economic,main weight,0.55,A4,0.14467270231252377,4
+C1 Economic,main weight,0.6000000000000001,A1,0.25960182860128606,3
+C1 Economic,main weight,0.6000000000000001,A2,0.2916953107840219,2
+C1 Economic,main weight,0.6000000000000001,A3,0.3166193424192883,1
+C1 Economic,main weight,0.6000000000000001,A4,0.13208351819540368,4
+C1 Economic,main weight,0.65,A1,0.2637320572414144,3
+C1 Economic,main weight,0.65,A2,0.29760023280383163,2
+C1 Economic,main weight,0.65,A3,0.3191733758764703,1
+C1 Economic,main weight,0.65,A4,0.11949433407828361,4
+C1 Economic,main weight,0.7000000000000001,A1,0.26786228588154276,3
+C1 Economic,main weight,0.7000000000000001,A2,0.3035051548236415,2
+C1 Economic,main weight,0.7000000000000001,A3,0.32172740933365224,1
+C1 Economic,main weight,0.7000000000000001,A4,0.10690514996116349,4
+C1 Economic,main weight,0.75,A1,0.27199251452167106,3
+C1 Economic,main weight,0.75,A2,0.3094100768434513,2
+C1 Economic,main weight,0.75,A3,0.32428144279083426,1
+C1 Economic,main weight,0.75,A4,0.09431596584404342,4
+C1 Economic,main weight,0.8,A1,0.27612274316179936,3
+C1 Economic,main weight,0.8,A2,0.3153149988632611,2
+C1 Economic,main weight,0.8,A3,0.32683547624801623,1
+C1 Economic,main weight,0.8,A4,0.0817267817269233,4
+C1 Economic,main weight,0.8500000000000001,A1,0.28025297180192776,3
+C1 Economic,main weight,0.8500000000000001,A2,0.3212199208830709,2
+C1 Economic,main weight,0.8500000000000001,A3,0.3293895097051982,1
+C1 Economic,main weight,0.8500000000000001,A4,0.06913759760980319,4
+C1 Economic,main weight,0.9,A1,0.2843832004420561,3
+C1 Economic,main weight,0.9,A2,0.3271248429028807,2
+C1 Economic,main weight,0.9,A3,0.3319435431623801,1
+C1 Economic,main weight,0.9,A4,0.05654841349268311,4
+C1 Economic,main weight,0.9500000000000001,A1,0.2885134290821844,3
+C1 Economic,main weight,0.9500000000000001,A2,0.3330297649226905,2
+C1 Economic,main weight,0.9500000000000001,A3,0.33449757661956214,1
+C1 Economic,main weight,0.9500000000000001,A4,0.043959229375563,4
+C1 Economic,main weight,1.0,A1,0.2926436577223127,3
+C1 Economic,main weight,1.0,A2,0.3389346869425003,1
+C1 Economic,main weight,1.0,A3,0.3370516100767441,2
+C1 Economic,main weight,1.0,A4,0.03137004525844292,4
+C1a Societal life-cycle cost,subcriterion weight,0.0,A1,0.2296838327749458,3
+C1a Societal life-cycle cost,subcriterion weight,0.0,A2,0.24908307293847903,2
+C1a Societal life-cycle cost,subcriterion weight,0.0,A3,0.30100199917876536,1
+C1a Societal life-cycle cost,subcriterion weight,0.0,A4,0.22023109510780975,4
+C1a Societal life-cycle cost,subcriterion weight,0.05,A1,0.22978447230949,3
+C1a Societal life-cycle cost,subcriterion weight,0.05,A2,0.24921085130916648,2
+C1a Societal life-cycle cost,subcriterion weight,0.05,A3,0.30077591008279025,1
+C1a Societal life-cycle cost,subcriterion weight,0.05,A4,0.2202287662985532,4
+C1a Societal life-cycle cost,subcriterion weight,0.1,A1,0.2298851118440342,3
+C1a Societal life-cycle cost,subcriterion weight,0.1,A2,0.24933862967985393,2
+C1a Societal life-cycle cost,subcriterion weight,0.1,A3,0.3005498209868152,1
+C1a Societal life-cycle cost,subcriterion weight,0.1,A4,0.22022643748929666,4
+C1a Societal life-cycle cost,subcriterion weight,0.15000000000000002,A1,0.22998575137857835,3
+C1a Societal life-cycle cost,subcriterion weight,0.15000000000000002,A2,0.24946640805054132,2
+C1a Societal life-cycle cost,subcriterion weight,0.15000000000000002,A3,0.3003237318908401,1
+C1a Societal life-cycle cost,subcriterion weight,0.15000000000000002,A4,0.2202241086800401,4
+C1a Societal life-cycle cost,subcriterion weight,0.2,A1,0.23008639091312255,3
+C1a Societal life-cycle cost,subcriterion weight,0.2,A2,0.24959418642122877,2
+C1a Societal life-cycle cost,subcriterion weight,0.2,A3,0.30009764279486506,1
+C1a Societal life-cycle cost,subcriterion weight,0.2,A4,0.22022177987078356,4
+C1a Societal life-cycle cost,subcriterion weight,0.25,A1,0.23018703044766675,3
+C1a Societal life-cycle cost,subcriterion weight,0.25,A2,0.24972196479191616,2
+C1a Societal life-cycle cost,subcriterion weight,0.25,A3,0.29987155369888996,1
+C1a Societal life-cycle cost,subcriterion weight,0.25,A4,0.22021945106152707,4
+C1a Societal life-cycle cost,subcriterion weight,0.30000000000000004,A1,0.23028766998221095,3
+C1a Societal life-cycle cost,subcriterion weight,0.30000000000000004,A2,0.24984974316260355,2
+C1a Societal life-cycle cost,subcriterion weight,0.30000000000000004,A3,0.29964546460291486,1
+C1a Societal life-cycle cost,subcriterion weight,0.30000000000000004,A4,0.22021712225227053,4
+C1a Societal life-cycle cost,subcriterion weight,0.35000000000000003,A1,0.23038830951675515,3
+C1a Societal life-cycle cost,subcriterion weight,0.35000000000000003,A2,0.249977521533291,2
+C1a Societal life-cycle cost,subcriterion weight,0.35000000000000003,A3,0.2994193755069398,1
+C1a Societal life-cycle cost,subcriterion weight,0.35000000000000003,A4,0.22021479344301398,4
+C1a Societal life-cycle cost,subcriterion weight,0.4,A1,0.23048894905129935,3
+C1a Societal life-cycle cost,subcriterion weight,0.4,A2,0.2501052999039784,2
+C1a Societal life-cycle cost,subcriterion weight,0.4,A3,0.29919328641096476,1
+C1a Societal life-cycle cost,subcriterion weight,0.4,A4,0.22021246463375743,4
+C1a Societal life-cycle cost,subcriterion weight,0.45,A1,0.2305895885858435,3
+C1a Societal life-cycle cost,subcriterion weight,0.45,A2,0.25023307827466584,2
+C1a Societal life-cycle cost,subcriterion weight,0.45,A3,0.29896719731498966,1
+C1a Societal life-cycle cost,subcriterion weight,0.45,A4,0.22021013582450094,4
+C1a Societal life-cycle cost,subcriterion weight,0.5,A1,0.2306902281203877,3
+C1a Societal life-cycle cost,subcriterion weight,0.5,A2,0.25036085664535324,2
+C1a Societal life-cycle cost,subcriterion weight,0.5,A3,0.29874110821901456,1
+C1a Societal life-cycle cost,subcriterion weight,0.5,A4,0.2202078070152444,4
+C1a Societal life-cycle cost,subcriterion weight,0.55,A1,0.2307908676549319,3
+C1a Societal life-cycle cost,subcriterion weight,0.55,A2,0.2504886350160407,2
+C1a Societal life-cycle cost,subcriterion weight,0.55,A3,0.2985150191230395,1
+C1a Societal life-cycle cost,subcriterion weight,0.55,A4,0.22020547820598785,4
+C1a Societal life-cycle cost,subcriterion weight,0.6000000000000001,A1,0.2308915071894761,3
+C1a Societal life-cycle cost,subcriterion weight,0.6000000000000001,A2,0.2506164133867281,2
+C1a Societal life-cycle cost,subcriterion weight,0.6000000000000001,A3,0.2982889300270644,1
+C1a Societal life-cycle cost,subcriterion weight,0.6000000000000001,A4,0.2202031493967313,4
+C1a Societal life-cycle cost,subcriterion weight,0.65,A1,0.2309921467240203,3
+C1a Societal life-cycle cost,subcriterion weight,0.65,A2,0.2507441917574155,2
+C1a Societal life-cycle cost,subcriterion weight,0.65,A3,0.29806284093108937,1
+C1a Societal life-cycle cost,subcriterion weight,0.65,A4,0.22020082058747475,4
+C1a Societal life-cycle cost,subcriterion weight,0.7000000000000001,A1,0.2310927862585645,3
+C1a Societal life-cycle cost,subcriterion weight,0.7000000000000001,A2,0.2508719701281029,2
+C1a Societal life-cycle cost,subcriterion weight,0.7000000000000001,A3,0.29783675183511427,1
+C1a Societal life-cycle cost,subcriterion weight,0.7000000000000001,A4,0.22019849177821826,4
+C1a Societal life-cycle cost,subcriterion weight,0.75,A1,0.2311934257931087,3
+C1a Societal life-cycle cost,subcriterion weight,0.75,A2,0.25099974849879036,2
+C1a Societal life-cycle cost,subcriterion weight,0.75,A3,0.2976106627391392,1
+C1a Societal life-cycle cost,subcriterion weight,0.75,A4,0.22019616296896172,4
+C1a Societal life-cycle cost,subcriterion weight,0.8,A1,0.23129406532765284,3
+C1a Societal life-cycle cost,subcriterion weight,0.8,A2,0.25112752686947776,2
+C1a Societal life-cycle cost,subcriterion weight,0.8,A3,0.2973845736431642,1
+C1a Societal life-cycle cost,subcriterion weight,0.8,A4,0.22019383415970517,4
+C1a Societal life-cycle cost,subcriterion weight,0.8500000000000001,A1,0.23139470486219704,3
+C1a Societal life-cycle cost,subcriterion weight,0.8500000000000001,A2,0.2512553052401652,2
+C1a Societal life-cycle cost,subcriterion weight,0.8500000000000001,A3,0.2971584845471891,1
+C1a Societal life-cycle cost,subcriterion weight,0.8500000000000001,A4,0.22019150535044862,4
+C1a Societal life-cycle cost,subcriterion weight,0.9,A1,0.23149534439674124,3
+C1a Societal life-cycle cost,subcriterion weight,0.9,A2,0.2513830836108526,2
+C1a Societal life-cycle cost,subcriterion weight,0.9,A3,0.29693239545121397,1
+C1a Societal life-cycle cost,subcriterion weight,0.9,A4,0.22018917654119213,4
+C1a Societal life-cycle cost,subcriterion weight,0.9500000000000001,A1,0.23159598393128544,3
+C1a Societal life-cycle cost,subcriterion weight,0.9500000000000001,A2,0.25151086198154005,2
+C1a Societal life-cycle cost,subcriterion weight,0.9500000000000001,A3,0.2967063063552389,1
+C1a Societal life-cycle cost,subcriterion weight,0.9500000000000001,A4,0.2201868477319356,4
+C1a Societal life-cycle cost,subcriterion weight,1.0,A1,0.23169662346582964,3
+C1a Societal life-cycle cost,subcriterion weight,1.0,A2,0.25163864035222744,2
+C1a Societal life-cycle cost,subcriterion weight,1.0,A3,0.2964802172592638,1
+C1a Societal life-cycle cost,subcriterion weight,1.0,A4,0.22018451892267904,4
+C1b Cost to DC operators,subcriterion weight,0.0,A1,0.23169662346582964,3
+C1b Cost to DC operators,subcriterion weight,0.0,A2,0.25163864035222744,2
+C1b Cost to DC operators,subcriterion weight,0.0,A3,0.2964802172592638,1
+C1b Cost to DC operators,subcriterion weight,0.0,A4,0.22018451892267904,4
+C1b Cost to DC operators,subcriterion weight,0.05,A1,0.23159598393128544,3
+C1b Cost to DC operators,subcriterion weight,0.05,A2,0.25151086198154005,2
+C1b Cost to DC operators,subcriterion weight,0.05,A3,0.29670630635523887,1
+C1b Cost to DC operators,subcriterion weight,0.05,A4,0.2201868477319356,4
+C1b Cost to DC operators,subcriterion weight,0.1,A1,0.23149534439674124,3
+C1b Cost to DC operators,subcriterion weight,0.1,A2,0.2513830836108526,2
+C1b Cost to DC operators,subcriterion weight,0.1,A3,0.29693239545121397,1
+C1b Cost to DC operators,subcriterion weight,0.1,A4,0.22018917654119213,4
+C1b Cost to DC operators,subcriterion weight,0.15000000000000002,A1,0.23139470486219704,3
+C1b Cost to DC operators,subcriterion weight,0.15000000000000002,A2,0.2512553052401652,2
+C1b Cost to DC operators,subcriterion weight,0.15000000000000002,A3,0.2971584845471891,1
+C1b Cost to DC operators,subcriterion weight,0.15000000000000002,A4,0.22019150535044862,4
+C1b Cost to DC operators,subcriterion weight,0.2,A1,0.23129406532765284,3
+C1b Cost to DC operators,subcriterion weight,0.2,A2,0.25112752686947776,2
+C1b Cost to DC operators,subcriterion weight,0.2,A3,0.2973845736431642,1
+C1b Cost to DC operators,subcriterion weight,0.2,A4,0.22019383415970517,4
+C1b Cost to DC operators,subcriterion weight,0.25,A1,0.2311934257931087,3
+C1b Cost to DC operators,subcriterion weight,0.25,A2,0.25099974849879036,2
+C1b Cost to DC operators,subcriterion weight,0.25,A3,0.2976106627391392,1
+C1b Cost to DC operators,subcriterion weight,0.25,A4,0.22019616296896172,4
+C1b Cost to DC operators,subcriterion weight,0.30000000000000004,A1,0.2310927862585645,3
+C1b Cost to DC operators,subcriterion weight,0.30000000000000004,A2,0.2508719701281029,2
+C1b Cost to DC operators,subcriterion weight,0.30000000000000004,A3,0.29783675183511427,1
+C1b Cost to DC operators,subcriterion weight,0.30000000000000004,A4,0.22019849177821826,4
+C1b Cost to DC operators,subcriterion weight,0.35000000000000003,A1,0.2309921467240203,3
+C1b Cost to DC operators,subcriterion weight,0.35000000000000003,A2,0.2507441917574155,2
+C1b Cost to DC operators,subcriterion weight,0.35000000000000003,A3,0.29806284093108937,1
+C1b Cost to DC operators,subcriterion weight,0.35000000000000003,A4,0.22020082058747475,4
+C1b Cost to DC operators,subcriterion weight,0.4,A1,0.2308915071894761,3
+C1b Cost to DC operators,subcriterion weight,0.4,A2,0.2506164133867281,2
+C1b Cost to DC operators,subcriterion weight,0.4,A3,0.29828893002706447,1
+C1b Cost to DC operators,subcriterion weight,0.4,A4,0.2202031493967313,4
+C1b Cost to DC operators,subcriterion weight,0.45,A1,0.2307908676549319,3
+C1b Cost to DC operators,subcriterion weight,0.45,A2,0.2504886350160407,2
+C1b Cost to DC operators,subcriterion weight,0.45,A3,0.2985150191230395,1
+C1b Cost to DC operators,subcriterion weight,0.45,A4,0.22020547820598785,4
+C1b Cost to DC operators,subcriterion weight,0.5,A1,0.2306902281203877,3
+C1b Cost to DC operators,subcriterion weight,0.5,A2,0.25036085664535324,2
+C1b Cost to DC operators,subcriterion weight,0.5,A3,0.29874110821901456,1
+C1b Cost to DC operators,subcriterion weight,0.5,A4,0.2202078070152444,4
+C1b Cost to DC operators,subcriterion weight,0.55,A1,0.2305895885858435,3
+C1b Cost to DC operators,subcriterion weight,0.55,A2,0.25023307827466584,2
+C1b Cost to DC operators,subcriterion weight,0.55,A3,0.29896719731498966,1
+C1b Cost to DC operators,subcriterion weight,0.55,A4,0.22021013582450094,4
+C1b Cost to DC operators,subcriterion weight,0.6000000000000001,A1,0.23048894905129935,3
+C1b Cost to DC operators,subcriterion weight,0.6000000000000001,A2,0.2501052999039784,2
+C1b Cost to DC operators,subcriterion weight,0.6000000000000001,A3,0.29919328641096476,1
+C1b Cost to DC operators,subcriterion weight,0.6000000000000001,A4,0.22021246463375743,4
+C1b Cost to DC operators,subcriterion weight,0.65,A1,0.23038830951675515,3
+C1b Cost to DC operators,subcriterion weight,0.65,A2,0.249977521533291,2
+C1b Cost to DC operators,subcriterion weight,0.65,A3,0.2994193755069398,1
+C1b Cost to DC operators,subcriterion weight,0.65,A4,0.22021479344301398,4
+C1b Cost to DC operators,subcriterion weight,0.7000000000000001,A1,0.23028766998221095,3
+C1b Cost to DC operators,subcriterion weight,0.7000000000000001,A2,0.24984974316260355,2
+C1b Cost to DC operators,subcriterion weight,0.7000000000000001,A3,0.29964546460291486,1
+C1b Cost to DC operators,subcriterion weight,0.7000000000000001,A4,0.22021712225227053,4
+C1b Cost to DC operators,subcriterion weight,0.75,A1,0.23018703044766675,3
+C1b Cost to DC operators,subcriterion weight,0.75,A2,0.24972196479191616,2
+C1b Cost to DC operators,subcriterion weight,0.75,A3,0.29987155369888996,1
+C1b Cost to DC operators,subcriterion weight,0.75,A4,0.22021945106152707,4
+C1b Cost to DC operators,subcriterion weight,0.8,A1,0.23008639091312255,3
+C1b Cost to DC operators,subcriterion weight,0.8,A2,0.24959418642122871,2
+C1b Cost to DC operators,subcriterion weight,0.8,A3,0.30009764279486506,1
+C1b Cost to DC operators,subcriterion weight,0.8,A4,0.22022177987078356,4
+C1b Cost to DC operators,subcriterion weight,0.8500000000000001,A1,0.22998575137857835,3
+C1b Cost to DC operators,subcriterion weight,0.8500000000000001,A2,0.24946640805054132,2
+C1b Cost to DC operators,subcriterion weight,0.8500000000000001,A3,0.3003237318908401,1
+C1b Cost to DC operators,subcriterion weight,0.8500000000000001,A4,0.2202241086800401,4
+C1b Cost to DC operators,subcriterion weight,0.9,A1,0.2298851118440342,3
+C1b Cost to DC operators,subcriterion weight,0.9,A2,0.24933862967985387,2
+C1b Cost to DC operators,subcriterion weight,0.9,A3,0.3005498209868152,1
+C1b Cost to DC operators,subcriterion weight,0.9,A4,0.22022643748929666,4
+C1b Cost to DC operators,subcriterion weight,0.9500000000000001,A1,0.22978447230949,3
+C1b Cost to DC operators,subcriterion weight,0.9500000000000001,A2,0.24921085130916648,2
+C1b Cost to DC operators,subcriterion weight,0.9500000000000001,A3,0.30077591008279025,1
+C1b Cost to DC operators,subcriterion weight,0.9500000000000001,A4,0.2202287662985532,4
+C1b Cost to DC operators,subcriterion weight,1.0,A1,0.2296838327749458,3
+C1b Cost to DC operators,subcriterion weight,1.0,A2,0.24908307293847903,2
+C1b Cost to DC operators,subcriterion weight,1.0,A3,0.30100199917876536,1
+C1b Cost to DC operators,subcriterion weight,1.0,A4,0.22023109510780975,4
+C2 Environmental,main weight,0.0,A1,0.23491809349444376,3
+C2 Environmental,main weight,0.0,A2,0.23076980287417787,4
+C2 Environmental,main weight,0.0,A3,0.28467544631020286,1
+C2 Environmental,main weight,0.0,A4,0.24963665732117557,2
+C2 Environmental,main weight,0.05,A1,0.23407252041963256,4
+C2 Environmental,main weight,0.05,A2,0.2346880136284129,3
+C2 Environmental,main weight,0.05,A3,0.28748857869196515,1
+C2 Environmental,main weight,0.05,A4,0.24375088725998928,2
+C2 Environmental,main weight,0.1,A1,0.23322694734482138,4
+C2 Environmental,main weight,0.1,A2,0.238606224382648,2
+C2 Environmental,main weight,0.1,A3,0.2903017110737276,1
+C2 Environmental,main weight,0.1,A4,0.23786511719880307,3
+C2 Environmental,main weight,0.15000000000000002,A1,0.23238137427001015,3
+C2 Environmental,main weight,0.15000000000000002,A2,0.24252443513688313,2
+C2 Environmental,main weight,0.15000000000000002,A3,0.2931148434554899,1
+C2 Environmental,main weight,0.15000000000000002,A4,0.2319793471376168,4
+C2 Environmental,main weight,0.2,A1,0.23153580119519898,3
+C2 Environmental,main weight,0.2,A2,0.24644264589111822,2
+C2 Environmental,main weight,0.2,A3,0.2959279758372523,1
+C2 Environmental,main weight,0.2,A4,0.22609357707643063,4
+C2 Environmental,main weight,0.25,A1,0.23069022812038775,3
+C2 Environmental,main weight,0.25,A2,0.2503608566453533,2
+C2 Environmental,main weight,0.25,A3,0.29874110821901456,1
+C2 Environmental,main weight,0.25,A4,0.2202078070152444,4
+C2 Environmental,main weight,0.30000000000000004,A1,0.22984465504557652,3
+C2 Environmental,main weight,0.30000000000000004,A2,0.25427906739958833,2
+C2 Environmental,main weight,0.30000000000000004,A3,0.30155424060077696,1
+C2 Environmental,main weight,0.30000000000000004,A4,0.21432203695405816,4
+C2 Environmental,main weight,0.35000000000000003,A1,0.2289990819707653,3
+C2 Environmental,main weight,0.35000000000000003,A2,0.25819727815382343,2
+C2 Environmental,main weight,0.35000000000000003,A3,0.30436737298253924,1
+C2 Environmental,main weight,0.35000000000000003,A4,0.20843626689287192,4
+C2 Environmental,main weight,0.4,A1,0.2281535088959541,3
+C2 Environmental,main weight,0.4,A2,0.2621154889080585,2
+C2 Environmental,main weight,0.4,A3,0.30718050536430164,1
+C2 Environmental,main weight,0.4,A4,0.20255049683168572,4
+C2 Environmental,main weight,0.45,A1,0.2273079358211429,3
+C2 Environmental,main weight,0.45,A2,0.2660336996622936,2
+C2 Environmental,main weight,0.45,A3,0.30999363774606403,1
+C2 Environmental,main weight,0.45,A4,0.19666472677049948,4
+C2 Environmental,main weight,0.5,A1,0.22646236274633172,3
+C2 Environmental,main weight,0.5,A2,0.2699519104165287,2
+C2 Environmental,main weight,0.5,A3,0.3128067701278263,1
+C2 Environmental,main weight,0.5,A4,0.1907789567093133,4
+C2 Environmental,main weight,0.55,A1,0.2256167896715205,3
+C2 Environmental,main weight,0.55,A2,0.27387012117076376,2
+C2 Environmental,main weight,0.55,A3,0.3156199025095887,1
+C2 Environmental,main weight,0.55,A4,0.184893186648127,4
+C2 Environmental,main weight,0.6000000000000001,A1,0.2247712165967093,3
+C2 Environmental,main weight,0.6000000000000001,A2,0.27778833192499885,2
+C2 Environmental,main weight,0.6000000000000001,A3,0.318433034891351,1
+C2 Environmental,main weight,0.6000000000000001,A4,0.1790074165869408,4
+C2 Environmental,main weight,0.65,A1,0.2239256435218981,3
+C2 Environmental,main weight,0.65,A2,0.28170654267923395,2
+C2 Environmental,main weight,0.65,A3,0.3212461672731134,1
+C2 Environmental,main weight,0.65,A4,0.17312164652575457,4
+C2 Environmental,main weight,0.7000000000000001,A1,0.22308007044708683,3
+C2 Environmental,main weight,0.7000000000000001,A2,0.28562475343346905,2
+C2 Environmental,main weight,0.7000000000000001,A3,0.32405929965487573,1
+C2 Environmental,main weight,0.7000000000000001,A4,0.16723587646456836,4
+C2 Environmental,main weight,0.75,A1,0.22223449737227566,3
+C2 Environmental,main weight,0.75,A2,0.28954296418770414,2
+C2 Environmental,main weight,0.75,A3,0.32687243203663807,1
+C2 Environmental,main weight,0.75,A4,0.16135010640338213,4
+C2 Environmental,main weight,0.8,A1,0.22138892429746446,3
+C2 Environmental,main weight,0.8,A2,0.2934611749419392,2
+C2 Environmental,main weight,0.8,A3,0.32968556441840047,1
+C2 Environmental,main weight,0.8,A4,0.1554643363421959,4
+C2 Environmental,main weight,0.8500000000000001,A1,0.22054335122265326,3
+C2 Environmental,main weight,0.8500000000000001,A2,0.29737938569617434,2
+C2 Environmental,main weight,0.8500000000000001,A3,0.33249869680016275,1
+C2 Environmental,main weight,0.8500000000000001,A4,0.14957856628100966,4
+C2 Environmental,main weight,0.9,A1,0.219697778147842,3
+C2 Environmental,main weight,0.9,A2,0.3012975964504094,2
+C2 Environmental,main weight,0.9,A3,0.3353118291819251,1
+C2 Environmental,main weight,0.9,A4,0.14369279621982342,4
+C2 Environmental,main weight,0.9500000000000001,A1,0.21885220507303085,3
+C2 Environmental,main weight,0.9500000000000001,A2,0.3052158072046445,2
+C2 Environmental,main weight,0.9500000000000001,A3,0.3381249615636875,1
+C2 Environmental,main weight,0.9500000000000001,A4,0.13780702615863724,4
+C2 Environmental,main weight,1.0,A1,0.21800663199821962,3
+C2 Environmental,main weight,1.0,A2,0.30913401795887957,2
+C2 Environmental,main weight,1.0,A3,0.34093809394544977,1
+C2 Environmental,main weight,1.0,A4,0.131921256097451,4
+C2a GHG per MWh_IT,subcriterion weight,0.0,A1,0.2080304334337254,4
+C2a GHG per MWh_IT,subcriterion weight,0.0,A2,0.24280260301585166,3
+C2a GHG per MWh_IT,subcriterion weight,0.0,A3,0.29933155657299,1
+C2a GHG per MWh_IT,subcriterion weight,0.0,A4,0.2498354069774329,2
+C2a GHG per MWh_IT,subcriterion weight,0.05,A1,0.21013006127709793,4
+C2a GHG per MWh_IT,subcriterion weight,0.05,A2,0.24350294121340443,3
+C2a GHG per MWh_IT,subcriterion weight,0.05,A3,0.29927684637719065,1
+C2a GHG per MWh_IT,subcriterion weight,0.05,A4,0.24709015113230692,2
+C2a GHG per MWh_IT,subcriterion weight,0.1,A1,0.21222968912047047,4
+C2a GHG per MWh_IT,subcriterion weight,0.1,A2,0.2442032794109572,3
+C2a GHG per MWh_IT,subcriterion weight,0.1,A3,0.29922213618139126,1
+C2a GHG per MWh_IT,subcriterion weight,0.1,A4,0.24434489528718095,2
+C2a GHG per MWh_IT,subcriterion weight,0.15000000000000002,A1,0.214329316963843,4
+C2a GHG per MWh_IT,subcriterion weight,0.15000000000000002,A2,0.24490361760850998,2
+C2a GHG per MWh_IT,subcriterion weight,0.15000000000000002,A3,0.29916742598559193,1
+C2a GHG per MWh_IT,subcriterion weight,0.15000000000000002,A4,0.24159963944205498,3
+C2a GHG per MWh_IT,subcriterion weight,0.2,A1,0.21642894480721556,4
+C2a GHG per MWh_IT,subcriterion weight,0.2,A2,0.2456039558060628,2
+C2a GHG per MWh_IT,subcriterion weight,0.2,A3,0.2991127157897926,1
+C2a GHG per MWh_IT,subcriterion weight,0.2,A4,0.238854383596929,3
+C2a GHG per MWh_IT,subcriterion weight,0.25,A1,0.21852857265058806,4
+C2a GHG per MWh_IT,subcriterion weight,0.25,A2,0.2463042940036156,2
+C2a GHG per MWh_IT,subcriterion weight,0.25,A3,0.29905800559399326,1
+C2a GHG per MWh_IT,subcriterion weight,0.25,A4,0.23610912775180304,3
+C2a GHG per MWh_IT,subcriterion weight,0.30000000000000004,A1,0.22062820049396065,4
+C2a GHG per MWh_IT,subcriterion weight,0.30000000000000004,A2,0.2470046322011683,2
+C2a GHG per MWh_IT,subcriterion weight,0.30000000000000004,A3,0.2990032953981939,1
+C2a GHG per MWh_IT,subcriterion weight,0.30000000000000004,A4,0.23336387190667707,3
+C2a GHG per MWh_IT,subcriterion weight,0.35000000000000003,A1,0.22272782833733318,4
+C2a GHG per MWh_IT,subcriterion weight,0.35000000000000003,A2,0.24770497039872108,2
+C2a GHG per MWh_IT,subcriterion weight,0.35000000000000003,A3,0.29894858520239453,1
+C2a GHG per MWh_IT,subcriterion weight,0.35000000000000003,A4,0.2306186160615511,3
+C2a GHG per MWh_IT,subcriterion weight,0.4,A1,0.2248274561807057,4
+C2a GHG per MWh_IT,subcriterion weight,0.4,A2,0.2484053085962739,2
+C2a GHG per MWh_IT,subcriterion weight,0.4,A3,0.29889387500659526,1
+C2a GHG per MWh_IT,subcriterion weight,0.4,A4,0.22787336021642512,3
+C2a GHG per MWh_IT,subcriterion weight,0.45,A1,0.22692708402407824,3
+C2a GHG per MWh_IT,subcriterion weight,0.45,A2,0.24910564679382668,2
+C2a GHG per MWh_IT,subcriterion weight,0.45,A3,0.29883916481079587,1
+C2a GHG per MWh_IT,subcriterion weight,0.45,A4,0.22512810437129915,4
+C2a GHG per MWh_IT,subcriterion weight,0.5,A1,0.22902671186745077,3
+C2a GHG per MWh_IT,subcriterion weight,0.5,A2,0.2498059849913794,2
+C2a GHG per MWh_IT,subcriterion weight,0.5,A3,0.29878445461499653,1
+C2a GHG per MWh_IT,subcriterion weight,0.5,A4,0.22238284852617318,4
+C2a GHG per MWh_IT,subcriterion weight,0.55,A1,0.2311263397108233,3
+C2a GHG per MWh_IT,subcriterion weight,0.55,A2,0.2505063231889322,2
+C2a GHG per MWh_IT,subcriterion weight,0.55,A3,0.2987297444191972,1
+C2a GHG per MWh_IT,subcriterion weight,0.55,A4,0.2196375926810472,4
+C2a GHG per MWh_IT,subcriterion weight,0.6000000000000001,A1,0.23322596755419583,3
+C2a GHG per MWh_IT,subcriterion weight,0.6000000000000001,A2,0.25120666138648495,2
+C2a GHG per MWh_IT,subcriterion weight,0.6000000000000001,A3,0.29867503422339786,1
+C2a GHG per MWh_IT,subcriterion weight,0.6000000000000001,A4,0.21689233683592124,4
+C2a GHG per MWh_IT,subcriterion weight,0.65,A1,0.23532559539756837,3
+C2a GHG per MWh_IT,subcriterion weight,0.65,A2,0.2519069995840377,2
+C2a GHG per MWh_IT,subcriterion weight,0.65,A3,0.2986203240275985,1
+C2a GHG per MWh_IT,subcriterion weight,0.65,A4,0.21414708099079532,4
+C2a GHG per MWh_IT,subcriterion weight,0.7000000000000001,A1,0.2374252232409409,3
+C2a GHG per MWh_IT,subcriterion weight,0.7000000000000001,A2,0.25260733778159056,2
+C2a GHG per MWh_IT,subcriterion weight,0.7000000000000001,A3,0.2985656138317992,1
+C2a GHG per MWh_IT,subcriterion weight,0.7000000000000001,A4,0.21140182514566935,4
+C2a GHG per MWh_IT,subcriterion weight,0.75,A1,0.23952485108431343,3
+C2a GHG per MWh_IT,subcriterion weight,0.75,A2,0.25330767597914333,2
+C2a GHG per MWh_IT,subcriterion weight,0.75,A3,0.29851090363599986,1
+C2a GHG per MWh_IT,subcriterion weight,0.75,A4,0.20865656930054338,4
+C2a GHG per MWh_IT,subcriterion weight,0.8,A1,0.24162447892768596,3
+C2a GHG per MWh_IT,subcriterion weight,0.8,A2,0.2540080141766961,2
+C2a GHG per MWh_IT,subcriterion weight,0.8,A3,0.29845619344020047,1
+C2a GHG per MWh_IT,subcriterion weight,0.8,A4,0.2059113134554174,4
+C2a GHG per MWh_IT,subcriterion weight,0.8500000000000001,A1,0.2437241067710585,3
+C2a GHG per MWh_IT,subcriterion weight,0.8500000000000001,A2,0.2547083523742489,2
+C2a GHG per MWh_IT,subcriterion weight,0.8500000000000001,A3,0.2984014832444012,1
+C2a GHG per MWh_IT,subcriterion weight,0.8500000000000001,A4,0.20316605761029144,4
+C2a GHG per MWh_IT,subcriterion weight,0.9,A1,0.24582373461443102,3
+C2a GHG per MWh_IT,subcriterion weight,0.9,A2,0.25540869057180166,2
+C2a GHG per MWh_IT,subcriterion weight,0.9,A3,0.2983467730486018,1
+C2a GHG per MWh_IT,subcriterion weight,0.9,A4,0.20042080176516547,4
+C2a GHG per MWh_IT,subcriterion weight,0.9500000000000001,A1,0.24792336245780355,3
+C2a GHG per MWh_IT,subcriterion weight,0.9500000000000001,A2,0.25610902876935443,2
+C2a GHG per MWh_IT,subcriterion weight,0.9500000000000001,A3,0.29829206285280246,1
+C2a GHG per MWh_IT,subcriterion weight,0.9500000000000001,A4,0.1976755459200395,4
+C2a GHG per MWh_IT,subcriterion weight,1.0,A1,0.2500229903011761,3
+C2a GHG per MWh_IT,subcriterion weight,1.0,A2,0.2568093669669072,2
+C2a GHG per MWh_IT,subcriterion weight,1.0,A3,0.29823735265700313,1
+C2a GHG per MWh_IT,subcriterion weight,1.0,A4,0.19493029007491353,4
+C2b Electricity use,subcriterion weight,0.0,A1,0.22680981626019,3
+C2b Electricity use,subcriterion weight,0.0,A2,0.24912893056275903,2
+C2b Electricity use,subcriterion weight,0.0,A3,0.29890917978837805,1
+C2b Electricity use,subcriterion weight,0.0,A4,0.22515207338867282,4
+C2b Electricity use,subcriterion weight,0.05,A1,0.22799703755109768,3
+C2b Electricity use,subcriterion weight,0.05,A2,0.2495058412946023,2
+C2b Electricity use,subcriterion weight,0.05,A3,0.2988577578896896,1
+C2b Electricity use,subcriterion weight,0.05,A4,0.22363936326461037,4
+C2b Electricity use,subcriterion weight,0.1,A1,0.22918425884200538,3
+C2b Electricity use,subcriterion weight,0.1,A2,0.24988275202644555,2
+C2b Electricity use,subcriterion weight,0.1,A3,0.29880633599100115,1
+C2b Electricity use,subcriterion weight,0.1,A4,0.22212665314054786,4
+C2b Electricity use,subcriterion weight,0.15000000000000002,A1,0.2303714801329131,3
+C2b Electricity use,subcriterion weight,0.15000000000000002,A2,0.2502596627582888,2
+C2b Electricity use,subcriterion weight,0.15000000000000002,A3,0.2987549140923127,1
+C2b Electricity use,subcriterion weight,0.15000000000000002,A4,0.2206139430164854,4
+C2b Electricity use,subcriterion weight,0.2,A1,0.23155870142382073,3
+C2b Electricity use,subcriterion weight,0.2,A2,0.2506365734901321,2
+C2b Electricity use,subcriterion weight,0.2,A3,0.29870349219362424,1
+C2b Electricity use,subcriterion weight,0.2,A4,0.2191012328924229,4
+C2b Electricity use,subcriterion weight,0.25,A1,0.23274592271472844,3
+C2b Electricity use,subcriterion weight,0.25,A2,0.25101348422197534,2
+C2b Electricity use,subcriterion weight,0.25,A3,0.2986520702949358,1
+C2b Electricity use,subcriterion weight,0.25,A4,0.21758852276836044,4
+C2b Electricity use,subcriterion weight,0.30000000000000004,A1,0.23393314400563614,3
+C2b Electricity use,subcriterion weight,0.30000000000000004,A2,0.2513903949538186,2
+C2b Electricity use,subcriterion weight,0.30000000000000004,A3,0.29860064839624734,1
+C2b Electricity use,subcriterion weight,0.30000000000000004,A4,0.21607581264429793,4
+C2b Electricity use,subcriterion weight,0.35000000000000003,A1,0.2351203652965438,3
+C2b Electricity use,subcriterion weight,0.35000000000000003,A2,0.2517673056856618,2
+C2b Electricity use,subcriterion weight,0.35000000000000003,A3,0.29854922649755883,1
+C2b Electricity use,subcriterion weight,0.35000000000000003,A4,0.21456310252023547,4
+C2b Electricity use,subcriterion weight,0.4,A1,0.2363075865874515,3
+C2b Electricity use,subcriterion weight,0.4,A2,0.25214421641750506,2
+C2b Electricity use,subcriterion weight,0.4,A3,0.2984978045988704,1
+C2b Electricity use,subcriterion weight,0.4,A4,0.21305039239617296,4
+C2b Electricity use,subcriterion weight,0.45,A1,0.2374948078783592,3
+C2b Electricity use,subcriterion weight,0.45,A2,0.2525211271493483,2
+C2b Electricity use,subcriterion weight,0.45,A3,0.2984463827001819,1
+C2b Electricity use,subcriterion weight,0.45,A4,0.2115376822721105,4
+C2b Electricity use,subcriterion weight,0.5,A1,0.2386820291692669,3
+C2b Electricity use,subcriterion weight,0.5,A2,0.2528980378811916,2
+C2b Electricity use,subcriterion weight,0.5,A3,0.29839496080149347,1
+C2b Electricity use,subcriterion weight,0.5,A4,0.210024972148048,4
+C2b Electricity use,subcriterion weight,0.55,A1,0.23986925046017454,3
+C2b Electricity use,subcriterion weight,0.55,A2,0.25327494861303484,2
+C2b Electricity use,subcriterion weight,0.55,A3,0.298343538902805,1
+C2b Electricity use,subcriterion weight,0.55,A4,0.20851226202398554,4
+C2b Electricity use,subcriterion weight,0.6000000000000001,A1,0.24105647175108225,3
+C2b Electricity use,subcriterion weight,0.6000000000000001,A2,0.2536518593448781,2
+C2b Electricity use,subcriterion weight,0.6000000000000001,A3,0.29829211700411656,1
+C2b Electricity use,subcriterion weight,0.6000000000000001,A4,0.20699955189992303,4
+C2b Electricity use,subcriterion weight,0.65,A1,0.24224369304198995,3
+C2b Electricity use,subcriterion weight,0.65,A2,0.25402877007672137,2
+C2b Electricity use,subcriterion weight,0.65,A3,0.2982406951054281,1
+C2b Electricity use,subcriterion weight,0.65,A4,0.20548684177586057,4
+C2b Electricity use,subcriterion weight,0.7000000000000001,A1,0.2434309143328976,3
+C2b Electricity use,subcriterion weight,0.7000000000000001,A2,0.2544056808085646,2
+C2b Electricity use,subcriterion weight,0.7000000000000001,A3,0.29818927320673966,1
+C2b Electricity use,subcriterion weight,0.7000000000000001,A4,0.20397413165179806,4
+C2b Electricity use,subcriterion weight,0.75,A1,0.2446181356238053,3
+C2b Electricity use,subcriterion weight,0.75,A2,0.2547825915404079,2
+C2b Electricity use,subcriterion weight,0.75,A3,0.2981378513080512,1
+C2b Electricity use,subcriterion weight,0.75,A4,0.20246142152773555,4
+C2b Electricity use,subcriterion weight,0.8,A1,0.245805356914713,3
+C2b Electricity use,subcriterion weight,0.8,A2,0.25515950227225115,2
+C2b Electricity use,subcriterion weight,0.8,A3,0.2980864294093627,1
+C2b Electricity use,subcriterion weight,0.8,A4,0.2009487114036731,4
+C2b Electricity use,subcriterion weight,0.8500000000000001,A1,0.2469925782056207,3
+C2b Electricity use,subcriterion weight,0.8500000000000001,A2,0.2555364130040944,2
+C2b Electricity use,subcriterion weight,0.8500000000000001,A3,0.29803500751067424,1
+C2b Electricity use,subcriterion weight,0.8500000000000001,A4,0.1994360012796106,4
+C2b Electricity use,subcriterion weight,0.9,A1,0.24817979949652835,3
+C2b Electricity use,subcriterion weight,0.9,A2,0.25591332373593767,2
+C2b Electricity use,subcriterion weight,0.9,A3,0.2979835856119858,1
+C2b Electricity use,subcriterion weight,0.9,A4,0.19792329115554813,4
+C2b Electricity use,subcriterion weight,0.9500000000000001,A1,0.24936702078743606,3
+C2b Electricity use,subcriterion weight,0.9500000000000001,A2,0.25629023446778093,2
+C2b Electricity use,subcriterion weight,0.9500000000000001,A3,0.29793216371329734,1
+C2b Electricity use,subcriterion weight,0.9500000000000001,A4,0.19641058103148562,4
+C2b Electricity use,subcriterion weight,1.0,A1,0.25055424207834376,3
+C2b Electricity use,subcriterion weight,1.0,A2,0.25666714519962414,2
+C2b Electricity use,subcriterion weight,1.0,A3,0.2978807418146089,1
+C2b Electricity use,subcriterion weight,1.0,A4,0.19489787090742317,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.0,A1,0.2501464818774932,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.0,A2,0.25677630695471854,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.0,A3,0.29815445705655197,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.0,A4,0.19492275411123616,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.05,A1,0.24687059176788445,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.05,A2,0.2556961241775248,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.05,A3,0.2982532327389055,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.05,A4,0.1991800513156851,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.1,A1,0.24359470165827568,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.1,A2,0.25461594140033106,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.1,A3,0.2983520084212591,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.1,A4,0.20343734852013412,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.15000000000000002,A1,0.2403188115486669,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.15000000000000002,A2,0.2535357586231373,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.15000000000000002,A3,0.2984507841036126,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.15000000000000002,A4,0.20769464572458307,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.2,A1,0.23704292143905814,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.2,A2,0.2524555758459436,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.2,A3,0.29854955978596615,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.2,A4,0.21195194292903208,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.25,A1,0.23376703132944937,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.25,A2,0.25137539306874984,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.25,A3,0.2986483354683197,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.25,A4,0.21620924013348103,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.30000000000000004,A1,0.2304911412198406,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.30000000000000004,A2,0.2502952102915561,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.30000000000000004,A3,0.2987471111506732,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.30000000000000004,A4,0.22046653733793004,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.35000000000000003,A1,0.22721525111023178,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.35000000000000003,A2,0.24921502751436236,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.35000000000000003,A3,0.29884588683302676,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.35000000000000003,A4,0.224723834542379,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.4,A1,0.223939361000623,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.4,A2,0.24813484473716862,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.4,A3,0.2989446625153803,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.4,A4,0.22898113174682794,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.45,A1,0.22066347089101424,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.45,A2,0.24705466195997489,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.45,A3,0.2990434381977338,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.45,A4,0.23323842895127694,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.5,A1,0.21738758078140547,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.5,A2,0.24597447918278115,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.5,A3,0.2991422138800874,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.5,A4,0.2374957261557259,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.55,A1,0.2141116906717967,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.55,A2,0.2448942964055874,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.55,A3,0.29924098956244094,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.55,A4,0.2417530233601749,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.6000000000000001,A1,0.21083580056218792,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.6000000000000001,A2,0.24381411362839367,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.6000000000000001,A3,0.29933976524479444,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.6000000000000001,A4,0.24601032056462385,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.65,A1,0.20755991045257915,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.65,A2,0.24273393085119999,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.65,A3,0.299438540927148,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.65,A4,0.25026761776907286,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.7000000000000001,A1,0.20428402034297038,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.7000000000000001,A2,0.2416537480740062,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.7000000000000001,A3,0.29953731660950156,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.7000000000000001,A4,0.2545249149735218,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.75,A1,0.20100813023336161,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.75,A2,0.24057356529681245,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.75,A3,0.29963609229185506,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.75,A4,0.2587822121779708,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8,A1,0.19773224012375284,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8,A2,0.2394933825196187,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8,A3,0.2997348679742086,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8,A4,0.26303950938241977,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8500000000000001,A1,0.19445635001414405,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8500000000000001,A2,0.23841319974242503,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8500000000000001,A3,0.2998336436565622,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.8500000000000001,A4,0.2672968065868688,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9,A1,0.19118045990453528,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9,A2,0.2373330169652313,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9,A3,0.29993241933891573,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9,A4,0.2715541037913177,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9500000000000001,A1,0.18790456979492648,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9500000000000001,A2,0.23625283418803755,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9500000000000001,A3,0.30003119502126924,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,0.9500000000000001,A4,0.2758114009957667,2
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,1.0,A1,0.1846286796853177,4
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,1.0,A2,0.2351726514108438,3
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,1.0,A3,0.3001299707036228,1
+"C2c Marine discharge (brine, blowdown)",subcriterion weight,1.0,A4,0.2800686982002157,2
+C3 Water security,main weight,0.0,A1,0.23843665842965261,3
+C3 Water security,main weight,0.0,A2,0.2980353107447171,2
+C3 Water security,main weight,0.0,A3,0.3173987506595923,1
+C3 Water security,main weight,0.0,A4,0.1461292801660381,4
+C3 Water security,main weight,0.05,A1,0.2368873723677996,3
+C3 Water security,main weight,0.05,A2,0.28850041992484426,2
+C3 Water security,main weight,0.05,A3,0.31366722217147663,1
+C3 Water security,main weight,0.05,A4,0.16094498553587935,4
+C3 Water security,main weight,0.1,A1,0.23533808630594666,3
+C3 Water security,main weight,0.1,A2,0.2789655291049716,2
+C3 Water security,main weight,0.1,A3,0.3099356936833612,1
+C3 Water security,main weight,0.1,A4,0.17576069090572063,4
+C3 Water security,main weight,0.15000000000000002,A1,0.23378880024409365,3
+C3 Water security,main weight,0.15000000000000002,A2,0.2694306382850988,2
+C3 Water security,main weight,0.15000000000000002,A3,0.3062041651952456,1
+C3 Water security,main weight,0.15000000000000002,A4,0.1905763962755619,4
+C3 Water security,main weight,0.2,A1,0.23223951418224073,3
+C3 Water security,main weight,0.2,A2,0.25989574746522603,2
+C3 Water security,main weight,0.2,A3,0.30247263670713015,1
+C3 Water security,main weight,0.2,A4,0.20539210164540317,4
+C3 Water security,main weight,0.25,A1,0.2306902281203877,3
+C3 Water security,main weight,0.25,A2,0.25036085664535324,2
+C3 Water security,main weight,0.25,A3,0.29874110821901456,1
+C3 Water security,main weight,0.25,A4,0.2202078070152444,4
+C3 Water security,main weight,0.30000000000000004,A1,0.22914094205853477,4
+C3 Water security,main weight,0.30000000000000004,A2,0.2408259658254805,2
+C3 Water security,main weight,0.30000000000000004,A3,0.29500957973089903,1
+C3 Water security,main weight,0.30000000000000004,A4,0.23502351238508568,3
+C3 Water security,main weight,0.35000000000000003,A1,0.22759165599668174,4
+C3 Water security,main weight,0.35000000000000003,A2,0.23129107500560772,3
+C3 Water security,main weight,0.35000000000000003,A3,0.2912780512427835,1
+C3 Water security,main weight,0.35000000000000003,A4,0.2498392177549269,2
+C3 Water security,main weight,0.4,A1,0.22604236993482882,3
+C3 Water security,main weight,0.4,A2,0.22175618418573498,4
+C3 Water security,main weight,0.4,A3,0.28754652275466797,1
+C3 Water security,main weight,0.4,A4,0.2646549231247681,2
+C3 Water security,main weight,0.45,A1,0.22449308387297584,3
+C3 Water security,main weight,0.45,A2,0.21222129336586223,4
+C3 Water security,main weight,0.45,A3,0.2838149942665525,1
+C3 Water security,main weight,0.45,A4,0.27947062849460946,2
+C3 Water security,main weight,0.5,A1,0.2229437978111229,3
+C3 Water security,main weight,0.5,A2,0.20268640254598946,4
+C3 Water security,main weight,0.5,A3,0.2800834657784369,2
+C3 Water security,main weight,0.5,A4,0.2942863338644507,1
+C3 Water security,main weight,0.55,A1,0.22139451174926994,3
+C3 Water security,main weight,0.55,A2,0.1931515117261167,4
+C3 Water security,main weight,0.55,A3,0.27635193729032137,2
+C3 Water security,main weight,0.55,A4,0.30910203923429197,1
+C3 Water security,main weight,0.6000000000000001,A1,0.21984522568741693,3
+C3 Water security,main weight,0.6000000000000001,A2,0.18361662090624392,4
+C3 Water security,main weight,0.6000000000000001,A3,0.27262040880220584,2
+C3 Water security,main weight,0.6000000000000001,A4,0.32391774460413325,1
+C3 Water security,main weight,0.65,A1,0.21829593962556398,3
+C3 Water security,main weight,0.65,A2,0.17408173008637115,4
+C3 Water security,main weight,0.65,A3,0.2688888803140903,2
+C3 Water security,main weight,0.65,A4,0.3387334499739745,1
+C3 Water security,main weight,0.7000000000000001,A1,0.21674665356371098,3
+C3 Water security,main weight,0.7000000000000001,A2,0.16454683926649838,4
+C3 Water security,main weight,0.7000000000000001,A3,0.26515735182597483,2
+C3 Water security,main weight,0.7000000000000001,A4,0.35354915534381576,1
+C3 Water security,main weight,0.75,A1,0.21519736750185806,3
+C3 Water security,main weight,0.75,A2,0.15501194844662564,4
+C3 Water security,main weight,0.75,A3,0.2614258233378593,2
+C3 Water security,main weight,0.75,A4,0.368364860713657,1
+C3 Water security,main weight,0.8,A1,0.21364808144000505,3
+C3 Water security,main weight,0.8,A2,0.14547705762675286,4
+C3 Water security,main weight,0.8,A3,0.2576942948497437,2
+C3 Water security,main weight,0.8,A4,0.3831805660834982,1
+C3 Water security,main weight,0.8500000000000001,A1,0.2120987953781521,3
+C3 Water security,main weight,0.8500000000000001,A2,0.1359421668068801,4
+C3 Water security,main weight,0.8500000000000001,A3,0.2539627663616282,2
+C3 Water security,main weight,0.8500000000000001,A4,0.3979962714533395,1
+C3 Water security,main weight,0.9,A1,0.2105495093162991,3
+C3 Water security,main weight,0.9,A2,0.12640727598700735,4
+C3 Water security,main weight,0.9,A3,0.2502312378735127,2
+C3 Water security,main weight,0.9,A4,0.41281197682318077,1
+C3 Water security,main weight,0.9500000000000001,A1,0.20900022325444617,3
+C3 Water security,main weight,0.9500000000000001,A2,0.11687238516713457,4
+C3 Water security,main weight,0.9500000000000001,A3,0.24649970938539714,2
+C3 Water security,main weight,0.9500000000000001,A4,0.42762768219302205,1
+C3 Water security,main weight,1.0,A1,0.20745093719259317,3
+C3 Water security,main weight,1.0,A2,0.10733749434726182,4
+C3 Water security,main weight,1.0,A3,0.2427681808972816,2
+C3 Water security,main weight,1.0,A4,0.4424433875628633,1
+C3a Water drawn from national supply,subcriterion weight,0.0,A1,0.2686554554197589,2
+C3a Water drawn from national supply,subcriterion weight,0.0,A2,0.2632977232333916,3
+C3a Water drawn from national supply,subcriterion weight,0.0,A3,0.2901007444274373,1
+C3a Water drawn from national supply,subcriterion weight,0.0,A4,0.1779460769194121,4
+C3a Water drawn from national supply,subcriterion weight,0.05,A1,0.2648589326898218,2
+C3a Water drawn from national supply,subcriterion weight,0.05,A2,0.26200403657458776,3
+C3a Water drawn from national supply,subcriterion weight,0.05,A3,0.29096478080659505,1
+C3a Water drawn from national supply,subcriterion weight,0.05,A4,0.18217224992899533,4
+C3a Water drawn from national supply,subcriterion weight,0.1,A1,0.26106240995988467,2
+C3a Water drawn from national supply,subcriterion weight,0.1,A2,0.2607103499157839,3
+C3a Water drawn from national supply,subcriterion weight,0.1,A3,0.29182881718575276,1
+C3a Water drawn from national supply,subcriterion weight,0.1,A4,0.18639842293857856,4
+C3a Water drawn from national supply,subcriterion weight,0.15000000000000002,A1,0.25726588722994753,3
+C3a Water drawn from national supply,subcriterion weight,0.15000000000000002,A2,0.2594166632569801,2
+C3a Water drawn from national supply,subcriterion weight,0.15000000000000002,A3,0.2926928535649105,1
+C3a Water drawn from national supply,subcriterion weight,0.15000000000000002,A4,0.19062459594816178,4
+C3a Water drawn from national supply,subcriterion weight,0.2,A1,0.25346936450001045,3
+C3a Water drawn from national supply,subcriterion weight,0.2,A2,0.25812297659817623,2
+C3a Water drawn from national supply,subcriterion weight,0.2,A3,0.29355688994406826,1
+C3a Water drawn from national supply,subcriterion weight,0.2,A4,0.194850768957745,4
+C3a Water drawn from national supply,subcriterion weight,0.25,A1,0.24967284177007332,3
+C3a Water drawn from national supply,subcriterion weight,0.25,A2,0.25682928993937243,2
+C3a Water drawn from national supply,subcriterion weight,0.25,A3,0.2944209263232259,1
+C3a Water drawn from national supply,subcriterion weight,0.25,A4,0.19907694196732822,4
+C3a Water drawn from national supply,subcriterion weight,0.30000000000000004,A1,0.24587631904013618,3
+C3a Water drawn from national supply,subcriterion weight,0.30000000000000004,A2,0.25553560328056857,2
+C3a Water drawn from national supply,subcriterion weight,0.30000000000000004,A3,0.2952849627023837,1
+C3a Water drawn from national supply,subcriterion weight,0.30000000000000004,A4,0.20330311497691145,4
+C3a Water drawn from national supply,subcriterion weight,0.35000000000000003,A1,0.24207979631019905,3
+C3a Water drawn from national supply,subcriterion weight,0.35000000000000003,A2,0.25424191662176476,2
+C3a Water drawn from national supply,subcriterion weight,0.35000000000000003,A3,0.2961489990815414,1
+C3a Water drawn from national supply,subcriterion weight,0.35000000000000003,A4,0.20752928798649467,4
+C3a Water drawn from national supply,subcriterion weight,0.4,A1,0.23828327358026194,3
+C3a Water drawn from national supply,subcriterion weight,0.4,A2,0.2529482299629609,2
+C3a Water drawn from national supply,subcriterion weight,0.4,A3,0.2970130354606991,1
+C3a Water drawn from national supply,subcriterion weight,0.4,A4,0.2117554609960779,4
+C3a Water drawn from national supply,subcriterion weight,0.45,A1,0.23448675085032483,3
+C3a Water drawn from national supply,subcriterion weight,0.45,A2,0.2516545433041571,2
+C3a Water drawn from national supply,subcriterion weight,0.45,A3,0.2978770718398569,1
+C3a Water drawn from national supply,subcriterion weight,0.45,A4,0.21598163400566117,4
+C3a Water drawn from national supply,subcriterion weight,0.5,A1,0.2306902281203877,3
+C3a Water drawn from national supply,subcriterion weight,0.5,A2,0.25036085664535324,2
+C3a Water drawn from national supply,subcriterion weight,0.5,A3,0.29874110821901456,1
+C3a Water drawn from national supply,subcriterion weight,0.5,A4,0.2202078070152444,4
+C3a Water drawn from national supply,subcriterion weight,0.55,A1,0.2268937053904506,3
+C3a Water drawn from national supply,subcriterion weight,0.55,A2,0.24906716998654943,2
+C3a Water drawn from national supply,subcriterion weight,0.55,A3,0.29960514459817233,1
+C3a Water drawn from national supply,subcriterion weight,0.55,A4,0.22443398002482762,4
+C3a Water drawn from national supply,subcriterion weight,0.6000000000000001,A1,0.22309718266051345,4
+C3a Water drawn from national supply,subcriterion weight,0.6000000000000001,A2,0.24777348332774557,2
+C3a Water drawn from national supply,subcriterion weight,0.6000000000000001,A3,0.30046918097733005,1
+C3a Water drawn from national supply,subcriterion weight,0.6000000000000001,A4,0.22866015303441084,3
+C3a Water drawn from national supply,subcriterion weight,0.65,A1,0.21930065993057635,4
+C3a Water drawn from national supply,subcriterion weight,0.65,A2,0.24647979666894176,2
+C3a Water drawn from national supply,subcriterion weight,0.65,A3,0.30133321735648777,1
+C3a Water drawn from national supply,subcriterion weight,0.65,A4,0.23288632604399406,3
+C3a Water drawn from national supply,subcriterion weight,0.7000000000000001,A1,0.2155041372006392,4
+C3a Water drawn from national supply,subcriterion weight,0.7000000000000001,A2,0.2451861100101379,2
+C3a Water drawn from national supply,subcriterion weight,0.7000000000000001,A3,0.30219725373564554,1
+C3a Water drawn from national supply,subcriterion weight,0.7000000000000001,A4,0.23711249905357729,3
+C3a Water drawn from national supply,subcriterion weight,0.75,A1,0.2117076144707021,4
+C3a Water drawn from national supply,subcriterion weight,0.75,A2,0.2438924233513341,2
+C3a Water drawn from national supply,subcriterion weight,0.75,A3,0.3030612901148032,1
+C3a Water drawn from national supply,subcriterion weight,0.75,A4,0.2413386720631605,3
+C3a Water drawn from national supply,subcriterion weight,0.8,A1,0.207911091740765,4
+C3a Water drawn from national supply,subcriterion weight,0.8,A2,0.24259873669253024,3
+C3a Water drawn from national supply,subcriterion weight,0.8,A3,0.303925326493961,1
+C3a Water drawn from national supply,subcriterion weight,0.8,A4,0.24556484507274373,2
+C3a Water drawn from national supply,subcriterion weight,0.8500000000000001,A1,0.20411456901082786,4
+C3a Water drawn from national supply,subcriterion weight,0.8500000000000001,A2,0.24130505003372638,3
+C3a Water drawn from national supply,subcriterion weight,0.8500000000000001,A3,0.30478936287311864,1
+C3a Water drawn from national supply,subcriterion weight,0.8500000000000001,A4,0.24979101808232695,2
+C3a Water drawn from national supply,subcriterion weight,0.9,A1,0.20031804628089075,4
+C3a Water drawn from national supply,subcriterion weight,0.9,A2,0.24001136337492257,3
+C3a Water drawn from national supply,subcriterion weight,0.9,A3,0.3056533992522764,1
+C3a Water drawn from national supply,subcriterion weight,0.9,A4,0.2540171910919102,2
+C3a Water drawn from national supply,subcriterion weight,0.9500000000000001,A1,0.19652152355095365,4
+C3a Water drawn from national supply,subcriterion weight,0.9500000000000001,A2,0.2387176767161187,3
+C3a Water drawn from national supply,subcriterion weight,0.9500000000000001,A3,0.30651743563143413,1
+C3a Water drawn from national supply,subcriterion weight,0.9500000000000001,A4,0.25824336410149346,2
+C3a Water drawn from national supply,subcriterion weight,1.0,A1,0.1927250008210165,4
+C3a Water drawn from national supply,subcriterion weight,1.0,A2,0.2374239900573149,3
+C3a Water drawn from national supply,subcriterion weight,1.0,A3,0.30738147201059185,1
+C3a Water drawn from national supply,subcriterion weight,1.0,A4,0.2624695371110766,2
+C3b Weather resilience,subcriterion weight,0.0,A1,0.22714447288643713,4
+C3b Weather resilience,subcriterion weight,0.0,A2,0.23847231450762507,2
+C3b Weather resilience,subcriterion weight,0.0,A3,0.29813845662712135,1
+C3b Weather resilience,subcriterion weight,0.0,A4,0.23624475597881628,3
+C3b Weather resilience,subcriterion weight,0.05,A1,0.22785362393322725,4
+C3b Weather resilience,subcriterion weight,0.05,A2,0.24085002293517072,2
+C3b Weather resilience,subcriterion weight,0.05,A3,0.2982589869455,1
+C3b Weather resilience,subcriterion weight,0.05,A4,0.23303736618610194,3
+C3b Weather resilience,subcriterion weight,0.1,A1,0.22856277498001737,4
+C3b Weather resilience,subcriterion weight,0.1,A2,0.24322773136271636,2
+C3b Weather resilience,subcriterion weight,0.1,A3,0.2983795172638787,1
+C3b Weather resilience,subcriterion weight,0.1,A4,0.22982997639338754,3
+C3b Weather resilience,subcriterion weight,0.15000000000000002,A1,0.2292719260268075,3
+C3b Weather resilience,subcriterion weight,0.15000000000000002,A2,0.245605439790262,2
+C3b Weather resilience,subcriterion weight,0.15000000000000002,A3,0.29850004758225734,1
+C3b Weather resilience,subcriterion weight,0.15000000000000002,A4,0.22662258660067314,4
+C3b Weather resilience,subcriterion weight,0.2,A1,0.2299810770735976,3
+C3b Weather resilience,subcriterion weight,0.2,A2,0.2479831482178076,2
+C3b Weather resilience,subcriterion weight,0.2,A3,0.29862057790063595,1
+C3b Weather resilience,subcriterion weight,0.2,A4,0.22341519680795874,4
+C3b Weather resilience,subcriterion weight,0.25,A1,0.2306902281203877,3
+C3b Weather resilience,subcriterion weight,0.25,A2,0.25036085664535324,2
+C3b Weather resilience,subcriterion weight,0.25,A3,0.29874110821901456,1
+C3b Weather resilience,subcriterion weight,0.25,A4,0.2202078070152444,4
+C3b Weather resilience,subcriterion weight,0.30000000000000004,A1,0.23139937916717782,3
+C3b Weather resilience,subcriterion weight,0.30000000000000004,A2,0.2527385650728989,2
+C3b Weather resilience,subcriterion weight,0.30000000000000004,A3,0.2988616385373932,1
+C3b Weather resilience,subcriterion weight,0.30000000000000004,A4,0.21700041722253,4
+C3b Weather resilience,subcriterion weight,0.35000000000000003,A1,0.23210853021396793,3
+C3b Weather resilience,subcriterion weight,0.35000000000000003,A2,0.2551162735004445,2
+C3b Weather resilience,subcriterion weight,0.35000000000000003,A3,0.2989821688557719,1
+C3b Weather resilience,subcriterion weight,0.35000000000000003,A4,0.2137930274298156,4
+C3b Weather resilience,subcriterion weight,0.4,A1,0.23281768126075805,3
+C3b Weather resilience,subcriterion weight,0.4,A2,0.25749398192799017,2
+C3b Weather resilience,subcriterion weight,0.4,A3,0.2991026991741505,1
+C3b Weather resilience,subcriterion weight,0.4,A4,0.2105856376371012,4
+C3b Weather resilience,subcriterion weight,0.45,A1,0.23352683230754817,3
+C3b Weather resilience,subcriterion weight,0.45,A2,0.2598716903555358,2
+C3b Weather resilience,subcriterion weight,0.45,A3,0.2992232294925291,1
+C3b Weather resilience,subcriterion weight,0.45,A4,0.20737824784438685,4
+C3b Weather resilience,subcriterion weight,0.5,A1,0.2342359833543383,3
+C3b Weather resilience,subcriterion weight,0.5,A2,0.2622493987830814,2
+C3b Weather resilience,subcriterion weight,0.5,A3,0.2993437598109078,1
+C3b Weather resilience,subcriterion weight,0.5,A4,0.20417085805167245,4
+C3b Weather resilience,subcriterion weight,0.55,A1,0.2349451344011284,3
+C3b Weather resilience,subcriterion weight,0.55,A2,0.26462710721062704,2
+C3b Weather resilience,subcriterion weight,0.55,A3,0.29946429012928644,1
+C3b Weather resilience,subcriterion weight,0.55,A4,0.20096346825895806,4
+C3b Weather resilience,subcriterion weight,0.6000000000000001,A1,0.2356542854479185,3
+C3b Weather resilience,subcriterion weight,0.6000000000000001,A2,0.2670048156381727,2
+C3b Weather resilience,subcriterion weight,0.6000000000000001,A3,0.2995848204476651,1
+C3b Weather resilience,subcriterion weight,0.6000000000000001,A4,0.19775607846624366,4
+C3b Weather resilience,subcriterion weight,0.65,A1,0.23636343649470862,3
+C3b Weather resilience,subcriterion weight,0.65,A2,0.26938252406571833,2
+C3b Weather resilience,subcriterion weight,0.65,A3,0.2997053507660437,1
+C3b Weather resilience,subcriterion weight,0.65,A4,0.19454868867352926,4
+C3b Weather resilience,subcriterion weight,0.7000000000000001,A1,0.23707258754149874,3
+C3b Weather resilience,subcriterion weight,0.7000000000000001,A2,0.271760232493264,2
+C3b Weather resilience,subcriterion weight,0.7000000000000001,A3,0.2998258810844223,1
+C3b Weather resilience,subcriterion weight,0.7000000000000001,A4,0.19134129888081486,4
+C3b Weather resilience,subcriterion weight,0.75,A1,0.23778173858828885,3
+C3b Weather resilience,subcriterion weight,0.75,A2,0.2741379409208096,2
+C3b Weather resilience,subcriterion weight,0.75,A3,0.299946411402801,1
+C3b Weather resilience,subcriterion weight,0.75,A4,0.18813390908810051,4
+C3b Weather resilience,subcriterion weight,0.8,A1,0.23849088963507897,3
+C3b Weather resilience,subcriterion weight,0.8,A2,0.27651564934835526,2
+C3b Weather resilience,subcriterion weight,0.8,A3,0.30006694172117965,1
+C3b Weather resilience,subcriterion weight,0.8,A4,0.18492651929538612,4
+C3b Weather resilience,subcriterion weight,0.8500000000000001,A1,0.2392000406818691,3
+C3b Weather resilience,subcriterion weight,0.8500000000000001,A2,0.2788933577759009,2
+C3b Weather resilience,subcriterion weight,0.8500000000000001,A3,0.30018747203955826,1
+C3b Weather resilience,subcriterion weight,0.8500000000000001,A4,0.18171912950267172,4
+C3b Weather resilience,subcriterion weight,0.9,A1,0.2399091917286592,3
+C3b Weather resilience,subcriterion weight,0.9,A2,0.2812710662034465,2
+C3b Weather resilience,subcriterion weight,0.9,A3,0.30030800235793687,1
+C3b Weather resilience,subcriterion weight,0.9,A4,0.17851173970995732,4
+C3b Weather resilience,subcriterion weight,0.9500000000000001,A1,0.2406183427754493,3
+C3b Weather resilience,subcriterion weight,0.9500000000000001,A2,0.28364877463099214,2
+C3b Weather resilience,subcriterion weight,0.9500000000000001,A3,0.30042853267631553,1
+C3b Weather resilience,subcriterion weight,0.9500000000000001,A4,0.17530434991724292,4
+C3b Weather resilience,subcriterion weight,1.0,A1,0.24132749382223942,3
+C3b Weather resilience,subcriterion weight,1.0,A2,0.2860264830585378,2
+C3b Weather resilience,subcriterion weight,1.0,A3,0.3005490629946942,1
+C3b Weather resilience,subcriterion weight,1.0,A4,0.17209696012452858,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.0,A1,0.20892583182142416,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.0,A2,0.2536248210577225,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.0,A3,0.305104002338626,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.0,A4,0.2323453447822273,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.05,A1,0.21327871108121688,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.05,A2,0.25297202817524866,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.05,A3,0.3038314235147037,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.05,A4,0.2299178372288307,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.1,A1,0.21763159034100957,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.1,A2,0.25231923529277483,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.1,A3,0.3025588446907814,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.1,A4,0.2274903296754341,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.15000000000000002,A1,0.2219844696008023,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.15000000000000002,A2,0.25166644241030095,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.15000000000000002,A3,0.30128626586685914,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.15000000000000002,A4,0.22506282212203754,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.2,A1,0.226337348860595,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.2,A2,0.2510136495278271,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.2,A3,0.30001368704293685,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.2,A4,0.22263531456864094,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.25,A1,0.2306902281203877,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.25,A2,0.25036085664535324,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.25,A3,0.29874110821901456,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.25,A4,0.22020780701524434,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.30000000000000004,A1,0.23504310738018042,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.30000000000000004,A2,0.2497080637628794,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.30000000000000004,A3,0.2974685293950923,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.30000000000000004,A4,0.2177802994618478,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.35000000000000003,A1,0.23939598663997314,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.35000000000000003,A2,0.24905527088040552,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.35000000000000003,A3,0.29619595057117004,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.35000000000000003,A4,0.2153527919084512,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.4,A1,0.24374886589976585,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.4,A2,0.2484024779979317,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.4,A3,0.29492337174724775,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.4,A4,0.21292528435505464,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.45,A1,0.24810174515955857,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.45,A2,0.2477496851154578,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.45,A3,0.2936507929233255,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.45,A4,0.21049777680165804,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.5,A1,0.2524546244193513,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.5,A2,0.24709689223298398,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.5,A3,0.29237821409940323,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.5,A4,0.20807026924826144,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.55,A1,0.256807503679144,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.55,A2,0.2464440993505101,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.55,A3,0.29110563527548095,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.55,A4,0.2056427616948649,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.6000000000000001,A1,0.2611603829389367,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.6000000000000001,A2,0.24579130646803626,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.6000000000000001,A3,0.28983305645155866,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.6000000000000001,A4,0.2032152541414683,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.65,A1,0.2655132621987294,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.65,A2,0.24513851358556243,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.65,A3,0.28856047762763637,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.65,A4,0.2007877465880717,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.7000000000000001,A1,0.2698661414585221,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.7000000000000001,A2,0.24448572070308855,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.7000000000000001,A3,0.2872878988037141,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.7000000000000001,A4,0.19836023903467515,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.75,A1,0.27421902071831483,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.75,A2,0.24383292782061472,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.75,A3,0.2860153199797918,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.75,A4,0.19593273148127854,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.8,A1,0.27857189997810755,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.8,A2,0.24318013493814084,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.8,A3,0.28474274115586956,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.8,A4,0.19350522392788194,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.8500000000000001,A1,0.28292477923790027,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.8500000000000001,A2,0.242527342055667,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.8500000000000001,A3,0.2834701623319473,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.8500000000000001,A4,0.1910777163744854,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.9,A1,0.287277658497693,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.9,A2,0.24187454917319312,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.9,A3,0.28219758350802504,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.9,A4,0.1886502088210888,4
+C3c Dependence on used-water feedstock,subcriterion weight,0.9500000000000001,A1,0.2916305377574857,1
+C3c Dependence on used-water feedstock,subcriterion weight,0.9500000000000001,A2,0.2412217562907193,3
+C3c Dependence on used-water feedstock,subcriterion weight,0.9500000000000001,A3,0.28092500468410275,2
+C3c Dependence on used-water feedstock,subcriterion weight,0.9500000000000001,A4,0.18622270126769225,4
+C3c Dependence on used-water feedstock,subcriterion weight,1.0,A1,0.29598341701727837,1
+C3c Dependence on used-water feedstock,subcriterion weight,1.0,A2,0.2405689634082454,3
+C3c Dependence on used-water feedstock,subcriterion weight,1.0,A3,0.27965242586018046,2
+C3c Dependence on used-water feedstock,subcriterion weight,1.0,A4,0.18379519371429565,4
+C4 Implementation,main weight,0.0,A1,0.23936707563770854,3
+C4 Implementation,main weight,0.0,A2,0.25180206641621394,2
+C4 Implementation,main weight,0.0,A3,0.3069192949731585,1
+C4 Implementation,main weight,0.0,A4,0.20191156297291907,4
+C4 Implementation,main weight,0.05,A1,0.23763170613424434,3
+C4 Implementation,main weight,0.05,A2,0.25151382446204174,2
+C4 Implementation,main weight,0.05,A3,0.3052836576223296,1
+C4 Implementation,main weight,0.05,A4,0.2055708117813841,4
+C4 Implementation,main weight,0.1,A1,0.23589633663078025,3
+C4 Implementation,main weight,0.1,A2,0.2512255825078697,2
+C4 Implementation,main weight,0.1,A3,0.303648020271501,1
+C4 Implementation,main weight,0.1,A4,0.2092300605898492,4
+C4 Implementation,main weight,0.15000000000000002,A1,0.234160967127316,3
+C4 Implementation,main weight,0.15000000000000002,A2,0.25093734055369754,2
+C4 Implementation,main weight,0.15000000000000002,A3,0.3020123829206721,1
+C4 Implementation,main weight,0.15000000000000002,A4,0.21288930939831424,4
+C4 Implementation,main weight,0.2,A1,0.2324255976238519,3
+C4 Implementation,main weight,0.2,A2,0.25064909859952544,2
+C4 Implementation,main weight,0.2,A3,0.3003767455698434,1
+C4 Implementation,main weight,0.2,A4,0.21654855820677937,4
+C4 Implementation,main weight,0.25,A1,0.23069022812038772,3
+C4 Implementation,main weight,0.25,A2,0.25036085664535324,2
+C4 Implementation,main weight,0.25,A3,0.2987411082190146,1
+C4 Implementation,main weight,0.25,A4,0.2202078070152444,4
+C4 Implementation,main weight,0.30000000000000004,A1,0.22895485861692355,3
+C4 Implementation,main weight,0.30000000000000004,A2,0.25007261469118114,2
+C4 Implementation,main weight,0.30000000000000004,A3,0.2971054708681858,1
+C4 Implementation,main weight,0.30000000000000004,A4,0.22386705582370947,4
+C4 Implementation,main weight,0.35000000000000003,A1,0.2272194891134594,4
+C4 Implementation,main weight,0.35000000000000003,A2,0.24978437273700901,2
+C4 Implementation,main weight,0.35000000000000003,A3,0.295469833517357,1
+C4 Implementation,main weight,0.35000000000000003,A4,0.2275263046321745,3
+C4 Implementation,main weight,0.4,A1,0.22548411960999526,4
+C4 Implementation,main weight,0.4,A2,0.2494961307828369,2
+C4 Implementation,main weight,0.4,A3,0.2938341961665282,1
+C4 Implementation,main weight,0.4,A4,0.2311855534406396,3
+C4 Implementation,main weight,0.45,A1,0.2237487501065311,4
+C4 Implementation,main weight,0.45,A2,0.2492078888286648,2
+C4 Implementation,main weight,0.45,A3,0.2921985588156995,1
+C4 Implementation,main weight,0.45,A4,0.2348448022491047,3
+C4 Implementation,main weight,0.5,A1,0.22201338060306697,4
+C4 Implementation,main weight,0.5,A2,0.2489196468744927,2
+C4 Implementation,main weight,0.5,A3,0.2905629214648707,1
+C4 Implementation,main weight,0.5,A4,0.23850405105756975,3
+C4 Implementation,main weight,0.55,A1,0.22027801109960277,4
+C4 Implementation,main weight,0.55,A2,0.24863140492032054,2
+C4 Implementation,main weight,0.55,A3,0.2889272841140419,1
+C4 Implementation,main weight,0.55,A4,0.2421632998660348,3
+C4 Implementation,main weight,0.6000000000000001,A1,0.21854264159613862,4
+C4 Implementation,main weight,0.6000000000000001,A2,0.2483431629661484,2
+C4 Implementation,main weight,0.6000000000000001,A3,0.2872916467632131,1
+C4 Implementation,main weight,0.6000000000000001,A4,0.24582254867449987,3
+C4 Implementation,main weight,0.65,A1,0.21680727209267447,4
+C4 Implementation,main weight,0.65,A2,0.2480549210119763,3
+C4 Implementation,main weight,0.65,A3,0.28565600941238434,1
+C4 Implementation,main weight,0.65,A4,0.24948179748296495,2
+C4 Implementation,main weight,0.7000000000000001,A1,0.21507190258921033,4
+C4 Implementation,main weight,0.7000000000000001,A2,0.2477666790578042,3
+C4 Implementation,main weight,0.7000000000000001,A3,0.28402037206155556,1
+C4 Implementation,main weight,0.7000000000000001,A4,0.2531410462914301,2
+C4 Implementation,main weight,0.75,A1,0.21333653308574616,4
+C4 Implementation,main weight,0.75,A2,0.24747843710363207,3
+C4 Implementation,main weight,0.75,A3,0.2823847347107268,1
+C4 Implementation,main weight,0.75,A4,0.2568002950998951,2
+C4 Implementation,main weight,0.8,A1,0.21160116358228198,4
+C4 Implementation,main weight,0.8,A2,0.24719019514945992,3
+C4 Implementation,main weight,0.8,A3,0.280749097359898,1
+C4 Implementation,main weight,0.8,A4,0.2604595439083602,2
+C4 Implementation,main weight,0.8500000000000001,A1,0.20986579407881784,4
+C4 Implementation,main weight,0.8500000000000001,A2,0.2469019531952878,3
+C4 Implementation,main weight,0.8500000000000001,A3,0.2791134600090692,1
+C4 Implementation,main weight,0.8500000000000001,A4,0.26411879271682526,2
+C4 Implementation,main weight,0.9,A1,0.2081304245753537,4
+C4 Implementation,main weight,0.9,A2,0.24661371124111567,3
+C4 Implementation,main weight,0.9,A3,0.27747782265824045,1
+C4 Implementation,main weight,0.9,A4,0.2677780415252903,2
+C4 Implementation,main weight,0.9500000000000001,A1,0.20639505507188952,4
+C4 Implementation,main weight,0.9500000000000001,A2,0.24632546928694354,3
+C4 Implementation,main weight,0.9500000000000001,A3,0.2758421853074116,1
+C4 Implementation,main weight,0.9500000000000001,A4,0.27143729033375535,2
+C4 Implementation,main weight,1.0,A1,0.20465968556842537,4
+C4 Implementation,main weight,1.0,A2,0.24603722733277142,3
+C4 Implementation,main weight,1.0,A3,0.2742065479565829,2
+C4 Implementation,main weight,1.0,A4,0.27509653914222043,1
+C4a Technical maturity in the tropics,subcriterion weight,0.0,A1,0.20419411510906466,4
+C4a Technical maturity in the tropics,subcriterion weight,0.0,A2,0.23076100059475455,3
+C4a Technical maturity in the tropics,subcriterion weight,0.0,A3,0.3141391692420814,1
+C4a Technical maturity in the tropics,subcriterion weight,0.0,A4,0.2509057150540993,2
+C4a Technical maturity in the tropics,subcriterion weight,0.05,A1,0.20750612923548004,4
+C4a Technical maturity in the tropics,subcriterion weight,0.05,A2,0.2332109826010794,3
+C4a Technical maturity in the tropics,subcriterion weight,0.05,A3,0.31221441161419805,1
+C4a Technical maturity in the tropics,subcriterion weight,0.05,A4,0.24706847654924247,2
+C4a Technical maturity in the tropics,subcriterion weight,0.1,A1,0.21081814336189542,4
+C4a Technical maturity in the tropics,subcriterion weight,0.1,A2,0.23566096460740424,3
+C4a Technical maturity in the tropics,subcriterion weight,0.1,A3,0.3102896539863147,1
+C4a Technical maturity in the tropics,subcriterion weight,0.1,A4,0.2432312380443856,2
+C4a Technical maturity in the tropics,subcriterion weight,0.15000000000000002,A1,0.2141301574883108,4
+C4a Technical maturity in the tropics,subcriterion weight,0.15000000000000002,A2,0.23811094661372906,3
+C4a Technical maturity in the tropics,subcriterion weight,0.15000000000000002,A3,0.30836489635843134,1
+C4a Technical maturity in the tropics,subcriterion weight,0.15000000000000002,A4,0.23939399953952872,2
+C4a Technical maturity in the tropics,subcriterion weight,0.2,A1,0.21744217161472618,4
+C4a Technical maturity in the tropics,subcriterion weight,0.2,A2,0.2405609286200539,2
+C4a Technical maturity in the tropics,subcriterion weight,0.2,A3,0.306440138730548,1
+C4a Technical maturity in the tropics,subcriterion weight,0.2,A4,0.23555676103467188,3
+C4a Technical maturity in the tropics,subcriterion weight,0.25,A1,0.22075418574114156,4
+C4a Technical maturity in the tropics,subcriterion weight,0.25,A2,0.24301091062637875,2
+C4a Technical maturity in the tropics,subcriterion weight,0.25,A3,0.30451538110266463,1
+C4a Technical maturity in the tropics,subcriterion weight,0.25,A4,0.23171952252981498,3
+C4a Technical maturity in the tropics,subcriterion weight,0.30000000000000004,A1,0.22406619986755694,4
+C4a Technical maturity in the tropics,subcriterion weight,0.30000000000000004,A2,0.2454608926327036,2
+C4a Technical maturity in the tropics,subcriterion weight,0.30000000000000004,A3,0.30259062347478133,1
+C4a Technical maturity in the tropics,subcriterion weight,0.30000000000000004,A4,0.22788228402495814,3
+C4a Technical maturity in the tropics,subcriterion weight,0.35000000000000003,A1,0.22737821399397234,3
+C4a Technical maturity in the tropics,subcriterion weight,0.35000000000000003,A2,0.24791087463902842,2
+C4a Technical maturity in the tropics,subcriterion weight,0.35000000000000003,A3,0.3006658658468979,1
+C4a Technical maturity in the tropics,subcriterion weight,0.35000000000000003,A4,0.22404504552010124,4
+C4a Technical maturity in the tropics,subcriterion weight,0.4,A1,0.2306902281203877,3
+C4a Technical maturity in the tropics,subcriterion weight,0.4,A2,0.25036085664535324,2
+C4a Technical maturity in the tropics,subcriterion weight,0.4,A3,0.29874110821901456,1
+C4a Technical maturity in the tropics,subcriterion weight,0.4,A4,0.2202078070152444,4
+C4a Technical maturity in the tropics,subcriterion weight,0.45,A1,0.2340022422468031,3
+C4a Technical maturity in the tropics,subcriterion weight,0.45,A2,0.2528108386516781,2
+C4a Technical maturity in the tropics,subcriterion weight,0.45,A3,0.29681635059113126,1
+C4a Technical maturity in the tropics,subcriterion weight,0.45,A4,0.21637056851038755,4
+C4a Technical maturity in the tropics,subcriterion weight,0.5,A1,0.23731425637321846,3
+C4a Technical maturity in the tropics,subcriterion weight,0.5,A2,0.25526082065800293,2
+C4a Technical maturity in the tropics,subcriterion weight,0.5,A3,0.29489159296324785,1
+C4a Technical maturity in the tropics,subcriterion weight,0.5,A4,0.21253333000553065,4
+C4a Technical maturity in the tropics,subcriterion weight,0.55,A1,0.24062627049963387,3
+C4a Technical maturity in the tropics,subcriterion weight,0.55,A2,0.2577108026643278,2
+C4a Technical maturity in the tropics,subcriterion weight,0.55,A3,0.2929668353353645,1
+C4a Technical maturity in the tropics,subcriterion weight,0.55,A4,0.2086960915006738,4
+C4a Technical maturity in the tropics,subcriterion weight,0.6000000000000001,A1,0.24393828462604925,3
+C4a Technical maturity in the tropics,subcriterion weight,0.6000000000000001,A2,0.2601607846706526,2
+C4a Technical maturity in the tropics,subcriterion weight,0.6000000000000001,A3,0.29104207770748114,1
+C4a Technical maturity in the tropics,subcriterion weight,0.6000000000000001,A4,0.20485885299581694,4
+C4a Technical maturity in the tropics,subcriterion weight,0.65,A1,0.24725029875246463,3
+C4a Technical maturity in the tropics,subcriterion weight,0.65,A2,0.2626107666769774,2
+C4a Technical maturity in the tropics,subcriterion weight,0.65,A3,0.28911732007959784,1
+C4a Technical maturity in the tropics,subcriterion weight,0.65,A4,0.20102161449096007,4
+C4a Technical maturity in the tropics,subcriterion weight,0.7000000000000001,A1,0.25056231287888,3
+C4a Technical maturity in the tropics,subcriterion weight,0.7000000000000001,A2,0.26506074868330226,2
+C4a Technical maturity in the tropics,subcriterion weight,0.7000000000000001,A3,0.28719256245171443,1
+C4a Technical maturity in the tropics,subcriterion weight,0.7000000000000001,A4,0.1971843759861032,4
+C4a Technical maturity in the tropics,subcriterion weight,0.75,A1,0.2538743270052954,3
+C4a Technical maturity in the tropics,subcriterion weight,0.75,A2,0.2675107306896271,2
+C4a Technical maturity in the tropics,subcriterion weight,0.75,A3,0.28526780482383113,1
+C4a Technical maturity in the tropics,subcriterion weight,0.75,A4,0.19334713748124632,4
+C4a Technical maturity in the tropics,subcriterion weight,0.8,A1,0.2571863411317108,3
+C4a Technical maturity in the tropics,subcriterion weight,0.8,A2,0.26996071269595195,2
+C4a Technical maturity in the tropics,subcriterion weight,0.8,A3,0.2833430471959477,1
+C4a Technical maturity in the tropics,subcriterion weight,0.8,A4,0.18950989897638948,4
+C4a Technical maturity in the tropics,subcriterion weight,0.8500000000000001,A1,0.26049835525812615,3
+C4a Technical maturity in the tropics,subcriterion weight,0.8500000000000001,A2,0.27241069470227675,2
+C4a Technical maturity in the tropics,subcriterion weight,0.8500000000000001,A3,0.28141828956806436,1
+C4a Technical maturity in the tropics,subcriterion weight,0.8500000000000001,A4,0.18567266047153258,4
+C4a Technical maturity in the tropics,subcriterion weight,0.9,A1,0.2638103693845415,3
+C4a Technical maturity in the tropics,subcriterion weight,0.9,A2,0.2748606767086016,2
+C4a Technical maturity in the tropics,subcriterion weight,0.9,A3,0.279493531940181,1
+C4a Technical maturity in the tropics,subcriterion weight,0.9,A4,0.18183542196667574,4
+C4a Technical maturity in the tropics,subcriterion weight,0.9500000000000001,A1,0.2671223835109569,3
+C4a Technical maturity in the tropics,subcriterion weight,0.9500000000000001,A2,0.27731065871492644,2
+C4a Technical maturity in the tropics,subcriterion weight,0.9500000000000001,A3,0.27756877431229765,1
+C4a Technical maturity in the tropics,subcriterion weight,0.9500000000000001,A4,0.17799818346181887,4
+C4a Technical maturity in the tropics,subcriterion weight,1.0,A1,0.2704343976373723,3
+C4a Technical maturity in the tropics,subcriterion weight,1.0,A2,0.2797606407212513,1
+C4a Technical maturity in the tropics,subcriterion weight,1.0,A3,0.2756440166844143,2
+C4a Technical maturity in the tropics,subcriterion weight,1.0,A4,0.174160944956962,4
+C4b Policy alignment & enforceability,subcriterion weight,0.0,A1,0.2466145422925159,3
+C4b Policy alignment & enforceability,subcriterion weight,0.0,A2,0.25985699043387633,2
+C4b Policy alignment & enforceability,subcriterion weight,0.0,A3,0.28595671830655245,1
+C4b Policy alignment & enforceability,subcriterion weight,0.0,A4,0.20757174896705521,4
+C4b Policy alignment & enforceability,subcriterion weight,0.05,A1,0.24462400302099985,3
+C4b Policy alignment & enforceability,subcriterion weight,0.05,A2,0.258669973710311,2
+C4b Policy alignment & enforceability,subcriterion weight,0.05,A3,0.2875547670456102,1
+C4b Policy alignment & enforceability,subcriterion weight,0.05,A4,0.20915125622307884,4
+C4b Policy alignment & enforceability,subcriterion weight,0.1,A1,0.24263346374948383,3
+C4b Policy alignment & enforceability,subcriterion weight,0.1,A2,0.2574829569867456,2
+C4b Policy alignment & enforceability,subcriterion weight,0.1,A3,0.289152815784668,1
+C4b Policy alignment & enforceability,subcriterion weight,0.1,A4,0.2107307634791025,4
+C4b Policy alignment & enforceability,subcriterion weight,0.15000000000000002,A1,0.2406429244779678,3
+C4b Policy alignment & enforceability,subcriterion weight,0.15000000000000002,A2,0.2562959402631802,2
+C4b Policy alignment & enforceability,subcriterion weight,0.15000000000000002,A3,0.2907508645237258,1
+C4b Policy alignment & enforceability,subcriterion weight,0.15000000000000002,A4,0.21231027073512615,4
+C4b Policy alignment & enforceability,subcriterion weight,0.2,A1,0.2386523852064518,3
+C4b Policy alignment & enforceability,subcriterion weight,0.2,A2,0.2551089235396148,2
+C4b Policy alignment & enforceability,subcriterion weight,0.2,A3,0.2923489132627835,1
+C4b Policy alignment & enforceability,subcriterion weight,0.2,A4,0.21388977799114978,4
+C4b Policy alignment & enforceability,subcriterion weight,0.25,A1,0.23666184593493578,3
+C4b Policy alignment & enforceability,subcriterion weight,0.25,A2,0.2539219068160494,2
+C4b Policy alignment & enforceability,subcriterion weight,0.25,A3,0.2939469620018413,1
+C4b Policy alignment & enforceability,subcriterion weight,0.25,A4,0.21546928524717346,4
+C4b Policy alignment & enforceability,subcriterion weight,0.30000000000000004,A1,0.23467130666341973,3
+C4b Policy alignment & enforceability,subcriterion weight,0.30000000000000004,A2,0.252734890092484,2
+C4b Policy alignment & enforceability,subcriterion weight,0.30000000000000004,A3,0.29554501074089906,1
+C4b Policy alignment & enforceability,subcriterion weight,0.30000000000000004,A4,0.21704879250319709,4
+C4b Policy alignment & enforceability,subcriterion weight,0.35000000000000003,A1,0.23268076739190371,3
+C4b Policy alignment & enforceability,subcriterion weight,0.35000000000000003,A2,0.2515478733689186,2
+C4b Policy alignment & enforceability,subcriterion weight,0.35000000000000003,A3,0.2971430594799568,1
+C4b Policy alignment & enforceability,subcriterion weight,0.35000000000000003,A4,0.21862829975922074,4
+C4b Policy alignment & enforceability,subcriterion weight,0.4,A1,0.2306902281203877,3
+C4b Policy alignment & enforceability,subcriterion weight,0.4,A2,0.25036085664535324,2
+C4b Policy alignment & enforceability,subcriterion weight,0.4,A3,0.29874110821901456,1
+C4b Policy alignment & enforceability,subcriterion weight,0.4,A4,0.2202078070152444,4
+C4b Policy alignment & enforceability,subcriterion weight,0.45,A1,0.2286996888488717,3
+C4b Policy alignment & enforceability,subcriterion weight,0.45,A2,0.24917383992178785,2
+C4b Policy alignment & enforceability,subcriterion weight,0.45,A3,0.30033915695807234,1
+C4b Policy alignment & enforceability,subcriterion weight,0.45,A4,0.22178731427126802,4
+C4b Policy alignment & enforceability,subcriterion weight,0.5,A1,0.22670914957735566,3
+C4b Policy alignment & enforceability,subcriterion weight,0.5,A2,0.24798682319822246,2
+C4b Policy alignment & enforceability,subcriterion weight,0.5,A3,0.3019372056971301,1
+C4b Policy alignment & enforceability,subcriterion weight,0.5,A4,0.22336682152729168,4
+C4b Policy alignment & enforceability,subcriterion weight,0.55,A1,0.22471861030583964,4
+C4b Policy alignment & enforceability,subcriterion weight,0.55,A2,0.24679980647465707,2
+C4b Policy alignment & enforceability,subcriterion weight,0.55,A3,0.3035352544361879,1
+C4b Policy alignment & enforceability,subcriterion weight,0.55,A4,0.22494632878331533,3
+C4b Policy alignment & enforceability,subcriterion weight,0.6000000000000001,A1,0.22272807103432363,4
+C4b Policy alignment & enforceability,subcriterion weight,0.6000000000000001,A2,0.2456127897510917,2
+C4b Policy alignment & enforceability,subcriterion weight,0.6000000000000001,A3,0.3051333031752457,1
+C4b Policy alignment & enforceability,subcriterion weight,0.6000000000000001,A4,0.22652583603933896,3
+C4b Policy alignment & enforceability,subcriterion weight,0.65,A1,0.2207375317628076,4
+C4b Policy alignment & enforceability,subcriterion weight,0.65,A2,0.2444257730275263,2
+C4b Policy alignment & enforceability,subcriterion weight,0.65,A3,0.3067313519143034,1
+C4b Policy alignment & enforceability,subcriterion weight,0.65,A4,0.22810534329536264,3
+C4b Policy alignment & enforceability,subcriterion weight,0.7000000000000001,A1,0.21874699249129156,4
+C4b Policy alignment & enforceability,subcriterion weight,0.7000000000000001,A2,0.2432387563039609,2
+C4b Policy alignment & enforceability,subcriterion weight,0.7000000000000001,A3,0.3083294006533612,1
+C4b Policy alignment & enforceability,subcriterion weight,0.7000000000000001,A4,0.22968485055138627,3
+C4b Policy alignment & enforceability,subcriterion weight,0.75,A1,0.21675645321977555,4
+C4b Policy alignment & enforceability,subcriterion weight,0.75,A2,0.24205173958039553,2
+C4b Policy alignment & enforceability,subcriterion weight,0.75,A3,0.3099274493924189,1
+C4b Policy alignment & enforceability,subcriterion weight,0.75,A4,0.23126435780740992,3
+C4b Policy alignment & enforceability,subcriterion weight,0.8,A1,0.21476591394825956,4
+C4b Policy alignment & enforceability,subcriterion weight,0.8,A2,0.24086472285683014,2
+C4b Policy alignment & enforceability,subcriterion weight,0.8,A3,0.3115254981314767,1
+C4b Policy alignment & enforceability,subcriterion weight,0.8,A4,0.23284386506343357,3
+C4b Policy alignment & enforceability,subcriterion weight,0.8500000000000001,A1,0.2127753746767435,4
+C4b Policy alignment & enforceability,subcriterion weight,0.8500000000000001,A2,0.23967770613326472,2
+C4b Policy alignment & enforceability,subcriterion weight,0.8500000000000001,A3,0.31312354687053445,1
+C4b Policy alignment & enforceability,subcriterion weight,0.8500000000000001,A4,0.2344233723194572,3
+C4b Policy alignment & enforceability,subcriterion weight,0.9,A1,0.2107848354052275,4
+C4b Policy alignment & enforceability,subcriterion weight,0.9,A2,0.23849068940969936,2
+C4b Policy alignment & enforceability,subcriterion weight,0.9,A3,0.31472159560959223,1
+C4b Policy alignment & enforceability,subcriterion weight,0.9,A4,0.23600287957548088,3
+C4b Policy alignment & enforceability,subcriterion weight,0.9500000000000001,A1,0.20879429613371148,4
+C4b Policy alignment & enforceability,subcriterion weight,0.9500000000000001,A2,0.23730367268613395,3
+C4b Policy alignment & enforceability,subcriterion weight,0.9500000000000001,A3,0.31631964434865,1
+C4b Policy alignment & enforceability,subcriterion weight,0.9500000000000001,A4,0.2375823868315045,2
+C4b Policy alignment & enforceability,subcriterion weight,1.0,A1,0.20680375686219546,4
+C4b Policy alignment & enforceability,subcriterion weight,1.0,A2,0.23611665596256856,3
+C4b Policy alignment & enforceability,subcriterion weight,1.0,A3,0.31791769308770773,1
+C4b Policy alignment & enforceability,subcriterion weight,1.0,A4,0.23916189408752814,2
+C4c Effect on other water users,subcriterion weight,0.0,A1,0.23861907724978387,3
+C4c Effect on other water users,subcriterion weight,0.0,A2,0.25793864834190994,2
+C4c Effect on other water users,subcriterion weight,0.0,A3,0.29678085488606104,1
+C4c Effect on other water users,subcriterion weight,0.0,A4,0.2066614195222451,4
+C4c Effect on other water users,subcriterion weight,0.05,A1,0.23663686496743483,3
+C4c Effect on other water users,subcriterion weight,0.05,A2,0.25604420041777076,2
+C4c Effect on other water users,subcriterion weight,0.05,A3,0.2972709182192994,1
+C4c Effect on other water users,subcriterion weight,0.05,A4,0.21004801639549492,4
+C4c Effect on other water users,subcriterion weight,0.1,A1,0.2346546526850858,3
+C4c Effect on other water users,subcriterion weight,0.1,A2,0.2541497524936316,2
+C4c Effect on other water users,subcriterion weight,0.1,A3,0.29776098155253783,1
+C4c Effect on other water users,subcriterion weight,0.1,A4,0.21343461326874474,4
+C4c Effect on other water users,subcriterion weight,0.15000000000000002,A1,0.23267244040273677,3
+C4c Effect on other water users,subcriterion weight,0.15000000000000002,A2,0.2522553045694924,2
+C4c Effect on other water users,subcriterion weight,0.15000000000000002,A3,0.2982510448857762,1
+C4c Effect on other water users,subcriterion weight,0.15000000000000002,A4,0.21682121014199457,4
+C4c Effect on other water users,subcriterion weight,0.2,A1,0.23069022812038772,3
+C4c Effect on other water users,subcriterion weight,0.2,A2,0.25036085664535324,2
+C4c Effect on other water users,subcriterion weight,0.2,A3,0.29874110821901456,1
+C4c Effect on other water users,subcriterion weight,0.2,A4,0.2202078070152444,4
+C4c Effect on other water users,subcriterion weight,0.25,A1,0.22870801583803868,3
+C4c Effect on other water users,subcriterion weight,0.25,A2,0.2484664087212141,2
+C4c Effect on other water users,subcriterion weight,0.25,A3,0.299231171552253,1
+C4c Effect on other water users,subcriterion weight,0.25,A4,0.22359440388849422,4
+C4c Effect on other water users,subcriterion weight,0.30000000000000004,A1,0.22672580355568964,4
+C4c Effect on other water users,subcriterion weight,0.30000000000000004,A2,0.2465719607970749,2
+C4c Effect on other water users,subcriterion weight,0.30000000000000004,A3,0.29972123488549135,1
+C4c Effect on other water users,subcriterion weight,0.30000000000000004,A4,0.22698100076174405,3
+C4c Effect on other water users,subcriterion weight,0.35000000000000003,A1,0.2247435912733406,4
+C4c Effect on other water users,subcriterion weight,0.35000000000000003,A2,0.24467751287293574,2
+C4c Effect on other water users,subcriterion weight,0.35000000000000003,A3,0.3002112982187297,1
+C4c Effect on other water users,subcriterion weight,0.35000000000000003,A4,0.23036759763499387,3
+C4c Effect on other water users,subcriterion weight,0.4,A1,0.22276137899099155,4
+C4c Effect on other water users,subcriterion weight,0.4,A2,0.24278306494879656,2
+C4c Effect on other water users,subcriterion weight,0.4,A3,0.30070136155196814,1
+C4c Effect on other water users,subcriterion weight,0.4,A4,0.2337541945082437,3
+C4c Effect on other water users,subcriterion weight,0.45,A1,0.2207791667086425,4
+C4c Effect on other water users,subcriterion weight,0.45,A2,0.2408886170246574,2
+C4c Effect on other water users,subcriterion weight,0.45,A3,0.3011914248852065,1
+C4c Effect on other water users,subcriterion weight,0.45,A4,0.23714079138149352,3
+C4c Effect on other water users,subcriterion weight,0.5,A1,0.21879695442629346,4
+C4c Effect on other water users,subcriterion weight,0.5,A2,0.23899416910051824,3
+C4c Effect on other water users,subcriterion weight,0.5,A3,0.3016814882184449,1
+C4c Effect on other water users,subcriterion weight,0.5,A4,0.24052738825474335,2
+C4c Effect on other water users,subcriterion weight,0.55,A1,0.21681474214394442,4
+C4c Effect on other water users,subcriterion weight,0.55,A2,0.23709972117637906,3
+C4c Effect on other water users,subcriterion weight,0.55,A3,0.3021715515516833,1
+C4c Effect on other water users,subcriterion weight,0.55,A4,0.24391398512799317,2
+C4c Effect on other water users,subcriterion weight,0.6000000000000001,A1,0.21483252986159537,4
+C4c Effect on other water users,subcriterion weight,0.6000000000000001,A2,0.2352052732522399,3
+C4c Effect on other water users,subcriterion weight,0.6000000000000001,A3,0.3026616148849217,1
+C4c Effect on other water users,subcriterion weight,0.6000000000000001,A4,0.247300582001243,2
+C4c Effect on other water users,subcriterion weight,0.65,A1,0.21285031757924633,4
+C4c Effect on other water users,subcriterion weight,0.65,A2,0.2333108253281007,3
+C4c Effect on other water users,subcriterion weight,0.65,A3,0.3031516782181601,1
+C4c Effect on other water users,subcriterion weight,0.65,A4,0.2506871788744928,2
+C4c Effect on other water users,subcriterion weight,0.7000000000000001,A1,0.21086810529689728,4
+C4c Effect on other water users,subcriterion weight,0.7000000000000001,A2,0.23141637740396154,3
+C4c Effect on other water users,subcriterion weight,0.7000000000000001,A3,0.30364174155139845,1
+C4c Effect on other water users,subcriterion weight,0.7000000000000001,A4,0.25407377574774265,2
+C4c Effect on other water users,subcriterion weight,0.75,A1,0.20888589301454824,4
+C4c Effect on other water users,subcriterion weight,0.75,A2,0.22952192947982236,3
+C4c Effect on other water users,subcriterion weight,0.75,A3,0.30413180488463687,1
+C4c Effect on other water users,subcriterion weight,0.75,A4,0.2574603726209925,2
+C4c Effect on other water users,subcriterion weight,0.8,A1,0.2069036807321992,4
+C4c Effect on other water users,subcriterion weight,0.8,A2,0.2276274815556832,3
+C4c Effect on other water users,subcriterion weight,0.8,A3,0.30462186821787524,1
+C4c Effect on other water users,subcriterion weight,0.8,A4,0.2608469694942423,2
+C4c Effect on other water users,subcriterion weight,0.8500000000000001,A1,0.20492146844985015,4
+C4c Effect on other water users,subcriterion weight,0.8500000000000001,A2,0.225733033631544,3
+C4c Effect on other water users,subcriterion weight,0.8500000000000001,A3,0.3051119315511136,1
+C4c Effect on other water users,subcriterion weight,0.8500000000000001,A4,0.2642335663674921,2
+C4c Effect on other water users,subcriterion weight,0.9,A1,0.2029392561675011,4
+C4c Effect on other water users,subcriterion weight,0.9,A2,0.22383858570740484,3
+C4c Effect on other water users,subcriterion weight,0.9,A3,0.305601994884352,1
+C4c Effect on other water users,subcriterion weight,0.9,A4,0.26762016324074195,2
+C4c Effect on other water users,subcriterion weight,0.9500000000000001,A1,0.20095704388515206,4
+C4c Effect on other water users,subcriterion weight,0.9500000000000001,A2,0.22194413778326566,3
+C4c Effect on other water users,subcriterion weight,0.9500000000000001,A3,0.3060920582175904,1
+C4c Effect on other water users,subcriterion weight,0.9500000000000001,A4,0.2710067601139918,2
+C4c Effect on other water users,subcriterion weight,1.0,A1,0.19897483160280302,4
+C4c Effect on other water users,subcriterion weight,1.0,A2,0.2200496898591265,3
+C4c Effect on other water users,subcriterion weight,1.0,A3,0.30658212155082876,1
+C4c Effect on other water users,subcriterion weight,1.0,A4,0.2743933569872416,2

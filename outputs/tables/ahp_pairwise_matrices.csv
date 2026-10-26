@@ -1,0 +1,192 @@
+matrix,row,column,comparison,row_priority,CR
+Main W1 Balanced,C1 Economic,C1 Economic,1.0,0.25000000000000006,0.0
+Main W1 Balanced,C1 Economic,C2 Environmental,1.0,0.25000000000000006,0.0
+Main W1 Balanced,C1 Economic,C3 Water security,1.0,0.25000000000000006,0.0
+Main W1 Balanced,C1 Economic,C4 Implementation,1.0,0.25000000000000006,0.0
+Main W1 Balanced,C2 Environmental,C1 Economic,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C2 Environmental,C2 Environmental,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C2 Environmental,C3 Water security,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C2 Environmental,C4 Implementation,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C3 Water security,C1 Economic,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C3 Water security,C2 Environmental,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C3 Water security,C3 Water security,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C3 Water security,C4 Implementation,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C4 Implementation,C1 Economic,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C4 Implementation,C2 Environmental,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C4 Implementation,C3 Water security,1.0,0.24999999999999997,0.0
+Main W1 Balanced,C4 Implementation,C4 Implementation,1.0,0.24999999999999997,0.0
+Main W2 PUB / water security,C1 Economic,C1 Economic,1.0,0.12096271328944484,0.007637107133077644
+Main W2 PUB / water security,C1 Economic,C2 Environmental,1.0,0.12096271328944484,0.007637107133077644
+Main W2 PUB / water security,C1 Economic,C3 Water security,0.25,0.12096271328944484,0.007637107133077644
+Main W2 PUB / water security,C1 Economic,C4 Implementation,0.5,0.12096271328944484,0.007637107133077644
+Main W2 PUB / water security,C2 Environmental,C1 Economic,1.0,0.12096271328944475,0.007637107133077644
+Main W2 PUB / water security,C2 Environmental,C2 Environmental,1.0,0.12096271328944475,0.007637107133077644
+Main W2 PUB / water security,C2 Environmental,C3 Water security,0.25,0.12096271328944475,0.007637107133077644
+Main W2 PUB / water security,C2 Environmental,C4 Implementation,0.5,0.12096271328944475,0.007637107133077644
+Main W2 PUB / water security,C3 Water security,C1 Economic,4.0,0.5384703443612728,0.007637107133077644
+Main W2 PUB / water security,C3 Water security,C2 Environmental,4.0,0.5384703443612728,0.007637107133077644
+Main W2 PUB / water security,C3 Water security,C3 Water security,1.0,0.5384703443612728,0.007637107133077644
+Main W2 PUB / water security,C3 Water security,C4 Implementation,3.0,0.5384703443612728,0.007637107133077644
+Main W2 PUB / water security,C4 Implementation,C1 Economic,2.0,0.2196042290598375,0.007637107133077644
+Main W2 PUB / water security,C4 Implementation,C2 Environmental,2.0,0.2196042290598375,0.007637107133077644
+Main W2 PUB / water security,C4 Implementation,C3 Water security,0.3333333333333333,0.2196042290598375,0.007637107133077644
+Main W2 PUB / water security,C4 Implementation,C4 Implementation,1.0,0.2196042290598375,0.007637107133077644
+Main W3 Operator / economic,C1 Economic,C1 Economic,1.0,0.47783140073516184,0.0038381119410738998
+Main W3 Operator / economic,C1 Economic,C2 Environmental,4.0,0.47783140073516184,0.0038381119410738998
+Main W3 Operator / economic,C1 Economic,C3 Water security,3.0,0.47783140073516184,0.0038381119410738998
+Main W3 Operator / economic,C1 Economic,C4 Implementation,2.0,0.47783140073516184,0.0038381119410738998
+Main W3 Operator / economic,C2 Environmental,C1 Economic,0.25,0.12805987549557724,0.0038381119410738998
+Main W3 Operator / economic,C2 Environmental,C2 Environmental,1.0,0.12805987549557724,0.0038381119410738998
+Main W3 Operator / economic,C2 Environmental,C3 Water security,1.0,0.12805987549557724,0.0038381119410738998
+Main W3 Operator / economic,C2 Environmental,C4 Implementation,0.5,0.12805987549557724,0.0038381119410738998
+Main W3 Operator / economic,C3 Water security,C1 Economic,0.3333333333333333,0.13798897277810657,0.0038381119410738998
+Main W3 Operator / economic,C3 Water security,C2 Environmental,1.0,0.13798897277810657,0.0038381119410738998
+Main W3 Operator / economic,C3 Water security,C3 Water security,1.0,0.13798897277810657,0.0038381119410738998
+Main W3 Operator / economic,C3 Water security,C4 Implementation,0.5,0.13798897277810657,0.0038381119410738998
+Main W3 Operator / economic,C4 Implementation,C1 Economic,0.5,0.25611975099115436,0.0038381119410738998
+Main W3 Operator / economic,C4 Implementation,C2 Environmental,2.0,0.25611975099115436,0.0038381119410738998
+Main W3 Operator / economic,C4 Implementation,C3 Water security,2.0,0.25611975099115436,0.0038381119410738998
+Main W3 Operator / economic,C4 Implementation,C4 Implementation,1.0,0.25611975099115436,0.0038381119410738998
+"Main W4 Climate (EMA, NGOs)",C1 Economic,C1 Economic,1.0,0.12358436322536158,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C1 Economic,C2 Environmental,0.25,0.12358436322536158,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C1 Economic,C3 Water security,0.5,0.12358436322536158,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C1 Economic,C4 Implementation,1.0,0.12358436322536158,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C2 Environmental,C1 Economic,4.0,0.5409480269910539,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C2 Environmental,C2 Environmental,1.0,0.5409480269910539,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C2 Environmental,C3 Water security,3.0,0.5409480269910539,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C2 Environmental,C4 Implementation,4.0,0.5409480269910539,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C3 Water security,C1 Economic,2.0,0.18857795951341913,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C3 Water security,C2 Environmental,0.3333333333333333,0.18857795951341913,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C3 Water security,C3 Water security,1.0,0.18857795951341913,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C3 Water security,C4 Implementation,1.0,0.18857795951341913,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C4 Implementation,C1 Economic,1.0,0.14688965027016537,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C4 Implementation,C2 Environmental,0.25,0.14688965027016537,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C4 Implementation,C3 Water security,1.0,0.14688965027016537,0.016970105370908314
+"Main W4 Climate (EMA, NGOs)",C4 Implementation,C4 Implementation,1.0,0.14688965027016537,0.016970105370908314
+"Main W5 Growth (IMDA, EDB)",C1 Economic,C1 Economic,1.0,0.32030188033347673,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C1 Economic,C2 Environmental,2.0,0.32030188033347673,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C1 Economic,C3 Water security,2.0,0.32030188033347673,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C1 Economic,C4 Implementation,1.0,0.32030188033347673,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C2 Environmental,C1 Economic,0.5,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C2 Environmental,C2 Environmental,1.0,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C2 Environmental,C3 Water security,1.0,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C2 Environmental,C4 Implementation,0.3333333333333333,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C3 Water security,C1 Economic,0.5,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C3 Water security,C2 Environmental,1.0,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C3 Water security,C3 Water security,1.0,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C3 Water security,C4 Implementation,0.3333333333333333,0.14390610336324758,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C4 Implementation,C1 Economic,1.0,0.3918859129400281,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C4 Implementation,C2 Environmental,3.0,0.3918859129400281,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C4 Implementation,C3 Water security,3.0,0.3918859129400281,0.007637107133075341
+"Main W5 Growth (IMDA, EDB)",C4 Implementation,C4 Implementation,1.0,0.3918859129400281,0.007637107133075341
+Sub C1 Economic,C1a Societal life-cycle cost,C1a Societal life-cycle cost,1.0,0.5,0.0
+Sub C1 Economic,C1a Societal life-cycle cost,C1b Cost to DC operators,1.0,0.5,0.0
+Sub C1 Economic,C1b Cost to DC operators,C1a Societal life-cycle cost,1.0,0.5,0.0
+Sub C1 Economic,C1b Cost to DC operators,C1b Cost to DC operators,1.0,0.5,0.0
+Sub C2 Environmental,C2a GHG per MWh_IT,C2a GHG per MWh_IT,1.0,0.5396145502210747,0.007933373029552273
+Sub C2 Environmental,C2a GHG per MWh_IT,C2b Electricity use,3.0,0.5396145502210747,0.007933373029552273
+Sub C2 Environmental,C2a GHG per MWh_IT,"C2c Marine discharge (brine, blowdown)",2.0,0.5396145502210747,0.007933373029552273
+Sub C2 Environmental,C2b Electricity use,C2a GHG per MWh_IT,0.3333333333333333,0.16342411856642794,0.007933373029552273
+Sub C2 Environmental,C2b Electricity use,C2b Electricity use,1.0,0.16342411856642794,0.007933373029552273
+Sub C2 Environmental,C2b Electricity use,"C2c Marine discharge (brine, blowdown)",0.5,0.16342411856642794,0.007933373029552273
+Sub C2 Environmental,"C2c Marine discharge (brine, blowdown)",C2a GHG per MWh_IT,0.5,0.2969613312124973,0.007933373029552273
+Sub C2 Environmental,"C2c Marine discharge (brine, blowdown)",C2b Electricity use,2.0,0.2969613312124973,0.007933373029552273
+Sub C2 Environmental,"C2c Marine discharge (brine, blowdown)","C2c Marine discharge (brine, blowdown)",1.0,0.2969613312124973,0.007933373029552273
+Sub C3 Water security,C3a Water drawn from national supply,C3a Water drawn from national supply,1.0,0.5,0.0
+Sub C3 Water security,C3a Water drawn from national supply,C3b Weather resilience,2.0,0.5,0.0
+Sub C3 Water security,C3a Water drawn from national supply,C3c Dependence on used-water feedstock,2.0,0.5,0.0
+Sub C3 Water security,C3b Weather resilience,C3a Water drawn from national supply,0.5,0.24999999999999994,0.0
+Sub C3 Water security,C3b Weather resilience,C3b Weather resilience,1.0,0.24999999999999994,0.0
+Sub C3 Water security,C3b Weather resilience,C3c Dependence on used-water feedstock,1.0,0.24999999999999994,0.0
+Sub C3 Water security,C3c Dependence on used-water feedstock,C3a Water drawn from national supply,0.5,0.25,0.0
+Sub C3 Water security,C3c Dependence on used-water feedstock,C3b Weather resilience,1.0,0.25,0.0
+Sub C3 Water security,C3c Dependence on used-water feedstock,C3c Dependence on used-water feedstock,1.0,0.25,0.0
+Sub C4 Implementation,C4a Technical maturity in the tropics,C4a Technical maturity in the tropics,1.0,0.4000000000000001,0.0
+Sub C4 Implementation,C4a Technical maturity in the tropics,C4b Policy alignment & enforceability,1.0,0.4000000000000001,0.0
+Sub C4 Implementation,C4a Technical maturity in the tropics,C4c Effect on other water users,2.0,0.4000000000000001,0.0
+Sub C4 Implementation,C4b Policy alignment & enforceability,C4a Technical maturity in the tropics,1.0,0.39999999999999997,0.0
+Sub C4 Implementation,C4b Policy alignment & enforceability,C4b Policy alignment & enforceability,1.0,0.39999999999999997,0.0
+Sub C4 Implementation,C4b Policy alignment & enforceability,C4c Effect on other water users,2.0,0.39999999999999997,0.0
+Sub C4 Implementation,C4c Effect on other water users,C4a Technical maturity in the tropics,0.5,0.20000000000000004,0.0
+Sub C4 Implementation,C4c Effect on other water users,C4b Policy alignment & enforceability,0.5,0.20000000000000004,0.0
+Sub C4 Implementation,C4c Effect on other water users,C4c Effect on other water users,1.0,0.20000000000000004,0.0
+C3b Weather resilience,A1,A1,1.0,0.25000000000000006,0.0
+C3b Weather resilience,A1,A2,1.0,0.25000000000000006,0.0
+C3b Weather resilience,A1,A3,1.0,0.25000000000000006,0.0
+C3b Weather resilience,A1,A4,1.0,0.25000000000000006,0.0
+C3b Weather resilience,A2,A1,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A2,A2,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A2,A3,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A2,A4,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A3,A1,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A3,A2,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A3,A3,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A3,A4,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A4,A1,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A4,A2,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A4,A3,1.0,0.24999999999999997,0.0
+C3b Weather resilience,A4,A4,1.0,0.24999999999999997,0.0
+C3c Dependence on used-water feedstock,A1,A1,1.0,0.4686236927801559,0.021975107885486886
+C3c Dependence on used-water feedstock,A1,A2,5.0,0.4686236927801559,0.021975107885486886
+C3c Dependence on used-water feedstock,A1,A3,3.0,0.4686236927801559,0.021975107885486886
+C3c Dependence on used-water feedstock,A1,A4,2.0,0.4686236927801559,0.021975107885486886
+C3c Dependence on used-water feedstock,A2,A1,0.2,0.06816992139883056,0.021975107885486886
+C3c Dependence on used-water feedstock,A2,A2,1.0,0.06816992139883056,0.021975107885486886
+C3c Dependence on used-water feedstock,A2,A3,0.3333333333333333,0.06816992139883056,0.021975107885486886
+C3c Dependence on used-water feedstock,A2,A4,0.2,0.06816992139883056,0.021975107885486886
+C3c Dependence on used-water feedstock,A3,A1,0.3333333333333333,0.16641345146194506,0.021975107885486886
+C3c Dependence on used-water feedstock,A3,A2,3.0,0.16641345146194506,0.021975107885486886
+C3c Dependence on used-water feedstock,A3,A3,1.0,0.16641345146194506,0.021975107885486886
+C3c Dependence on used-water feedstock,A3,A4,0.5,0.16641345146194506,0.021975107885486886
+C3c Dependence on used-water feedstock,A4,A1,0.5,0.29679293435906834,0.021975107885486886
+C3c Dependence on used-water feedstock,A4,A2,5.0,0.29679293435906834,0.021975107885486886
+C3c Dependence on used-water feedstock,A4,A3,2.0,0.29679293435906834,0.021975107885486886
+C3c Dependence on used-water feedstock,A4,A4,1.0,0.29679293435906834,0.021975107885486886
+C4a Technical maturity in the tropics,A1,A1,1.0,0.3636363636363637,0.0
+C4a Technical maturity in the tropics,A1,A2,1.0,0.3636363636363637,0.0
+C4a Technical maturity in the tropics,A1,A3,2.0,0.3636363636363637,0.0
+C4a Technical maturity in the tropics,A1,A4,4.0,0.3636363636363637,0.0
+C4a Technical maturity in the tropics,A2,A1,1.0,0.3636363636363636,0.0
+C4a Technical maturity in the tropics,A2,A2,1.0,0.3636363636363636,0.0
+C4a Technical maturity in the tropics,A2,A3,2.0,0.3636363636363636,0.0
+C4a Technical maturity in the tropics,A2,A4,4.0,0.3636363636363636,0.0
+C4a Technical maturity in the tropics,A3,A1,0.5,0.1818181818181818,0.0
+C4a Technical maturity in the tropics,A3,A2,0.5,0.1818181818181818,0.0
+C4a Technical maturity in the tropics,A3,A3,1.0,0.1818181818181818,0.0
+C4a Technical maturity in the tropics,A3,A4,2.0,0.1818181818181818,0.0
+C4a Technical maturity in the tropics,A4,A1,0.25,0.0909090909090909,0.0
+C4a Technical maturity in the tropics,A4,A2,0.25,0.0909090909090909,0.0
+C4a Technical maturity in the tropics,A4,A3,0.5,0.0909090909090909,0.0
+C4a Technical maturity in the tropics,A4,A4,1.0,0.0909090909090909,0.0
+C4b Policy alignment & enforceability,A1,A1,1.0,0.10911380053565635,0.003838111941075216
+C4b Policy alignment & enforceability,A1,A2,0.5,0.10911380053565635,0.003838111941075216
+C4b Policy alignment & enforceability,A1,A3,0.3333333333333333,0.10911380053565635,0.003838111941075216
+C4b Policy alignment & enforceability,A1,A4,0.3333333333333333,0.10911380053565635,0.003838111941075216
+C4b Policy alignment & enforceability,A2,A1,2.0,0.1890604246016327,0.003838111941075216
+C4b Policy alignment & enforceability,A2,A2,1.0,0.1890604246016327,0.003838111941075216
+C4b Policy alignment & enforceability,A2,A3,0.5,0.1890604246016327,0.003838111941075216
+C4b Policy alignment & enforceability,A2,A4,0.5,0.1890604246016327,0.003838111941075216
+C4b Policy alignment & enforceability,A3,A1,3.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A3,A2,2.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A3,A3,1.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A3,A4,1.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A4,A1,3.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A4,A2,2.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A4,A3,1.0,0.3509128874313555,0.003838111941075216
+C4b Policy alignment & enforceability,A4,A4,1.0,0.3509128874313555,0.003838111941075216
+C4c Effect on other water users,A1,A1,1.0,0.07779809949808662,0.017911414055513417
+C4c Effect on other water users,A1,A2,0.5,0.07779809949808662,0.017911414055513417
+C4c Effect on other water users,A1,A3,0.25,0.07779809949808662,0.017911414055513417
+C4c Effect on other water users,A1,A4,0.2,0.07779809949808662,0.017911414055513417
+C4c Effect on other water users,A2,A1,2.0,0.12479256018786443,0.017911414055513417
+C4c Effect on other water users,A2,A2,1.0,0.12479256018786443,0.017911414055513417
+C4c Effect on other water users,A2,A3,0.3333333333333333,0.12479256018786443,0.017911414055513417
+C4c Effect on other water users,A2,A4,0.25,0.12479256018786443,0.017911414055513417
+C4c Effect on other water users,A3,A1,4.0,0.3055706012838396,0.017911414055513417
+C4c Effect on other water users,A3,A2,3.0,0.3055706012838396,0.017911414055513417
+C4c Effect on other water users,A3,A3,1.0,0.3055706012838396,0.017911414055513417
+C4c Effect on other water users,A3,A4,0.5,0.3055706012838396,0.017911414055513417
+C4c Effect on other water users,A4,A1,5.0,0.4918387390302093,0.017911414055513417
+C4c Effect on other water users,A4,A2,4.0,0.4918387390302093,0.017911414055513417
+C4c Effect on other water users,A4,A3,2.0,0.4918387390302093,0.017911414055513417
+C4c Effect on other water users,A4,A4,1.0,0.4918387390302093,0.017911414055513417

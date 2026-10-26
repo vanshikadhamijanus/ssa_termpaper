@@ -1,0 +1,45 @@
+criterion,sub_criterion,strategy,local_priority,raw_value,kind,CR
+C1 Economic,C1a Societal life-cycle cost,A1,0.2966692391040804,2.603390096473271,quantitative,
+C1 Economic,C1a Societal life-cycle cost,A2,0.34404582176999704,0.9971188102957939,quantitative,
+C1 Economic,C1a Societal life-cycle cost,A3,0.32800804623774105,1.5408688421053993,quantitative,
+C1 Economic,C1a Societal life-cycle cost,A4,0.03127689288818155,11.601339743959157,quantitative,
+C1 Economic,C1b Cost to DC operators,A1,0.2886180763405451,6.804000000000001,quantitative,
+C1 Economic,C1b Cost to DC operators,A2,0.3338235521150035,5.25,quantitative,
+C1 Economic,C1b Cost to DC operators,A3,0.3460951739157471,4.828146232250686,quantitative,
+C1 Economic,C1b Cost to DC operators,A4,0.03146319762870429,15.644050340626867,quantitative,
+C2 Environmental,C2a GHG per MWh_IT,A1,0.2953376807213731,3.424008,quantitative,
+C2 Environmental,C2a GHG per MWh_IT,A2,0.3349280592450953,0.98616,quantitative,
+C2 Environmental,C2a GHG per MWh_IT,A3,0.33892307169740393,0.7401599999999999,quantitative,
+C2 Environmental,C2a GHG per MWh_IT,A4,0.03081118833612763,19.71269743554007,quantitative,
+C2 Environmental,C2b Electricity use,A1,0.2974626878300437,7.98,quantitative,
+C2 Environmental,C2b Electricity use,A2,0.33435917217596317,2.1,quantitative,
+C2 Environmental,C2b Electricity use,A3,0.33749662832782706,1.5999999999999999,quantitative,
+C2 Environmental,C2b Electricity use,A4,0.030681511666166096,50.49552264808362,quantitative,
+C2 Environmental,"C2c Marine discharge (brine, blowdown)",A1,0.03376043825793965,3.266666666666667,quantitative,
+C2 Environmental,"C2c Marine discharge (brine, blowdown)",A2,0.2483811970208417,1.4,quantitative,
+C2 Environmental,"C2c Marine discharge (brine, blowdown)",A3,0.34649354388388265,0.5466666666666666,quantitative,
+C2 Environmental,"C2c Marine discharge (brine, blowdown)",A4,0.37136482083733613,0.33034843205574904,quantitative,
+C3 Water security,C3a Water drawn from national supply,A1,0.055590027995108406,2.1,quantitative,
+C3 Water security,C3a Water drawn from national supply,A2,0.055590027995108406,2.1,quantitative,
+C3 Water security,C3a Water drawn from national supply,A3,0.27732963606359073,1.4600000000000002,quantitative,
+C3 Water security,C3a Water drawn from national supply,A4,0.6114903079461924,0.4955226480836236,quantitative,
+C3 Water security,C3b Weather resilience,A1,0.25000000000000006,,pairwise,0.0
+C3 Water security,C3b Weather resilience,A2,0.24999999999999997,,pairwise,0.0
+C3 Water security,C3b Weather resilience,A3,0.24999999999999997,,pairwise,0.0
+C3 Water security,C3b Weather resilience,A4,0.24999999999999997,,pairwise,0.0
+C3 Water security,C3c Dependence on used-water feedstock,A1,0.4686236927801559,,pairwise,0.021975107885486886
+C3 Water security,C3c Dependence on used-water feedstock,A2,0.06816992139883056,,pairwise,0.021975107885486886
+C3 Water security,C3c Dependence on used-water feedstock,A3,0.16641345146194506,,pairwise,0.021975107885486886
+C3 Water security,C3c Dependence on used-water feedstock,A4,0.29679293435906834,,pairwise,0.021975107885486886
+C4 Implementation,C4a Technical maturity in the tropics,A1,0.3636363636363637,,pairwise,0.0
+C4 Implementation,C4a Technical maturity in the tropics,A2,0.3636363636363636,,pairwise,0.0
+C4 Implementation,C4a Technical maturity in the tropics,A3,0.1818181818181818,,pairwise,0.0
+C4 Implementation,C4a Technical maturity in the tropics,A4,0.0909090909090909,,pairwise,0.0
+C4 Implementation,C4b Policy alignment & enforceability,A1,0.10911380053565635,,pairwise,0.003838111941075216
+C4 Implementation,C4b Policy alignment & enforceability,A2,0.1890604246016327,,pairwise,0.003838111941075216
+C4 Implementation,C4b Policy alignment & enforceability,A3,0.3509128874313555,,pairwise,0.003838111941075216
+C4 Implementation,C4b Policy alignment & enforceability,A4,0.3509128874313555,,pairwise,0.003838111941075216
+C4 Implementation,C4c Effect on other water users,A1,0.07779809949808662,,pairwise,0.017911414055513417
+C4 Implementation,C4c Effect on other water users,A2,0.12479256018786443,,pairwise,0.017911414055513417
+C4 Implementation,C4c Effect on other water users,A3,0.3055706012838396,,pairwise,0.017911414055513417
+C4 Implementation,C4c Effect on other water users,A4,0.4918387390302093,,pairwise,0.017911414055513417

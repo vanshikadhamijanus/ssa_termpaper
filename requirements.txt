@@ -1,7 +1,11 @@
+# Analysis
 pandas>=2.2
 numpy>=1.26
 scipy>=1.12
 matplotlib>=3.8
-numpy-financial>=1.0   # npf.npv / npf.pmt as used in the LCC lecture
-openpyxl>=3.1          # reading EMA Singapore Energy Statistics .xlsx (manual download)
+openpyxl>=3.1          # EMA Singapore Energy Statistics .xlsx; eco-costs tables
 pypdf>=4.0             # optional: text extraction from downloaded reports
+# Deliverables (paper, poster, video slides)
+python-docx>=1.1
+python-pptx>=1.0
+pillow>=10.0

@@ -1,0 +1,20 @@
+setting,value
+parameter_seed,29
+parameter_draws,10000
+active_triangular_inputs,32
+input_ids,util;ramp_years;wue_base;coc_current;coc_best;dpue_dry;sec_desal;sec_newater;sec_distrib;sec_hicoc;ghg_desal_nonenergy;ghg_newater_nonenergy;ef_grid_2035_bau;capex_desal;capex_newater;opex_desal_nonenergy;opex_newater_nonenergy;price_elec;capex_hicoc;life_plant;life_dc_cooling;disc_social;disc_private;carbon_tax_2030;price_elec_plant;swro_recovery;newater_recovery;blowdown_recovery;trim_threshold;liquid_heat_share;plant_cf;capex_dry_premium
+input_dependence,Independent triangular inputs; shared inputs use the same draw across strategies
+capacity_policy,Fixed IT capacity in each explicit scenario; no stochastic capacity weights
+parameter_AHP,W1 and base subweights/judgments fixed; score floor 0.1
+preference_seed,2901
+preference_draws_per_case,2000
+main_weight_distribution,"Dirichlet(1,1,1,1); broad simplex stress test, not elicited preferences"
+sub_and_qualitative_distribution,"Upper ratios times exp(N(0,0.35^2)); clipped to [1/9,9]; reciprocal lower triangle"
+matrix_acceptance_rule,CR <= 0.10; redraw the rejected matrix
+matrix_attempts,19587
+matrices_accepted,18000
+matrices_rejected,1587
+maximum_accepted_CR,0.09998433580468154
+score_floor_distribution,"Equal probability over 0.01, 0.10, 0.30"
+score_floor_draw_counts,"{0.01: 690, 0.1: 650, 0.3: 660}"
+interpretation,"Conditional frequencies under declared assumptions, not validated real-world probabilities"

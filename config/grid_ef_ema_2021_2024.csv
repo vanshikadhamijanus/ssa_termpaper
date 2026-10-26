@@ -1,5 +1,6 @@
 year,avg_opt_margin_kgco2_per_kwh,source,status
-2021,0.4090,EMA Singapore Energy Statistics Ch.2,updated
-2022,0.4170,EMA Singapore Energy Statistics Ch.2,updated
-2023,0.4120,EMA Singapore Energy Statistics 2025 Ch.2,verified
-2024,0.4020,EMA Singapore Energy Statistics 2025 Ch.2,verified
+2021,0.409,EMA Singapore Energy Statistics 2026 T2.3,verified
+2022,0.417,EMA Singapore Energy Statistics 2026 T2.3,verified
+2023,0.412,EMA Singapore Energy Statistics 2026 T2.3,verified
+2024,0.401,EMA Singapore Energy Statistics 2026 T2.3 (revised from 0.402),verified
+2025,0.404,EMA Singapore Energy Statistics 2026 T2.3,verified

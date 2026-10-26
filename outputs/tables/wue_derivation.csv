@@ -1,0 +1,10 @@
+item,value,basis
+Heat-balance evaporation only,1.536,3.6/L x heat-reject factor x evaporative fraction
+Heat-balance WUE at CoC 3,2.304,evaporation x CoC/(CoC-1)
+"PUB benchmark median (used for A1, A2)",2.1,"PUB Sectoral Water Efficiency Benchmark, Dec 2025"
+Calibrated WUE at CoC 8 (before recovery),1.6,heat-balance curve scaled to benchmark; not independent validation
+A3 WUE: high CoC + blowdown recovery,1.46,70% of remaining blowdown recovered; scaled to PUB median
+Share of hours needing adiabatic trim (A4),0.045,"Open-Meteo hourly data, Jurong Island 2015-2025, dry-bulb > 30 C"
+A4 WUE: dry rejection with wet assistance,0.496,80% of heat uses dry loop with trim; remainder uses towers; all strategies share liquid-cooled IT
+"LBNL (2024), other cooling configurations",0.1-0.3,p.47: airside economizer/adiabatic systems with air-cooled chillers; not validation of tropical A4
+IMDA (2021) median / Roadmap target,2.2 / 2.0,Green DC Roadmap 2024

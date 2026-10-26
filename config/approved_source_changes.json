@@ -1,0 +1,9 @@
+{
+  "DSS5202_Group29_TermPaper_Proposal.docx": {
+    "baseline_sha256": "8a5ea5e3f6d78a857ad08a6c15536b0eced235406fad3079a905f2cf21491a70",
+    "approved_sha256": "c3d238bed146d7429eaed1c6d114fa216505ce5663427b524a38f922eb5bfa4e",
+    "classification": "acknowledged_external_change",
+    "reason": "External Word author-ID correction observed during this session. The user explicitly confirmed Aditya's correct NUS ID as A0328872R. Word core properties identify Prateek Bansal as last modifier at 2026-10-25T11:34Z. The assistant did not edit or restore the proposal.",
+    "scope": "Only this exact before-and-after hash pair is acknowledged. The original pre-edit baseline is retained; downloaded sources and reference documents must still match their original hashes."
+  }
+}

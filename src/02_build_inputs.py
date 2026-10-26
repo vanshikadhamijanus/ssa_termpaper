@@ -8,6 +8,7 @@ Outputs
 grid_emission_factor.csv        EMA grid EF 2005-2024 (+ OWID carbon intensity for comparison)
 water_sales.csv                 National potable / NEWater sales, million m3/yr (long format)
 water_tariffs.csv               NEWater and industrial water tariffs + waterborne fee
+water_prices_current.csv        All-in operator prices used by the model, before GST
 electricity_tariff_annual.csv   SingStat electricity tariffs, cents/kWh (long format)
 electricity_gen_consumption.csv SingStat electricity generation & consumption, GWh (long format)
 weather_monthly.csv             Monthly dry-bulb / wet-bulb stats for the DC site (Jurong Island)
@@ -19,6 +20,8 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+from model import load_params, wue_by_strategy, STRATEGY_NAME
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
@@ -68,6 +71,13 @@ def build_water():
     tariffs = pd.concat(rows, ignore_index=True)
     tariffs["as_of"] = "2021 (data.gov.sg); add 2024-25 increases from PUB 2023 release"
     tariffs.to_csv(OUT / "water_tariffs.csv", index=False)
+    p = load_params()
+    pd.DataFrame([
+        dict(source="potable_non_domestic", all_in_sgd_per_m3=p["tariff_potable_nd"],
+             effective="April 2025", basis="PUB Annex A; tariff plus conservation and waterborne taxes; before GST"),
+        dict(source="newater", all_in_sgd_per_m3=p["tariff_newater"],
+             effective="April 2025", basis="PUB Annex B live verification 25 October 2026; 1.28 tariff + 0.13 conservation tax + 1.09 waterborne tax; before GST"),
+    ]).to_csv(OUT / "water_prices_current.csv", index=False)
     return sales
 
 
@@ -85,9 +95,8 @@ def build_weather():
                           "dew_point_2m": "tdp", "wet_bulb_temperature_2m": "twb"})
     w["year"], w["month"] = w["time"].dt.year, w["time"].dt.month
 
-    # Dry-cooler feasibility: a warm-water liquid loop with facility supply at
-    # e.g. 32-40 C and a dry-cooler approach of ~5 K can reject heat without
-    # evaporation whenever ambient dry-bulb < supply - approach.
+    # Weather-exposure proxy: thresholds reflect an assumed loop temperature
+    # and approach. These counts do not validate an installed cooler's capacity.
     for thr in (27, 30, 32, 35):
         w[f"hrs_tdb_gt_{thr}"] = (w["tdb"] > thr).astype(int)
 
@@ -128,13 +137,21 @@ def build_wue_check():
 def scale_check(sales, a):
     nat = sales[sales["year"] == sales["year"].max()]
     total = nat[nat["series"].isin(["Sales Of Potable Water", "Sales Of Newater"])]["million_m3"].sum()
-    it_mw = a.loc["cap_cfa2", "base"] * a.loc["mw_basis_it_share", "base"]
-    mwh = it_mw * a.loc["util", "base"] * 8760
-    lines = [f"National water sales {int(nat['year'].iloc[0])}: {total:.1f} million m3/yr (potable + NEWater)"]
-    for wid in ["wue_base", "wue_roadmap", "wue_hicoc", "wue_liquid_dry"]:
-        m3 = mwh * a.loc[wid, "base"]
-        lines.append(f"DC-CFA2 200 MW @ {wid}={a.loc[wid, 'base']}: {m3/1e6:.2f} million m3/yr "
+    p = a["base"].astype(float).to_dict()
+    it_mw = p["cap_cfa2"] * p["mw_basis_it_share"]
+    mwh = it_mw * p["util"] * 8760
+    wue, trim = wue_by_strategy(p)
+    lines = [f"National water sales {int(nat['year'].iloc[0])}: {total:.1f} million m3/yr (potable + NEWater)",
+             f"DC-CFA2 basis: {it_mw:g} MW IT; mature average utilisation {p['util']:.0%}; {mwh:,.0f} MWh IT/year.",
+             "Commissioning in 2027 and the 2028/2029 hypothetical tranches are team schedule assumptions, not verified opening dates.",
+             "WUE is benchmark-calibrated; weather trim is an exposure proxy, not a validated equipment simulation."]
+    for strategy, intensity in wue.items():
+        m3 = mwh * intensity
+        lines.append(f"{STRATEGY_NAME[strategy]}: WUE {intensity:.4f} m3/MWh IT; {m3/1e6:.3f} million m3/yr "
                      f"= {100*m3/1e6/total:.2f}% of national sales, {m3/365:,.0f} m3/day")
+    lines.extend([f"Exact archived-hour trim share at {p['trim_threshold']:g} C: {trim:.4%}.",
+                  f"Operator all-in water prices before GST: potable S${p['tariff_potable_nd']:.2f}/m3; NEWater S${p['tariff_newater']:.2f}/m3.",
+                  f"Electricity price proxies: social S${p['price_elec_plant']:.2f}/kWh; operator S${p['price_elec']:.2f}/kWh."])
     (OUT / "scale_check.txt").write_text("\n".join(lines) + "\n")
     return lines
 

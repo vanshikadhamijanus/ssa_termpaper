@@ -1,0 +1,9 @@
+question,parameter,base,breakeven,search_low,search_high,difference_at_low,difference_at_high,status
+A4 versus A2: dry-rejection delta PUE at equal resource cost,dpue_dry,0.05,-0.0030211046683168152,-0.03,0.15,-5.395779066336637,30.604220933663363,crossing in tested interval
+A4 versus A2: dry-rejection delta PUE at equal screening GHG,dpue_dry,0.05,0.0019339388204823726,-0.03,0.15,-12.44146256445993,57.68653743554007,crossing in tested interval
+A4 versus A3: dry-rejection delta PUE at equal resource cost,dpue_dry,0.05,-0.00030235450926878807,-0.03,0.15,-5.9395290981462425,30.06047090185376,crossing in tested interval
+A4 versus A3: dry-rejection delta PUE at equal screening GHG,dpue_dry,0.05,0.0013025219827000334,-0.03,0.15,-12.19546256445993,57.93253743554006,crossing in tested interval
+Desalination specific energy at equal GHG with NEWater,sec_desal,3.5,0.5203285420944558,0.1,5.0,-0.343896,3.665088000000001,crossing in tested interval
+NEWater tariff at A3 operator break-even against A2,tariff_newater,2.5,1.8408534878916947,0.2,6.0,1.0501462322506847,-2.6618537677493155,crossing in tested interval
+A3 recovery capex at resource-cost break-even against A2,capex_hicoc,60000.0,20195.63915996782,0.0,500000.0,-0.27588382789967036,6.554398336344295,crossing in tested interval
+A4 dry-rejection capex at operator break-even against A2,capex_dry_premium,100000.0,,0.0,1000000.0,8.48880662020906,27.541243824387138,no crossing in tested interval

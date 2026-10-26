@@ -1,0 +1,10 @@
+matrix,note
+C1 Economic,Society and operator costs weighted equally: the price-signal gap is itself a finding.
+C2 Environmental,"Team scenario: GHG has the greatest weight. Electricity and discharge volume are overlapping/incomplete proxies, removed in separate sensitivity cases; discharge volume is not ecological damage."
+C3 Water security,Volume drawn is PUB's planning variable; resilience and feedstock dependence are second-order.
+C4 Implementation,Maturity and policy fit matter equally for a 2027 start; distributional effects slightly less.
+C3b Weather resilience,Neutral team judgment: all options must meet the same cooling reliability requirement. Both supply taps are weather-resilient. Weather effects enter WUE and the energy assumptions; there are no site reliability data to justify a further advantage.
+C3c Dependence on used-water feedstock,"Team judgment for the NEWater-residual base case: desal needs no used-water feedstock; A2 uses most NEWater; A3/A4 use less. These ratios are illustrative, not measured scarcity or stakeholder preferences. They overlap with withdrawal and are stress-tested."
+C4a Technical maturity in the tropics,"Team judgment on heat rejection: conventional towers have the longest local operating record; recovery adds treatment complexity; warm-water dry/adiabatic rejection has less public Singapore operating evidence. Liquid cooling is common to all alternatives, so its adoption and the SS 726 publication date do not distinguish the options."
+C4b Policy alignment & enforceability,Illustrative team ratios: NEWater and water reduction align with published efficiency objectives. A3 and A4 receive equal preference; neither receives an extra credit for liquid cooling because it is common to all. No regulator supplied these weights.
+C4c Effect on other water users,Illustrative team judgment: reducing withdrawals leaves more supply available. A tariff increase caused by this tranche has not been estimated. This leaf overlaps with withdrawal/cost and is removed with other proxies in a sensitivity case.

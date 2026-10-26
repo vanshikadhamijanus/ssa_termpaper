@@ -1,0 +1,45 @@
+case,strategy,source,water_m3_per_mwh,social_cost,operator_cost,gwp,accounting
+"Base: grid electricity, no discharge resource cost",A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,full grid
+"Base: grid electricity, no discharge resource cost",A2,newater,2.1,0.9971188102957939,5.25,0.98616,full grid
+"Base: grid electricity, no discharge resource cost",A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,full grid
+"Base: grid electricity, no discharge resource cost",A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,19.71269743554007,full grid
+Residual desalination for A3/A4,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,full grid
+Residual desalination for A3/A4,A2,newater,2.1,0.9971188102957939,5.25,0.98616,full grid
+Residual desalination for A3/A4,A3,desal,1.4600000000000002,2.657609831543074,5.9085462322506865,2.4350447999999996,full grid
+Residual desalination for A3/A4,A4,desal,0.4955226480836236,11.980360601705515,16.01073710020875,20.287939767247387,full grid
+Discharge resource cost 0.00 SGD/m3,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,full grid
+Discharge resource cost 0.00 SGD/m3,A2,newater,2.1,0.9971188102957939,5.25,0.98616,full grid
+Discharge resource cost 0.00 SGD/m3,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,full grid
+Discharge resource cost 0.00 SGD/m3,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,19.71269743554007,full grid
+Discharge resource cost 0.30 SGD/m3,A1,desal,2.1,2.8133900964732708,6.804000000000001,3.424008,full grid
+Discharge resource cost 0.30 SGD/m3,A2,newater,2.1,1.207118810295794,5.25,0.98616,full grid
+Discharge resource cost 0.30 SGD/m3,A3,newater,1.4600000000000002,1.5588688421053993,4.828146232250686,0.7401599999999999,full grid
+Discharge resource cost 0.30 SGD/m3,A4,newater,0.4955226480836236,11.650892008767519,15.644050340626867,19.71269743554007,full grid
+Discharge resource cost 1.09 SGD/m3,A1,desal,2.1,3.366390096473271,6.804000000000001,3.424008,full grid
+Discharge resource cost 1.09 SGD/m3,A2,newater,2.1,1.7601188102957939,5.25,0.98616,full grid
+Discharge resource cost 1.09 SGD/m3,A3,newater,1.4600000000000002,1.6062688421053994,4.828146232250686,0.7401599999999999,full grid
+Discharge resource cost 1.09 SGD/m3,A4,newater,0.4955226480836236,11.78137963942954,15.644050340626867,19.71269743554007,full grid
+DC low-carbon share 0.5; intensity 0.05 kgCO2e/kWh,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.05 kgCO2e/kWh,A2,newater,2.1,0.9971188102957939,5.25,0.98616,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.05 kgCO2e/kWh,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.05 kgCO2e/kWh,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,11.22269743554007,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.15 kgCO2e/kWh,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.15 kgCO2e/kWh,A2,newater,2.1,0.9971188102957939,5.25,0.98616,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.15 kgCO2e/kWh,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.15 kgCO2e/kWh,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,13.722697435540068,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.30 kgCO2e/kWh,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.30 kgCO2e/kWh,A2,newater,2.1,0.9971188102957939,5.25,0.98616,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.30 kgCO2e/kWh,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,illustrative blended intensity
+DC low-carbon share 0.5; intensity 0.30 kgCO2e/kWh,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,17.472697435540066,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.05 kgCO2e/kWh,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.05 kgCO2e/kWh,A2,newater,2.1,0.9971188102957939,5.25,0.98616,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.05 kgCO2e/kWh,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.05 kgCO2e/kWh,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,6.12869743554007,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.15 kgCO2e/kWh,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.15 kgCO2e/kWh,A2,newater,2.1,0.9971188102957939,5.25,0.98616,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.15 kgCO2e/kWh,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.15 kgCO2e/kWh,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,10.128697435540069,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.30 kgCO2e/kWh,A1,desal,2.1,2.603390096473271,6.804000000000001,3.424008,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.30 kgCO2e/kWh,A2,newater,2.1,0.9971188102957939,5.25,0.98616,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.30 kgCO2e/kWh,A3,newater,1.4600000000000002,1.5408688421053993,4.828146232250686,0.7401599999999999,illustrative blended intensity
+DC low-carbon share 0.8; intensity 0.30 kgCO2e/kWh,A4,newater,0.4955226480836236,11.601339743959157,15.644050340626867,16.12869743554007,illustrative blended intensity

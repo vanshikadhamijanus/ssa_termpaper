@@ -15,7 +15,8 @@ year,avg_opt_margin_kgco2_per_kwh,build_margin_kgco2_per_kwh,source,owid_lifecyc
 2018,0.4206,0.4031,data.gov.sg (EMA),0.50708
 2019,0.4085,0.4013,data.gov.sg (EMA),0.5061
 2020,0.408,0.4022,data.gov.sg (EMA),0.50462
-2021,0.4057,,EMA Singapore Energy Statistics Ch.2,0.50618
-2022,0.4168,,EMA Singapore Energy Statistics Ch.2,0.50422
-2023,0.412,,EMA Singapore Energy Statistics 2025 Ch.2,0.50087
-2024,0.402,,EMA Singapore Energy Statistics 2025 Ch.2,0.49874
+2021,0.409,,EMA Singapore Energy Statistics 2026 T2.3,0.50618
+2022,0.417,,EMA Singapore Energy Statistics 2026 T2.3,0.50422
+2023,0.412,,EMA Singapore Energy Statistics 2026 T2.3,0.50087
+2024,0.401,,EMA Singapore Energy Statistics 2026 T2.3 (revised from 0.402),0.49874
+2025,0.404,,EMA Singapore Energy Statistics 2026 T2.3,0.49709
