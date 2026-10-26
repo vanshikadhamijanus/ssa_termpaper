@@ -1,4 +1,46 @@
+# Local environments and secrets
 .env
+.env.*
+!.env.example
+!.env.sample
 .venv/
-.DS_Store
+venv/
+node_modules/
 
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# macOS metadata and temporary Office files
+.DS_Store
+._*
+~$*
+.~lock.*#
+
+# Local document and chart build intermediates
+.build/
+.chart-*/
+
+# Submission archives duplicate the individual deliverables.
+/deliverables/*.zip
+
+# Keep result tables, figures and final documents versionable; omit run logs.
+/outputs/*.log
+/outputs/*_log.txt
+
+# Local validation receipts
+/outputs/validation/*
+
+# This retained baseline is an input to source-integrity validation.
+!/outputs/validation/protected_sources.json
+
+# Resolved report; commit report_template.md and references.md instead.
+/paper/paper.md
