@@ -1,0 +1,7 @@
+component,kind,model_value,reference,difference,reading
+"Wet-tower water use (A1, A2)",Calibration,2.30 m3/MWh from the heat balance before scaling,PUB sector benchmark 2.10 m3/MWh,+10% before scaling; scaled to the benchmark,"The benchmark sets the curve, so it cannot also validate it"
+Levelised cost of desalinated water,Independent context,S$1.18/m3 bottom-up,S$1.08/m3 Keppel Marina East first-year price,+9%,"Different year, financing and scope; agreement in magnitude only"
+Levelised cost of NEWater,Independent context,S$0.41/m3 bottom-up,S$0.30/m3 Changi and Sembcorp first-year prices,+38%,"Model is higher; the gap is reported, not corrected"
+Hourly weather for the A4 trim share,"Independent record, different location","Open-Meteo gridded record, Jurong Island","SingStat monthly series, Changi climate station",-1.37 degC monthly midrange; gridded record is cooler,Cross-location discrepancy; used as a hypothetical warming case for A4
+Grid emission factor,"Input, not validated","0.404 kg CO2/kWh in 2025, linear to 0.38 in 2035","EMA Singapore Energy Statistics 2026, Table 2.3",2025 value used directly; 2035 endpoint is a team assumption,No back-test is possible for a future path
+Arithmetic and AHP mathematics,Internal check,Saved tables against fresh model calls; 17 unit tests run 2026-11-07,Independent eigenvector calculation; mass and energy balances,Maximum absolute difference 0 (saved tables versus fresh calls); all tests pass,"Shows consistency, not the truth of any assumption"

@@ -1,0 +1,6 @@
+quantity,value,unit
+A3 operator saving against A2,0.4218537677493144,SGD per MWh IT
+Annual IT energy per MW at base utilisation,6132.0,MWh per MW-year
+Omitted operating cost that removes the saving,2586.8073038387956,SGD per MW IT-year
+Same allowance as a share of the assumed recovery capex,0.04311345506397993,fraction per year
+A3 resource-cost premium against A2 (society already pays more),0.5437500318096055,SGD per MWh IT

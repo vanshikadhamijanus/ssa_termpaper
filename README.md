@@ -19,15 +19,13 @@ dry-cooler performance and AHP judgments still need site or stakeholder evidence
 
 | File in `deliverables/` | Purpose |
 |---|---|
-| `DSS5202_Group29_TermPaper.docx` and `.pdf` | Report, references and appendices |
+| `DSS5202_Group29_TermPaper.docx` and `.pdf` | Final report (7 November build), references and supplementary material |
 | `DSS5202_Group29_Poster.pptx` | One-page poster using the module template |
-| `DSS5202_Group29_Poster_preview.pdf` | Poster preview |
-| `DSS5202_Group29_Video_Slides.pptx` and `_preview.pdf` | Ten slides with speaker notes |
-| `DSS5202_Group29_Video_Script.md` | Three-speaker script with timing and recording instructions |
+| `DSS5202_Group29_Video_Slides.pptx` | Seventeen slides for the ten-minute recording, built from the report figures; notes carry a suggested timing per slide |
 | `DSS5202_Group29_Submission.zip` | Prepared submission files for the team's final review |
 
-The team still needs to record the ten-minute MP4 and add it to the submission
-ZIP. The slides and script do not replace the recording. The
+The team still needs to record the ten-minute MP4 in their own voices and add
+it to `deliverables/` before packaging. The slides do not replace the recording. The
 [module brief](https://klpoh.github.io/courses/dss5202/termpaper.html) requires one
 ZIP per team containing the report, code, poster and video, due 13 November 2026.
 
@@ -41,9 +39,15 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python src/run_all.py
+python src/12_validation_extras.py
 python -m unittest discover -s tests
 python src/validate_project.py
 ```
+
+`12_validation_extras.py` adds the checks used in the final report. It compares
+the Open-Meteo record with the SingStat station series, reruns A4 under warmer
+conditions, tests the AHP scoring rule, separates calibration from validation
+in one table, and draws the tornado figure with the five largest drivers.
 
 `run_all.py` runs stages 02–08 and rewrites processed data, result tables and
 figures. It includes 10,000 parameter draws and 2,000 preference trials.
@@ -69,48 +73,32 @@ proposal, style-reference PDF and original poster template.
 
 ## Rebuild the deliverables
 
-```bash
-python src/build_deliverables.py
-```
-
-This rebuilds the report, PDF, presentations and submission ZIP from current
-outputs. Use `--skip-presentations` to rebuild the report and package while
-retaining the existing slides. To run individual stages:
+Everything below runs in the Python environment alone:
 
 ```bash
-python src/09_build_paper.py
-python src/10_build_poster.py
-python src/11_build_video_slides.py
-python src/package_submission.py
+python src/13_build_paper_final.py      # report_final.md + outputs -> deliverables/DSS5202_Group29_TermPaper.docx
+python src/15_build_video_slides.py     # report figures + outputs -> deliverables/DSS5202_Group29_Video_Slides.pptx
+python src/14_edit_presentations.py     # re-applies the hand edits to the pre-built poster
+python src/validate_deliverables.py     # tables, citations, poster and slide checks
+python src/package_submission.py        # submission ZIP
 ```
 
-The report combines `paper/report_template.md` with current result tables.
-Stage 09 writes the Word document. The full build command also renders its PDF.
-Presentation builders read the same outputs and create editable PowerPoint
-tables and charts, PDF previews, and the video script. Review the rendered pages
-after any content change. Packaging excludes the proposal, supplied style
-reference and private `.build/` files.
+`13_build_paper_final.py` reads `report_final.md` in the project root, fills every number and
+generated table from `outputs/tables` through `src/report_data_final.py`, and
+writes the Word file. The PDF is not produced by the Python build. After
+rebuilding the Word file, export it with Microsoft Word (File > Save As > PDF,
+or on macOS the AppleScript `save as active document file name ... file format
+format PDF`) and save it as `deliverables/DSS5202_Group29_TermPaper.pdf`;
+`validate_deliverables.py` checks that the PDF is the final build. Figure 1 is drawn by `16_draw_options_figure.py`. Figures 1, 2, 3 and 6 are
+diagrams kept as image files in `outputs/figures/fig_report_*.png`; the script
+that drew them was not retained.
 
-The full build also runs `src/validate_deliverables.py`, which compares report
-tables and presentation values with the saved outputs and checks PDF page counts.
-It records the results in `outputs/validation/deliverable_checks.json`.
-
-The PowerPoint builders require the Codex primary runtime with
-`@oai/artifact-tool`, bundled LibreOffice, and the installed presentation skill's
-validation helpers. Python requirements alone do not install these tools. The
-default runtime location is `~/.cache/codex-runtimes/codex-primary-runtime`.
-If it is elsewhere, set its root before running the builders:
-
-```bash
-export DSS5202_PRESENTATION_RUNTIME="/path/to/codex-primary-runtime"
-```
-
-The full build command also uses the bundled Python and the documents skill's
-`render_docx.py`. It searches the installed skills automatically. If the renderer
-is elsewhere, set `DSS5202_DOCX_RENDERER` to that script's full path.
-
-Build intermediates and private presentation validation reports go in `.build/`.
-The supplied PPTX and PDF files can be opened without this generation runtime.
+The poster was generated on 25 October with a presentation toolchain that is
+not part of this environment and is supplied as an editable PowerPoint file on
+the module template. Every later hand edit is recorded in
+`src/14_edit_presentations.py`, which only needs python-pptx. Packaging
+excludes the proposal, supplied style reference, Office lock files and private
+`.build/` files, and reruns the numerical validation first.
 
 ## Project files
 
@@ -121,7 +109,8 @@ The supplied PPTX and PDF files can be opened without this generation runtime.
 | `data/processed/` | Derived input tables |
 | `src/` | Analysis code and document builders, with validation checks |
 | `outputs/tables/`, `outputs/figures/` | Results used in the deliverables |
-| `paper/` | Report source and references, plus the poster template |
+| `report_final.md`, `references.md` | Report source and APA reference list (project root) |
+| `assets/` | NUS logo used on the report title page |
 | `PROJECT_PLAN.md` | Current design decisions and remaining work |
 
 The LCA covers water supply and incremental heat rejection. It omits common IT

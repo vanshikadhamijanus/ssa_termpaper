@@ -60,8 +60,17 @@ def source_inventory(protected, approved_changes=None):
         acknowledged = bool(baseline_hash and approved.get("baseline_sha256") == baseline_hash
                             and approved.get("approved_sha256") == current_hash
                             and current_hash != baseline_hash)
+        # A deliberate removal of a non-input file (for example a style
+        # reference) is acknowledged only with its exact baseline hash and a
+        # recorded reason; the file must actually be absent.
+        removed = bool(baseline_hash and not exists and approved.get("removed") is True
+                       and approved.get("baseline_sha256") == baseline_hash)
+        not_distributed = bool(baseline_hash and not exists and approved.get("not_distributed") is True
+                               and approved.get("baseline_sha256") == baseline_hash)
         preservation = ("unchanged" if baseline_hash == current_hash and baseline_hash
                         else "acknowledged_external_change" if acknowledged
+                        else "acknowledged_removal" if removed
+                        else "not_distributed_absent" if not_distributed
                         else "unapproved_change_or_missing" if baseline_hash
                         else "not_in_pre_edit_snapshot")
         records.append(dict(file=relative, bytes=path.stat().st_size if exists else 0,
@@ -70,7 +79,7 @@ def source_inventory(protected, approved_changes=None):
                             protected=bool(baseline_hash), baseline_sha256=baseline_hash,
                             unchanged=(current_hash == baseline_hash) if baseline_hash else "not in pre-edit snapshot",
                             preservation_status=preservation,
-                            acknowledged_change_reason=approved.get("reason", "") if acknowledged else "",
+                            acknowledged_change_reason=approved.get("reason", "") if (acknowledged or removed or not_distributed) else "",
                             exists=exists))
     return pd.DataFrame(records)
 
@@ -139,8 +148,10 @@ def main():
         if len(bad):
             raise AssertionError(f"Protected source files changed or missing: {bad.file.tolist()}")
         acknowledged = selected[selected.preservation_status == "acknowledged_external_change"]
+        removed = selected[selected.preservation_status == "acknowledged_removal"]
         return {"protected_files_unchanged": int((selected.preservation_status == "unchanged").sum()),
                 "acknowledged_external_changes": acknowledged[["file", "baseline_sha256", "sha256", "acknowledged_change_reason"]].to_dict("records"),
+                "acknowledged_removals": removed[["file", "baseline_sha256", "acknowledged_change_reason"]].to_dict("records"),
                 "original_baseline_retained": True, "inventory_files": len(inventory),
                 "unmapped_exact_urls": int((inventory.registry_url == "").sum()),
                 "scope": "Byte preservation only; a matching hash does not verify source claims"}

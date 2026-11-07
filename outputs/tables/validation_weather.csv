@@ -1,0 +1,9 @@
+metric,value,note
+months_compared,132,2015-2025 months present in both series
+bias_midrange_degC,-1.368707756293268,"Open-Meteo minus station, monthly mean of daily (max+min)/2"
+rmse_midrange_degC,1.4179414313886838,root mean square of the monthly differences
+max_abs_diff_degC,2.2516666666666687,largest monthly difference
+correlation,0.8422921965692008,month-to-month agreement
+openmeteo_mean_daily_max_degC,29.37257144783285,"mean of daily maxima, Open-Meteo"
+station_mean_daily_max_degC,31.77803030303031,"mean of daily maxima, SingStat station"
+station_note,"SingStat monthly climate series (data.gov.sg d_1744ca68dc7ed37221b17c441042405e). Dataset footnote: 'With effect from January 1984, data are from designated climate station located at Changi, Singapore.'","cross-location comparison (Changi station against a Jurong Island grid cell), not a measured Jurong bias"

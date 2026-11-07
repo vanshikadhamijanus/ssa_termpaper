@@ -1,4 +1,12 @@
-"""Build the report from reviewed prose and current numerical outputs."""
+"""Build the final report (November 2026) from report_final.md (project root)
+and the current numerical outputs.
+
+Reads report_final.md and report_data_final.context(); captions sit above
+tables and figures (APA 7); bullet paragraphs use the List Bullet style;
+literal pipe tables in the markdown are rendered as well as generated ones. Writes
+deliverables/DSS5202_Group29_TermPaper.docx and .build/report/paper_final_resolved.md
+(the resolved text, not versioned).
+"""
 from pathlib import Path
 import json
 import re
@@ -10,14 +18,15 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from PIL import Image
 
-from report_data import context
+from report_data_final import context
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'deliverables'
+SOURCE = ROOT / 'report_final.md'
+RESOLVED = ROOT / '.build/report/paper_final_resolved.md'
 NAVY = '1B2B4B'
 TEAL = '137D7C'
 GREY = '667085'
-
 
 def shade(element, colour):
     node = OxmlElement('w:shd')
@@ -26,6 +35,7 @@ def shade(element, colour):
 
 
 def inline(paragraph, text):
+    """Bold, italic and code spans from the markdown source."""
     for piece in re.split(r'(\*\*.+?\*\*|\*[^*]+\*|`[^`]+`)', text):
         run = paragraph.add_run(piece.strip('*`') if piece.startswith(('*', '`')) else piece)
         if piece.startswith('**'):
@@ -37,22 +47,21 @@ def inline(paragraph, text):
             run.font.size = Pt(9)
 
 
-def make_table(doc, lines):
+def page_field(paragraph, name):
+    field = OxmlElement('w:fldSimple')
+    field.set(qn('w:instr'), name)
+    paragraph._p.append(field)
+
+
+def make_table(doc, lines, total_cm=17.3):
+    """Shaded header, banded rows, column widths from the longest entry in
+    each column so long first-column labels fit."""
     rows = [[v.strip() for v in line.strip('|').split('|')] for line in lines]
     rows = [r for r in rows if not all(re.fullmatch(r':?-+:?', c) for c in r)]
     cols = len(rows[0])
-    widths = {2: [6.0, 11.3], 3: [7.1, 5.8, 4.4],
-              4: [7.0, 2.2, 3.7, 4.4], 5: [5.1, 3.05, 3.05, 3.05, 3.05]}.get(cols, [17.3/cols]*cols)
-    if rows[0][0] == 'Question':
-        widths = [5.6, 5.7, 6.0]
-    elif rows[0][0] == 'ID':
-        widths = [1.2, 11.4, 4.7]
-    elif rows[0][0] == 'Option' and cols == 3:
-        widths = [1.7, 7.8, 7.8]
-    elif rows[0][0] == 'Option':
-        widths = [1.7, 3.9, 3.9, 3.9, 3.9]
-    elif rows[0][0] == 'Subcriterion':
-        widths = [13.0, 4.3]
+    longest = [max(len(r[j]) for r in rows) for j in range(cols)]
+    weights = [min(max(l, 4), 60) ** 0.75 for l in longest]
+    widths = [total_cm * w / sum(weights) for w in weights]
     table = doc.add_table(rows=0, cols=cols)
     table.autofit = False
     for col, width in zip(table.columns, widths):
@@ -69,7 +78,7 @@ def make_table(doc, lines):
             shade(tc, NAVY if i == 0 else ('F0F3F6' if i % 2 else 'FFFFFF'))
             margins = OxmlElement('w:tcMar')
             for side in ['top', 'left', 'bottom', 'right']:
-                el = OxmlElement('w:'+side)
+                el = OxmlElement('w:' + side)
                 el.set(qn('w:w'), '65')
                 el.set(qn('w:type'), 'dxa')
                 margins.append(el)
@@ -78,7 +87,7 @@ def make_table(doc, lines):
             para.paragraph_format.space_after = Pt(1.5)
             para.paragraph_format.space_before = Pt(1.5)
             para.paragraph_format.line_spacing = 1.05
-            if len(rows) <= 7 or i in (0, len(rows)-1):
+            if len(rows) <= 7 or i in (0, len(rows) - 1):
                 para.paragraph_format.keep_with_next = True
             inline(para, value)
             for run in para.runs:
@@ -88,30 +97,26 @@ def make_table(doc, lines):
                     run.font.color.rgb = RGBColor.from_string('FFFFFF')
 
 
-def page_field(paragraph, name):
-    field = OxmlElement('w:fldSimple')
-    field.set(qn('w:instr'), name)
-    paragraph._p.append(field)
-
-
 def build():
     OUT.mkdir(exist_ok=True)
     values = context()
-    source = (ROOT/'paper/report_template.md').read_text()
-    missing = set(re.findall(r'\{\{(\w+)\}\}', source))-values.keys()
+    source = SOURCE.read_text()
+    missing = set(re.findall(r'\{\{(\w+)\}\}', source)) - values.keys()
     if missing:
         raise ValueError(f'Missing report fields: {sorted(missing)}')
     source = re.sub(r'\{\{(\w+)\}\}', lambda m: values[m[1]], source)
-    (ROOT/'paper/paper.md').write_text(source)
-    (ROOT/'outputs/tables/report_values.json').write_text(json.dumps({k:v for k,v in values.items() if not k.startswith('table_') and k != 'references'}, indent=2)+'\n')
-    meta = {}
-    body = []
+    RESOLVED.parent.mkdir(parents=True, exist_ok=True)
+    RESOLVED.write_text(source)
+    (ROOT / 'outputs/tables/report_values_final.json').write_text(
+        json.dumps({k: v for k, v in values.items() if not k.startswith('table_') and k != 'references'}, indent=2) + '\n')
+    meta, body = {}, []
     for line in source.splitlines():
         if line.startswith('%'):
             key, value = line[1:].split(' ', 1)
             meta[key] = value
         else:
             body.append(line)
+
     doc = Document()
     section = doc.sections[0]
     section.page_width, section.page_height = Cm(21), Cm(29.7)
@@ -138,7 +143,12 @@ def build():
     cap.font.italic = True
     cap.font.bold = False
     cap.font.color.rgb = RGBColor.from_string(GREY)
-    cap.paragraph_format.space_after = Pt(10)
+    cap.paragraph_format.space_before = Pt(6)
+    cap.paragraph_format.space_after = Pt(4)
+    cap.paragraph_format.keep_with_next = True
+    bullet = doc.styles['List Bullet']
+    bullet.font.name, bullet.font.size = 'Arial', Pt(10.5)
+    bullet.paragraph_format.space_after = Pt(5)
     head = section.header.paragraphs[0]
     head.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     r = head.add_run('The Thirsty Cloud  |  DSS5202 · Group 29')
@@ -159,10 +169,11 @@ def build():
     doc.core_properties.title = meta['title']
     doc.core_properties.subject = meta['subtitle']
     doc.core_properties.author = 'Group 29: Aditya Vijindra Pandhari; Apurwa Kumari; Vanshika Dhamija'
+
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p.paragraph_format.space_before = Pt(18)
-    p.add_run().add_picture(str(ROOT/'paper/assets/nus_logo.jpg'), width=Cm(2.4))
+    p.add_run().add_picture(str(ROOT / 'assets/nus_logo.jpg'), width=Cm(2.4))
     for key, sty in [('title', 'Title'), ('subtitle', 'Subtitle')]:
         p = doc.add_paragraph(meta[key], sty)
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -183,8 +194,9 @@ def build():
     p.add_run('ABSTRACT\n').bold = True
     p.add_run(meta['abstract'])
     doc.add_page_break()
+
     i = 0
-    conclusion = False
+    in_references = False
     while i < len(body):
         line = body[i].strip()
         if not line:
@@ -192,19 +204,17 @@ def build():
             continue
         if line.startswith('# '):
             title = line[2:]
-            conclusion = title.startswith('11. Conclusion')
-            if title == 'References' or title.startswith('Appendix A.'):
-                doc.add_page_break()
+            in_references = title == 'References'
             p = doc.add_paragraph(title, 'Heading 1')
+            if title in ('References', 'Supplementary material'):
+                p.paragraph_format.page_break_before = True
             border = OxmlElement('w:pBdr')
             bottom = OxmlElement('w:bottom')
-            for k,v in [('val','single'),('sz','8'),('space','5'),('color',TEAL)]:
-                bottom.set(qn('w:'+k),v)
+            for k, v in [('val', 'single'), ('sz', '8'), ('space', '5'), ('color', TEAL)]:
+                bottom.set(qn('w:' + k), v)
             border.append(bottom)
             p._p.get_or_add_pPr().append(border)
         elif line.startswith('## '):
-            if line == '## Reproducibility':
-                conclusion = False
             doc.add_paragraph(line[3:], 'Heading 2')
         elif line.startswith('|'):
             lines = []
@@ -212,36 +222,40 @@ def build():
                 lines.append(body[i].strip())
                 i += 1
             make_table(doc, lines)
+            doc.add_paragraph().paragraph_format.space_after = Pt(2)
             continue
         elif line.startswith('!['):
             match = re.fullmatch(r'!\[(.*?)\]\(([^)]+)\)', line)
             if not match:
                 raise ValueError(f'Invalid figure: {line}')
             caption, filename = match.groups()
-            path = ROOT/'outputs/figures'/filename
+            path = ROOT / 'outputs/figures' / filename
             with Image.open(path) as image:
                 w, h = image.size
-            width = min(17.3, (14.0 if 'hierarchy' in filename else 10.5)*w/h)
+            width = min(17.3, (14.0 if 'hierarchy' in filename else 10.5) * w / h)
+            c = doc.add_paragraph(caption, 'Caption')
+            c.paragraph_format.keep_with_next = True
             p = doc.add_paragraph()
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p.paragraph_format.keep_with_next = True
-            p.paragraph_format.space_after = Pt(3)
+            p.paragraph_format.space_after = Pt(8)
             p.add_run().add_picture(str(path), width=Cm(width))
-            doc.add_paragraph(caption, 'Caption')
-        elif re.match(r'Table [AB]?\d+\.', line):
+        elif re.match(r'Table S?\d+\.', line):
             doc.add_paragraph(line, 'Caption')
+        elif line.startswith('- '):
+            p = doc.add_paragraph(style='List Bullet')
+            inline(p, line[2:])
         else:
             p = doc.add_paragraph()
             inline(p, line)
-            if conclusion and not line.startswith('Generative AI assistance:'):
-                p.paragraph_format.keep_with_next = True
-            if line.startswith('The analysis reads config/assumptions.csv'):
-                p.paragraph_format.keep_together = True
-            if line.startswith('http') or ('https://' in line and 'References' in source):
+            if in_references:
+                p.paragraph_format.left_indent = Cm(1.0)
+                p.paragraph_format.first_line_indent = Cm(-1.0)
+                p.paragraph_format.space_after = Pt(4)
+                p.paragraph_format.line_spacing = 1.05
                 for run in p.runs:
                     run.font.size = Pt(9.5)
         i += 1
-    dest = OUT/'DSS5202_Group29_TermPaper.docx'
+    dest = OUT / 'DSS5202_Group29_TermPaper.docx'
     doc.save(dest)
     print(dest)
 

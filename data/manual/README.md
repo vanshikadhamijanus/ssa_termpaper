@@ -4,7 +4,7 @@ These files were obtained separately from the automated downloads. Keep their
 original bytes. Record derived values in `config/assumptions.csv` or a processed
 table, with the source location and units.
 
-The inventory below reflects files present on 25 October 2026. Presence does not
+The inventory below reflects files present on 25 October 2026. The four operator reports, the Keppel Infrastructure Trust report, the water-reuse LCA review and the PUB annual report are context only: no number in the register, the code or the paper is read from them, so they are kept locally and are not in git or the submission ZIP. Presence does not
 mean every parameter attributed to a report has been verified. The assumption
 register and `config/evidence_register.json` distinguish verified claims from
 proxies, team judgments and unresolved inputs.

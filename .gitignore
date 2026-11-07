@@ -42,5 +42,17 @@ htmlcov/
 # This retained baseline is an input to source-integrity validation.
 !/outputs/validation/protected_sources.json
 
-# Resolved report; commit report_template.md and references.md instead.
-/paper/paper.md
+# Study notes and local reading material, not deliverables
+/notes/
+Thirsty_Cloud_Beginners_Handbook.md
+Thirsty_Cloud_Beginners_Handbook.pdf
+
+# Third-party reports kept locally for context; they feed no number in the
+# model or the paper and are not distributed (see data/manual/README.md)
+/data/manual/operator_digitalrealty_2024.pdf
+/data/manual/operator_equinix_2024.pdf
+/data/manual/operator_keppeldc_2024.pdf
+/data/manual/operator_sttgdc_2024.pdf
+/data/manual/kit_ar_2024.pdf
+/data/manual/lit_santos_2026.pdf
+/data/manual/pub_annual_report_2026.pdf

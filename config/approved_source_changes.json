@@ -3,7 +3,64 @@
     "baseline_sha256": "8a5ea5e3f6d78a857ad08a6c15536b0eced235406fad3079a905f2cf21491a70",
     "approved_sha256": "c3d238bed146d7429eaed1c6d114fa216505ce5663427b524a38f922eb5bfa4e",
     "classification": "acknowledged_external_change",
-    "reason": "External Word author-ID correction observed during this session. The user explicitly confirmed Aditya's correct NUS ID as A0328872R. Word core properties identify Prateek Bansal as last modifier at 2026-10-25T11:34Z. The assistant did not edit or restore the proposal.",
-    "scope": "Only this exact before-and-after hash pair is acknowledged. The original pre-edit baseline is retained; downloaded sources and reference documents must still match their original hashes."
+    "reason": "External Word author-ID correction observed during this session. The user explicitly confirmed Aditya's correct NUS ID as A0328872R. Word core properties identify Prateek Bansal as last modifier at 2026-10-25T11:34Z. The assistant did not edit or restore the proposal. On 7 November 2026 the team removed the proposal files from the working tree; the file remains in git history and was never part of the submission ZIP, so its absence is accepted.",
+    "scope": "Only this exact before-and-after hash pair is acknowledged. The original pre-edit baseline is retained; downloaded sources and reference documents must still match their original hashes.",
+    "not_distributed": true
+  },
+  "DSA5208_Project2_Report.pdf": {
+    "baseline_sha256": "9d0529a277eb512e11f4579ed4f54deaca3a0a7a36c34e213017e37e547eb45d",
+    "removed": true,
+    "classification": "acknowledged_removal",
+    "reason": "Style-reference report from a different module (DSA5208). It is not a model input, was never tracked in git and was never part of the submission ZIP. It was already absent from the workspace when the 7 November 2026 review began. Recorded so the hash check distinguishes this deliberate absence from an unapproved change. Team to confirm.",
+    "scope": "Only this exact baseline hash is acknowledged as removed. Restoring the file with the same hash returns it to the unchanged state."
+  },
+  "data/manual/operator_digitalrealty_2024.pdf": {
+    "baseline_sha256": "31685be7da5e29c16a7efda8fffe7f581c1449d3e0ca096d97687ec6ab0a972c",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
+  },
+  "data/manual/operator_equinix_2024.pdf": {
+    "baseline_sha256": "59d9b2ca7b9857db229fe9ae4f045f3f917a3e33813a57f41630cefbe20c6f08",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
+  },
+  "data/manual/operator_keppeldc_2024.pdf": {
+    "baseline_sha256": "3f5f0c7a3721b60a4f99eae81a253d6f037cdbe40c4e38a7fa8e5fc8365e91aa",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
+  },
+  "data/manual/operator_sttgdc_2024.pdf": {
+    "baseline_sha256": "7d243d6847d702dfc6097208c1ac3dffd55034f44089c7fab7c2dbb6e23c9d2b",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
+  },
+  "data/manual/kit_ar_2024.pdf": {
+    "baseline_sha256": "57c9559dcca4557926820094782ed33b3edc04d02bdbeb04443adf129155e89f",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
+  },
+  "data/manual/lit_santos_2026.pdf": {
+    "baseline_sha256": "d6a9a081b3b6394894f07ac85e85a517fe39fd3bbac76bc4fd827b4d933dd4b3",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
+  },
+  "data/manual/pub_annual_report_2026.pdf": {
+    "baseline_sha256": "c25c1b8362dc50cd41f5d0fae6ca0b7ca921ccce390926b702bdae3525d57830",
+    "not_distributed": true,
+    "classification": "context_only_not_distributed",
+    "reason": "Context-only third-party report. No number in config/assumptions.csv, the code or the paper is read from it. Kept locally, excluded from git and from the submission ZIP; if present it must still match its baseline hash.",
+    "scope": "Absence is acceptable only for this exact baseline file."
   }
 }

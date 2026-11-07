@@ -1,6 +1,6 @@
 # The Thirsty Cloud: study design and remaining work
 
-DSS5202 Group 29. Updated 25 October 2026.
+DSS5202 Group 29. Updated 7 November 2026.
 
 This document records the implemented comparison and the work still needed
 before submission. The submitted proposal defines the study's scope. The project keeps
@@ -106,7 +106,16 @@ any explicitly acknowledged external changes. Source hashes establish byte
 preservation, not whether a claim is supported.
 
 The report, poster and video deck use the corrected model outputs. The poster
-keeps the official one-page template. The supplied DSA5208 report informs the
+keeps the official one-page template. On 7 November the report was rebuilt
+from `report_final.md` with four additions: a comparison of the
+Open-Meteo record with the SingStat station series (the gridded record is
+about 1.4 degC cooler, which would lift A4's water use from 0.50 to about 0.74
+m3/MWh), a decomposition showing that 85% of A4's water comes from the assumed
+20% wet share rather than from hot-hour trim, an AHP scoring-rule test (the
+ratio rule turns the operator viewpoint into an A2/A3 tie), and a table that
+separates calibration from independent validation. The poster was edited to say
+"resource cost" and to show the viewpoint result and the carbon break-even; the
+video deck was rebuilt from the report figures (`15_build_video_slides.py`). The supplied DSA5208 report informs the
 report's structure and language; it is a style reference, not a source for the
 water model.
 
@@ -114,10 +123,11 @@ Before the **13 November 2026** deadline in the
 [module brief](https://klpoh.github.io/courses/dss5202/termpaper.html):
 
 1. Review the conclusions and unresolved assumptions as a team.
-2. Rehearse the three-speaker script with the ten-slide deck.
-3. Record the required ten-minute MP4 and check sound, legibility and duration.
+2. Rehearse the 17-slide deck; the notes give a suggested time per slide.
+3. Record the required ten-minute MP4 in the team's own voices over the
+   17-slide deck and check sound, legibility and duration.
 4. Add the recording to the submission ZIP and verify that the report, code and
    one-page poster are present.
 
-The current package prepares the slides and script. The team recording remains
+The current package prepares the slides. The team recording remains
 outstanding. No additional assessment method is needed to finish the agreed scope.

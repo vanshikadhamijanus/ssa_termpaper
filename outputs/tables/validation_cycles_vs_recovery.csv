@@ -1,0 +1,4 @@
+configuration,wue_m3_per_mwh,gwp_kg_per_mwh,resource_cost_sgd_per_mwh,operator_cost_sgd_per_mwh,share_of_A3_water_saving
+"A2: ordinary towers, 3 cycles",2.1,0.98616,0.9971188102957939,5.25,0.0
+"Towers at 8 cycles, no recovery (same treatment capex as A3)",1.6,0.7513599999999999,1.579343429458452,5.143146232250685,0.7812500000000001
+A3: towers at 8 cycles with 70% recovery,1.4600000000000002,0.7401599999999999,1.5408688421053993,4.828146232250686,1.0

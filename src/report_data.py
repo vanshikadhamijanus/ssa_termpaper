@@ -99,5 +99,5 @@ def context():
     q['table_ahp_weights']=mdtable(['Subcriterion','Global weight'],[[r.sub_criterion,fmt(r.global_weight,3)] for r in wt.itertuples()])
     notes=read('ahp_judgement_notes')
     q['table_ahp_notes']=mdtable(['Comparison group','Judgment basis'],[[r.matrix,r.note] for r in notes.itertuples()])
-    q['references']=(ROOT/'paper/references.md').read_text()
+    q['references']=(ROOT/'references.md').read_text()
     return {k:str(v) for k,v in q.items()}

@@ -1,0 +1,49 @@
+rule,leaf,strategy,local_priority
+"Linear distance from worst, floor 0.10 (report base)",C1a Societal life-cycle cost,A1,0.2966692391040804
+"Linear distance from worst, floor 0.10 (report base)",C1a Societal life-cycle cost,A2,0.34404582176999704
+"Linear distance from worst, floor 0.10 (report base)",C1a Societal life-cycle cost,A3,0.32800804623774105
+"Linear distance from worst, floor 0.10 (report base)",C1a Societal life-cycle cost,A4,0.03127689288818155
+"Linear distance from worst, floor 0.10 (report base)",C1b Cost to DC operators,A1,0.2886180763405451
+"Linear distance from worst, floor 0.10 (report base)",C1b Cost to DC operators,A2,0.3338235521150035
+"Linear distance from worst, floor 0.10 (report base)",C1b Cost to DC operators,A3,0.3460951739157471
+"Linear distance from worst, floor 0.10 (report base)",C1b Cost to DC operators,A4,0.03146319762870429
+"Linear distance from worst, floor 0.10 (report base)",C2a GHG per MWh_IT,A1,0.2953376807213731
+"Linear distance from worst, floor 0.10 (report base)",C2a GHG per MWh_IT,A2,0.3349280592450953
+"Linear distance from worst, floor 0.10 (report base)",C2a GHG per MWh_IT,A3,0.33892307169740393
+"Linear distance from worst, floor 0.10 (report base)",C2a GHG per MWh_IT,A4,0.03081118833612763
+"Linear distance from worst, floor 0.10 (report base)",C2b Electricity use,A1,0.2974626878300437
+"Linear distance from worst, floor 0.10 (report base)",C2b Electricity use,A2,0.33435917217596317
+"Linear distance from worst, floor 0.10 (report base)",C2b Electricity use,A3,0.33749662832782706
+"Linear distance from worst, floor 0.10 (report base)",C2b Electricity use,A4,0.030681511666166096
+"Linear distance from worst, floor 0.10 (report base)","C2c Marine discharge (brine, blowdown)",A1,0.03376043825793965
+"Linear distance from worst, floor 0.10 (report base)","C2c Marine discharge (brine, blowdown)",A2,0.2483811970208417
+"Linear distance from worst, floor 0.10 (report base)","C2c Marine discharge (brine, blowdown)",A3,0.34649354388388265
+"Linear distance from worst, floor 0.10 (report base)","C2c Marine discharge (brine, blowdown)",A4,0.37136482083733613
+"Linear distance from worst, floor 0.10 (report base)",C3a Water drawn from national supply,A1,0.055590027995108406
+"Linear distance from worst, floor 0.10 (report base)",C3a Water drawn from national supply,A2,0.055590027995108406
+"Linear distance from worst, floor 0.10 (report base)",C3a Water drawn from national supply,A3,0.27732963606359073
+"Linear distance from worst, floor 0.10 (report base)",C3a Water drawn from national supply,A4,0.6114903079461924
+Inverse proportional (ratio) scoring,C1a Societal life-cycle cost,A1,0.18099951369224607
+Inverse proportional (ratio) scoring,C1a Societal life-cycle cost,A2,0.4725739165156127
+Inverse proportional (ratio) scoring,C1a Societal life-cycle cost,A3,0.30580950729655904
+Inverse proportional (ratio) scoring,C1a Societal life-cycle cost,A4,0.04061706249558228
+Inverse proportional (ratio) scoring,C1b Cost to DC operators,A1,0.24153642769530545
+Inverse proportional (ratio) scoring,C1b Cost to DC operators,A2,0.31303121029311587
+Inverse proportional (ratio) scoring,C1b Cost to DC operators,A3,0.3403819550993106
+Inverse proportional (ratio) scoring,C1b Cost to DC operators,A4,0.10505040691226808
+Inverse proportional (ratio) scoring,C2a GHG per MWh_IT,A1,0.1078539866111729
+Inverse proportional (ratio) scoring,C2a GHG per MWh_IT,A2,0.37447565606853744
+Inverse proportional (ratio) scoring,C2a GHG per MWh_IT,A3,0.4989365988280222
+Inverse proportional (ratio) scoring,C2a GHG per MWh_IT,A4,0.018733758492267518
+Inverse proportional (ratio) scoring,C2b Electricity use,A1,0.10054764467846204
+Inverse proportional (ratio) scoring,C2b Electricity use,A2,0.38208104977815577
+Inverse proportional (ratio) scoring,C2b Electricity use,A3,0.5014813778338295
+Inverse proportional (ratio) scoring,C2b Electricity use,A4,0.015889927709552647
+Inverse proportional (ratio) scoring,"C2c Marine discharge (brine, blowdown)",A1,0.052090137289248106
+Inverse proportional (ratio) scoring,"C2c Marine discharge (brine, blowdown)",A2,0.12154365367491228
+Inverse proportional (ratio) scoring,"C2c Marine discharge (brine, blowdown)",A3,0.3112703325820924
+Inverse proportional (ratio) scoring,"C2c Marine discharge (brine, blowdown)",A4,0.5150958764537471
+Inverse proportional (ratio) scoring,C3a Water drawn from national supply,A1,0.13027099660428418
+Inverse proportional (ratio) scoring,C3a Water drawn from national supply,A2,0.13027099660428418
+Inverse proportional (ratio) scoring,C3a Water drawn from national supply,A3,0.18737609100616218
+Inverse proportional (ratio) scoring,C3a Water drawn from national supply,A4,0.5520819157852694

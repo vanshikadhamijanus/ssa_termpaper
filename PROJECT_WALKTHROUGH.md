@@ -8,7 +8,7 @@ and the analysis is rerun.
 
 Related documents: [README.md](README.md) (how to rerun),
 [PROJECT_PLAN.md](PROJECT_PLAN.md) (design decisions and open work),
-[paper/report_template.md](paper/report_template.md) (the full report text),
+[report_final.md](report_final.md) (the full report text),
 [data/manual/README.md](data/manual/README.md) (manually collected sources).
 
 ---
@@ -34,7 +34,7 @@ liquid cooling that the others also have.
 | A1 | Conventional wet cooling + desalinated water | Standard towers, water from seawater desalination |
 | A2 | Conventional wet cooling + NEWater | Standard towers, water from recycled used water |
 | A3 | High-concentration towers + blowdown recovery (NEWater) | Run the water through more cycles and recover the waste stream, so less fresh water is needed |
-| A4 | Dry cooling with wet assistance (NEWater for the rest) | Mostly air-cooled; adds water-based cooling only on hot hours. Uses little water but more electricity |
+| A4 | Dry cooling with a 20% wet share (NEWater for the rest) | A dry loop takes 80% of the heat and needs water-assisted trim on hot hours; the other 20% of the heat still goes through wet towers all year. Uses little water but more electricity |
 
 Three capacity scenarios: **S1** = 200 MW IT (the real allocation); **S2** = 500 MW
 and **S3** = 700 MW total (hypothetical growth, not confirmed).
@@ -66,7 +66,7 @@ are team assumptions or proxies, not quotations. The report says so openly.
 
 ## 4. The pipeline, stage by stage
 
-Run order is `src/run_all.py` (stages 02-08), then the builders (09-11).
+Run order is `src/run_all.py` (stages 02-08), then `12_validation_extras.py`, then the builders (13 to 15).
 
 | Stage | Script | What it does | Key outputs |
 |---|---|---|---|
@@ -78,7 +78,10 @@ Run order is `src/run_all.py` (stages 02-08), then the builders (09-11).
 | 6 | `06_ahp.py` | **AHP.** Four-level hierarchy of economic / environmental / water-security / implementation criteria, five weighting scenarios, consistency checks | `ahp_*.csv`, hierarchy and score figures |
 | 7 | `07_sensitivity.py` | **Uncertainty.** 10,000 parameter draws (seed 29), 2,000 preference trials (seed 2901), structural cases (swap NEWater for desal, low-carbon grid, discharge cost), tornado charts, break-even thresholds | `mc_*.csv`, `tornado.csv`, `breakeven.csv`, `structural_sensitivity.csv` |
 | 8 | `08_summary.py` | Collects the headline numbers into one table | `headline.csv` |
-| 9-11 | `09_build_paper.py`, `10_build_poster.py`, `11_build_video_slides.py` | Fill the report template with the latest tables and build the Word/PDF report, poster and slides | `deliverables/` |
+| 12 | `12_validation_extras.py` | Weather record vs SingStat station, A4 under warmer conditions, AHP scoring-rule test, calibration table, five-driver tornado | `validation_*.csv`, `fig_tornado_cost_top5.png` |
+| 13 | `13_build_paper_final.py` (with `report_data_final.py`) | Fill `report_final.md` with the latest tables and build the Word report | `deliverables/DSS5202_Group29_TermPaper.docx` |
+| 14 | `14_edit_presentations.py` | Re-applies the hand edits to the pre-built poster | `deliverables/DSS5202_Group29_Poster.pptx` |
+| 15 | `15_build_video_slides.py` | Builds the 17-slide video deck from the report figures and tables | `deliverables/DSS5202_Group29_Video_Slides.pptx` |
 
 Supporting code: `model.py` (all core calculations), `ahp.py` (AHP maths),
 `validate_project.py` / `validate_deliverables.py` (consistency checks),
@@ -92,10 +95,11 @@ Supporting code: `model.py` (all core calculations), `ahp.py` (AHP maths),
   calibration, not independent validation.
 - **A3:** raising CoC cuts blowdown; recovering part of what remains returns
   water. Treatment electricity is charged only on the recovered water.
-- **A4:** the dry loop handles most heat. Tower-equivalent water is used only in
-  hours above a temperature threshold, counted from the real hourly weather
-  file. Its extra fan/pump electricity is the difference in PUE × 1,000
-  (base: 0.05 PUE, so about 50 kWh/MWh).
+- **A4:** the dry loop handles 80% of the heat and uses tower-equivalent water only in
+  hours above a temperature threshold, counted from the hourly weather file; the
+  remaining 20% of the heat goes through wet towers all year, which is 85% of A4's
+  water. Its extra fan/pump electricity is the difference in PUE × 1,000 (base:
+  0.05 PUE, so about 50 kWh/MWh).
 - **Grid emissions:** the primary case uses the full grid factor. A "50 % green
   electricity" rule is not treated as zero emissions.
 - **Costs:** "resource (social) cost" excludes water taxes and carbon pricing;
@@ -167,14 +171,14 @@ These show the arithmetic is consistent. They do not validate the assumptions.
 ## 8. What is left to do
 
 From `PROJECT_PLAN.md`: the team still needs to review the conclusions together,
-rehearse the three-speaker script, **record the ten-minute MP4**, and add it to
+rehearse the 17-slide deck, **record the ten-minute MP4**, and add it to
 the submission ZIP. The deadline is **13 November 2026**. The ZIP must contain the
 report, code, poster and video.
 
 ## 9. Suggested reading order for a newcomer
 
 1. This file, for the overall picture.
-2. `deliverables/DSS5202_Group29_TermPaper.pdf` (or `paper/report_template.md`),
+2. `deliverables/DSS5202_Group29_TermPaper.pdf` (or `report_final.md`),
    Sections 1, 5, 7 and 8.
 3. `config/assumptions.csv`, to see every input and how well it is supported.
 4. `src/model.py`, then stages 03 to 06 in order, to see the calculations.
