@@ -21,7 +21,7 @@ dry-cooler performance and AHP judgments still need site or stakeholder evidence
 |---|---|
 | `DSS5202_Group29_TermPaper.docx` and `.pdf` | Final report (7 November build), references and supplementary material |
 | `DSS5202_Group29_Poster.pptx` | One-page poster using the module template |
-| `DSS5202_Group29_Video_Slides.pptx` | Seventeen slides for the ten-minute recording, built from the report figures; notes carry a suggested timing per slide |
+| `DSS5202_Group29_Video_Slides.pptx` | Twenty slides for the ten-minute recording, prepared in PowerPoint from the report figures; the notes carry the narration and a suggested timing per slide |
 | `DSS5202_Group29_Submission.zip` | Prepared submission files for the team's final review |
 
 The team still needs to record the ten-minute MP4 in their own voices and add
@@ -77,7 +77,7 @@ Everything below runs in the Python environment alone:
 
 ```bash
 python src/13_build_paper_final.py      # report_final.md + outputs -> deliverables/DSS5202_Group29_TermPaper.docx
-python src/15_build_video_slides.py     # report figures + outputs -> deliverables/DSS5202_Group29_Video_Slides.pptx
+python src/17_edit_video_deck.py        # re-applies the review wording edits to the 20-slide deck
 python src/14_edit_presentations.py     # re-applies the hand edits to the pre-built poster
 python src/validate_deliverables.py     # tables, citations, poster and slide checks
 python src/package_submission.py        # submission ZIP
@@ -96,7 +96,11 @@ that drew them was not retained.
 The poster was generated on 25 October with a presentation toolchain that is
 not part of this environment and is supplied as an editable PowerPoint file on
 the module template. Every later hand edit is recorded in
-`src/14_edit_presentations.py`, which only needs python-pptx. Packaging
+`src/14_edit_presentations.py`, which only needs python-pptx and matplotlib; it
+also redraws the poster's AHP figure from the current scores. The 20-slide
+video deck was prepared in PowerPoint; `src/17_edit_video_deck.py` records the
+wording edits made after the 7 November review. The earlier generated 17-slide
+deck (`src/15_build_video_slides.py`) is kept in `.build/` and is not a deliverable. Packaging
 excludes the proposal, supplied style reference, Office lock files and private
 `.build/` files, and reruns the numerical validation first.
 

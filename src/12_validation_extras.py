@@ -76,6 +76,27 @@ def weather_check():
     return table, float(diff.mean())
 
 
+def weather_by_year(p0):
+    """Share of archived hours above the trim threshold in each year.
+
+    The Open-Meteo request did not pin a weather model, so a drift in the hot
+    tail across years may reflect the data product as much as the weather.
+    The A4 WUE column shows what each year's share would imply on its own.
+    """
+    hourly = pd.read_csv(HOURLY_FILE, parse_dates=["time"])
+    year = hourly.time.dt.year
+    share = (hourly.temperature_2m > p0["trim_threshold"]).groupby(year).mean()
+    mean = hourly.temperature_2m.groupby(year).mean()
+    rows = []
+    for y in share.index:
+        wue = p0["liquid_heat_share"] * share[y] * p0["wue_base"] + (1 - p0["liquid_heat_share"]) * p0["wue_base"]
+        rows.append(dict(year=int(y), share_above_threshold=float(share[y]), mean_temperature_degC=float(mean[y]),
+                         a4_wue_m3_per_mwh=wue, a4_water_saving_vs_A2=1 - wue / p0["wue_base"]))
+    table = pd.DataFrame(rows)
+    table.to_csv(TAB / "validation_weather_years.csv", index=False)
+    return table
+
+
 # ---------------------------------------------------------------- 2. A4 cases
 def a4_weather_cases(p0, bias):
     """Lowering the threshold by b degC equals warming every archived hour by b."""
@@ -158,15 +179,17 @@ def cycles_versus_recovery(p0):
     rows = []
     for name, override in [("A2: ordinary towers, 3 cycles", None),
                            ("Towers at 8 cycles, no recovery (same treatment capex as A3)", {"blowdown_recovery": 0.0}),
-                           ("A3: towers at 8 cycles with 70% recovery", {})]:
+                           ("A3: towers at 8 cycles with 70% recovery", {}),
+                           ("Towers at 8 cycles, no recovery, treatment capex S$40,000/MW", {"blowdown_recovery": 0.0, "capex_hicoc": 40000.0}),
+                           ("Towers at 8 cycles, no recovery, treatment capex S$20,000/MW", {"blowdown_recovery": 0.0, "capex_hicoc": 20000.0})]:
         p = {**p0, **(override or {})}
         L, C = lca(p), lcc(p)
         a = "A2" if override is None else "A3"
         rows.append(dict(configuration=name, wue_m3_per_mwh=L.loc[a, "wue"], gwp_kg_per_mwh=L.loc[a, "gwp_total"],
                          resource_cost_sgd_per_mwh=C.loc[a, "social_cost"], operator_cost_sgd_per_mwh=C.loc[a, "operator_cost"]))
     table = pd.DataFrame(rows)
-    base, mid, full = table.wue_m3_per_mwh
-    table["share_of_A3_water_saving"] = [0.0, (base - mid) / (base - full), 1.0]
+    base, full = table.wue_m3_per_mwh[0], table.wue_m3_per_mwh[2]
+    table["share_of_A3_water_saving"] = [(base - w) / (base - full) for w in table.wue_m3_per_mwh]
     table.to_csv(TAB / "validation_cycles_vs_recovery.csv", index=False)
     return table
 
@@ -236,8 +259,8 @@ def calibration_table(p0, weather_bias, tests):
              reading="Different year, financing and scope; agreement in magnitude only"),
         dict(component="Levelised cost of NEWater", kind="Independent context",
              model_value=f"S${lw_n:.2f}/m3 bottom-up",
-             reference=f"S${p0['ppp_price_newater']:.2f}/m3 Changi and Sembcorp first-year prices",
-             difference=f"{(lw_n / p0['ppp_price_newater'] - 1) * 100:+.0f}%",
+             reference="S$0.28 to 0.30/m3 Changi (2014) and Sembcorp (2008) first-year prices",
+             difference=f"{(lw_n / p0['ppp_price_newater'] - 1) * 100:+.0f}% against S$0.30",
              reading="Model is higher; the gap is reported, not corrected"),
         dict(component="Hourly weather for the A4 trim share", kind="Independent record, different location",
              model_value="Open-Meteo gridded record, Jurong Island",
@@ -299,6 +322,7 @@ def main():
     p = load_params()
     weather, bias = weather_check()
     print(weather.to_string(index=False))
+    print(weather_by_year(p).round(4).to_string(index=False))
     print(a4_weather_cases(p, bias).round(4).to_string(index=False))
     print(ahp_scoring_rule(p).round(3).to_string(index=False))
     print(cycles_versus_recovery(p).round(4).to_string(index=False))

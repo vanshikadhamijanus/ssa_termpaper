@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'deliverables'
 NS = {'a':'http://schemas.openxmlformats.org/drawingml/2006/main'}
 EXPECTED_IMAGES = 16   # logo plus 15 figures
-EXPECTED_SLIDES = 17
+EXPECTED_SLIDES = 20
 
 
 def markdown_tables(resolved):

@@ -163,9 +163,8 @@ def build():
     for r in footer.runs:
         r.font.size = Pt(8)
         r.font.color.rgb = RGBColor.from_string(GREY)
-    update = OxmlElement('w:updateFields')
-    update.set(qn('w:val'), 'true')
-    doc.settings.element.append(update)
+    # No w:updateFields flag: Word updates PAGE/NUMPAGES on layout anyway, and the
+    # flag makes Word ask a blocking question when the file is opened for PDF export.
     doc.core_properties.title = meta['title']
     doc.core_properties.subject = meta['subtitle']
     doc.core_properties.author = 'Group 29: Aditya Vijindra Pandhari; Apurwa Kumari; Vanshika Dhamija'
@@ -206,7 +205,7 @@ def build():
             title = line[2:]
             in_references = title == 'References'
             p = doc.add_paragraph(title, 'Heading 1')
-            if title in ('References', 'Supplementary material'):
+            if title == 'References':
                 p.paragraph_format.page_break_before = True
             border = OxmlElement('w:pBdr')
             bottom = OxmlElement('w:bottom')

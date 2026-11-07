@@ -119,13 +119,24 @@ video deck was rebuilt from the report figures (`15_build_video_slides.py`). The
 report's structure and language; it is a style reference, not a source for the
 water model.
 
+After the 7 November review the report was revised again: a shorter abstract;
+bounded robustness wording with two verified joint boundary cases; the three
+separate A4 break-evens (resource cost, operator cost, carbon); the horizon
+maintenance allowance of about S$1,200 per commissioned MW-year; separately
+costed towers at 8 cycles without recovery (Table 12); the per-year hot-hour
+share of the unpinned Open-Meteo record (Table S6b); a feasibility gate before
+the recommendations; a source column in Table S1; and the withdrawal-versus-
+consumption distinction. The poster's straight-line chart was replaced by a
+fresh AHP viewpoint figure and the 20-slide PowerPoint deck replaced the
+generated 17-slide deck.
+
 Before the **13 November 2026** deadline in the
 [module brief](https://klpoh.github.io/courses/dss5202/termpaper.html):
 
 1. Review the conclusions and unresolved assumptions as a team.
-2. Rehearse the 17-slide deck; the notes give a suggested time per slide.
+2. Rehearse the 20-slide deck; the notes give the narration and a suggested time per slide (about 9.5 minutes in total).
 3. Record the required ten-minute MP4 in the team's own voices over the
-   17-slide deck and check sound, legibility and duration.
+   20-slide deck and check sound, legibility and duration.
 4. Add the recording to the submission ZIP and verify that the report, code and
    one-page poster are present.
 

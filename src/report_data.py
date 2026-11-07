@@ -94,7 +94,7 @@ def context():
         [a,fmt(demand_mc.loc[a,'p5']/1e6)+'–'+fmt(demand_mc.loc[a,'p95']/1e6),
          fmt(costs_mc.loc[a,'p5'])+'–'+fmt(costs_mc.loc[a,'p95'])] for a in IDS])
     active=cfg[cfg.role.isin(['model','scenario-definition'])]
-    q['table_active_assumptions']=mdtable(['Parameter and unit','Low / base / high','Status'],[[r.parameter+' ('+r.unit+')',' / '.join(input_value(r,c) for c in ('low','base','high')),r.status] for r in active.itertuples()])
+    q['table_active_assumptions']=mdtable(['Parameter and unit','Low / base / high','Status','Source or basis'],[[r.parameter+' ('+r.unit+')',' / '.join(input_value(r,c) for c in ('low','base','high')),r.status,str(r.source)] for r in active.itertuples()])
     wt=read('ahp_weights');wt=wt[wt.weight_scenario=='W1 Balanced']
     q['table_ahp_weights']=mdtable(['Subcriterion','Global weight'],[[r.sub_criterion,fmt(r.global_weight,3)] for r in wt.itertuples()])
     notes=read('ahp_judgement_notes')

@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 from report_data import context as base_context, read, fmt, mdtable, IDS
-from model import load_params, crf, lca, lcc, tower_flows, wue_heat_balance, mwh_per_mw_year
+from model import load_params, crf, lca, lcc, tower_flows, wue_heat_balance, mwh_per_mw_year, commissioned_it_mw, YEARS
 
 ROOT = Path(__file__).resolve().parents[1]
 TAB = ROOT / 'outputs/tables'
@@ -33,9 +33,12 @@ def context():
     VC = read('validation_cycles_vs_recovery')
     VM = read('validation_maintenance_breakeven').set_index('quantity')['value']
     VU = read('validation_unit_tests').iloc[0]
+    VY = read('validation_weather_years')
+    CT = read('cooling_thresholds')
+    N = read('npc_by_scenario')
 
     # ---- key inputs table with the desalination-energy status made explicit
-    keys = [('cap_cfa2', 'IT capacity, MW'), ('util', 'Average utilisation, fraction'), ('wue_base', 'Wet-rejection WUE, m³/MWh'),
+    keys = [('util', 'Average utilisation, fraction'), ('wue_base', 'Wet-rejection WUE, m³/MWh'),
             ('coc_best', 'High cycles of concentration'), ('blowdown_recovery', 'Blowdown recovery, fraction'),
             ('dpue_dry', 'Additional dry-rejection PUE'), ('liquid_heat_share', 'Share of heat to the dry loop (A4)'),
             ('capex_hicoc', 'Recovery capex, S$/MW IT'), ('capex_dry_premium', 'Dry-rejection premium, S$/MW IT'),
@@ -80,19 +83,47 @@ def context():
     # ---- break-even table (Table 11)
     def be(pattern):
         return B[B.question.str.contains(pattern, regex=True)].iloc[0]
-    be_rows = [('A4 matches A2 on cost: extra dry-cooling PUE of', 'A4 versus A2:.*resource cost', 4),
+    be_rows = [('A4 matches A2 on resource cost: extra dry-cooling PUE of', 'A4 versus A2:.*resource cost', 4),
                ('A4 matches A2 on carbon: extra dry-cooling PUE of', 'A4 versus A2:.*GHG', 4),
                ('Desalination matches NEWater on carbon: desalination energy, kWh/m³', 'Desalination specific energy', 2),
                ('Operator is no better off with A3 than A2: NEWater tariff, S$/m³', 'NEWater tariff', 2),
                ('A3 costs society the same as A2: recovery capex, S$/MW IT', 'A3 recovery capex', 0),
                ('A4 matches A2 for the operator: dry-cooling capex, S$/MW IT', 'A4 dry-rejection capex', 0)]
     rows = []
+    op_row = CT[(CT.comparison == 'A2') & ((CT.capex_dry_premium - p['capex_dry_premium']).abs() < 1)].iloc[0]
     for label, pattern, nd in be_rows:
         r = be(pattern)
         base = fmt(r.base, nd if nd else 0) if nd != 4 else f'{r.base:.2f}'
         val = 'no value works' if pd.isna(r.breakeven) else (f'{r.breakeven:.4f}' if nd == 4 else fmt(r.breakeven, nd))
         rows.append([label, base, val])
+        if pattern == 'A4 versus A2:.*resource cost':
+            rows.append(['A4 matches A2 for the operator: extra dry-cooling PUE of', f"{p['dpue_dry']:.2f}", f'{op_row.operator_cost_equal_dpue:.4f}'])
     q['table_breakeven'] = mdtable(['Question', 'Base value', 'Break-even value'], rows)
+    q['dpue_operator_breakeven'] = f'{op_row.operator_cost_equal_dpue:.4f}'
+    q['a4_cost_zero_pue'] = fmt(lcc({**p, 'dpue_dry': 0.0}).loc['A4', 'social_cost'])
+    # joint boundary cases inside the declared ranges (reported, not sampled)
+    j1 = lcc({**p, 'capex_hicoc': 30000.0, 'life_dc_cooling': 20.0, 'util': 0.85})
+    q['joint1_a3'], q['joint1_a2'] = fmt(j1.loc['A3', 'social_cost'], 3), fmt(j1.loc['A2', 'social_cost'], 3)
+    j2 = lca({**p, 'coc_current': 4.0, 'coc_best': 6.0, 'sec_hicoc': 2.0, 'sec_newater': 0.6, 'sec_distrib': 0.2})
+    q['joint2_a3'], q['joint2_a2'] = fmt(j2.loc['A3', 'gwp_total'], 3), fmt(j2.loc['A2', 'gwp_total'], 3)
+    # horizon operator advantage of A3 and the fixed charge that removes it
+    nop = N[(N.perspective == 'operator') & (N.scenario == 'S1')].set_index('strategy')
+    adv = nop.loc['A2', 'npc_sgd'] - nop.loc['A3', 'npc_sgd']
+    rate = p['disc_private'] / 100
+    pv_mw_years = sum(commissioned_it_mw(p, 'S1', y) / (1 + rate) ** (y - 2026) for y in YEARS)
+    q['horizon_adv_m'] = fmt(adv / 1e6, 1)
+    q['horizon_fixed_charge'] = fmt(adv / pv_mw_years, 0)
+    q['horizon_per_mwh'] = fmt(adv / nop.loc['A3', 'pv_mwh'], 2)
+    q['a3_withdrawal_saving'] = fmt(L.loc['A2', 'wue'] - L.loc['A3', 'wue'])
+    # per-year weather exposure
+    ymin, ymax = VY.loc[VY.share_above_threshold.idxmin()], VY.loc[VY.share_above_threshold.idxmax()]
+    q['trim_year_min'], q['trim_year_min_share'] = str(int(ymin.year)), fmt(ymin.share_above_threshold * 100, 1)
+    q['trim_year_max'], q['trim_year_max_share'] = str(int(ymax.year)), fmt(ymax.share_above_threshold * 100, 1)
+    q['a4_wue_yearmax'] = fmt(ymax.a4_wue_m3_per_mwh)
+    q['a4_saving_yearmax'] = fmt(ymax.a4_water_saving_vs_A2 * 100, 0)
+    q['mean_temp_range'] = fmt(VY.mean_temperature_degC.max() - VY.mean_temperature_degC.min(), 1)
+    q['table_weather_years'] = mdtable(['Year', 'Hours above threshold', 'Annual mean, °C', 'A4 WUE at that share, m³/MWh', 'Saving vs A2'],
+        [[str(int(r.year)), fmt(r.share_above_threshold * 100, 1) + '%', fmt(r.mean_temperature_degC, 1), fmt(r.a4_wue_m3_per_mwh), fmt(r.a4_water_saving_vs_A2 * 100, 0) + '%'] for r in VY.itertuples()])
     q['dpue_cost_breakeven'] = f"{be('A4 versus A2:.*resource cost').breakeven:.4f}"
     q['capex_hicoc_breakeven'] = fmt(be('A3 recovery capex').breakeven, 0)
     q['sec_desal_breakeven'] = fmt(be('Desalination specific energy').breakeven)
@@ -105,6 +136,8 @@ def context():
         ['Base case', 'None', f"A2 is cheapest for society (S${fmt(case('Base', 'A2', 'social_cost'))}); A3 has the lowest carbon ({fmt(case('Base', 'A3', 'gwp'))} kg)"],
         ['Towers at 8 cycles without recovery', 'A3 keeps its treatment capex but recovers no blowdown',
          f"Water {fmt(VC.wue_m3_per_mwh[1])} m³ (A3 {fmt(VC.wue_m3_per_mwh[2])}); carbon {fmt(VC.gwp_kg_per_mwh[1])} kg; resource cost S${fmt(VC.resource_cost_sgd_per_mwh[1])}; operator cost S${fmt(VC.operator_cost_sgd_per_mwh[1])}"],
+        ['Towers at 8 cycles without recovery, cheaper treatment', 'Treatment capex S$40,000 or S$20,000 per MW instead of S$60,000',
+         f"Resource cost S${fmt(VC.resource_cost_sgd_per_mwh[3])} or S${fmt(VC.resource_cost_sgd_per_mwh[4])}; operator cost S${fmt(VC.operator_cost_sgd_per_mwh[3])} or S${fmt(VC.operator_cost_sgd_per_mwh[4])} (A3: S${fmt(VC.resource_cost_sgd_per_mwh[2])} and S${fmt(VC.operator_cost_sgd_per_mwh[2])})"],
         ['Residual desalination', 'A3 and A4 use desalinated water instead of NEWater',
          f"A3 carbon rises from {fmt(case('Base', 'A3', 'gwp'))} to {fmt(case('Residual', 'A3', 'gwp'))} kg; resource cost from S${fmt(case('Base', 'A3', 'social_cost'))} to S${fmt(case('Residual', 'A3', 'social_cost'))}"],
         ['Priced discharge', f"S${fmt(p['fee_waterborne'])} per m³ of blowdown discharged",
@@ -116,6 +149,9 @@ def context():
     q['coc8_opcost'] = fmt(VC.operator_cost_sgd_per_mwh[1])
     q['coc8_cost'] = fmt(VC.resource_cost_sgd_per_mwh[1])
     q['share_before_recovery'] = fmt(VC.share_of_A3_water_saving[1] * 100, 0)
+    q['coc8_opcost_40k'] = fmt(VC.operator_cost_sgd_per_mwh[3])
+    q['coc8_opcost_20k'] = fmt(VC.operator_cost_sgd_per_mwh[4])
+    q['coc8_cost_20k'] = fmt(VC.resource_cost_sgd_per_mwh[4])
     q['maint_breakeven'] = fmt(VM['Omitted operating cost that removes the saving'], 0)
     q['maint_pct_capex'] = fmt(VM['Same allowance as a share of the assumed recovery capex'] * 100, 1)
     q['tests_run'] = str(int(VU.tests_run))
@@ -163,10 +199,6 @@ def context():
     q['ratio_w3_a2'] = fmt(ratio_first.loc['W3 Operator / economic', 'A2'], 3)
     q['ratio_w3_a3'] = fmt(ratio_first.loc['W3 Operator / economic', 'A3'], 3)
     q['ratio_w1_a1'] = fmt(ratio_first.loc['W1 Balanced', 'A1'], 3)
-    last = {sc: min(IDS, key=lambda a: ratio_first.loc[sc, a]) for sc in VIEW}
-    a1_last = [VIEW[sc].split(' ', 1)[1].split(' /')[0].lower() for sc, a in last.items() if a == 'A1']
-    others = [f"{a} in the {VIEW[sc].split(' ', 1)[1].split(' /')[0].lower()} viewpoint" for sc, a in last.items() if a != 'A1']
-    q['ratio_last_sentence'] = f"A1 is last in the {', '.join(a1_last[:-1])} and {a1_last[-1]} viewpoints" + (f", and {'; '.join(others)} is last" if others else '') + '.'
     r3 = ratio_first.loc['W3 Operator / economic']
     q['ratio_w3_lead'] = 'A2' if r3['A2'] >= r3['A3'] else 'A3'
     q['ratio_w3_gap'] = f"{abs(r3['A2'] - r3['A3']):.4f}"

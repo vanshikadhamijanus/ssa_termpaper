@@ -81,7 +81,7 @@ Run order is `src/run_all.py` (stages 02-08), then `12_validation_extras.py`, th
 | 12 | `12_validation_extras.py` | Weather record vs SingStat station, A4 under warmer conditions, AHP scoring-rule test, calibration table, five-driver tornado | `validation_*.csv`, `fig_tornado_cost_top5.png` |
 | 13 | `13_build_paper_final.py` (with `report_data_final.py`) | Fill `report_final.md` with the latest tables and build the Word report | `deliverables/DSS5202_Group29_TermPaper.docx` |
 | 14 | `14_edit_presentations.py` | Re-applies the hand edits to the pre-built poster | `deliverables/DSS5202_Group29_Poster.pptx` |
-| 15 | `15_build_video_slides.py` | Builds the 17-slide video deck from the report figures and tables | `deliverables/DSS5202_Group29_Video_Slides.pptx` |
+| 15, 17 | `15_build_video_slides.py`, `17_edit_video_deck.py` | Stage 15 built the earlier generated deck (now in `.build/`); stage 17 re-applies the review wording edits to the 20-slide PowerPoint deck | `deliverables/DSS5202_Group29_Video_Slides.pptx` |
 
 Supporting code: `model.py` (all core calculations), `ahp.py` (AHP maths),
 `validate_project.py` / `validate_deliverables.py` (consistency checks),
@@ -171,7 +171,7 @@ These show the arithmetic is consistent. They do not validate the assumptions.
 ## 8. What is left to do
 
 From `PROJECT_PLAN.md`: the team still needs to review the conclusions together,
-rehearse the 17-slide deck, **record the ten-minute MP4**, and add it to
+rehearse the 20-slide deck, **record the ten-minute MP4**, and add it to
 the submission ZIP. The deadline is **13 November 2026**. The ZIP must contain the
 report, code, poster and video.
 

@@ -73,7 +73,7 @@ def main():
     }
     recording = any(p.suffix.lower() == '.mp4' for p in files)
     status = ('Team recording included; verify its length and audio before submission.' if recording else
-              'TEAM ACTION REQUIRED: Record the ten-minute presentation in the team\'s own voices and add the MP4 to deliverables/ before packaging. The 17-slide deck is included; speaker notes give a suggested timing per slide.')
+              'TEAM ACTION REQUIRED: Record the ten-minute presentation in the team\'s own voices and add the MP4 to deliverables/ before packaging. The 20-slide deck is included; speaker notes give a suggested timing per slide.')
     extra['SUBMISSION_STATUS.txt'] = status+'\n\nThe ZIP contains the model, retained source data and generated deliverables. The original proposal, the DSA5208 style-reference PDF, the earlier hand-made draft and the study notes are omitted. The portable protected-source manifest covers included files; the complete workspace baseline is retained separately for the original audit.\n'
     manifest = []
     temp = OUT.with_suffix('.zip.tmp')
