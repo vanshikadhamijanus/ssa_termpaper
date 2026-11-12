@@ -98,6 +98,11 @@ def context():
         rows.append([label, base, val])
         if pattern == 'A4 versus A2:.*resource cost':
             rows.append(['A4 matches A2 for the operator: extra dry-cooling PUE of', f"{p['dpue_dry']:.2f}", f'{op_row.operator_cost_equal_dpue:.4f}'])
+    from scipy.optimize import brentq
+    gap = lambda c: lcc({**p, 'cost_discharge_treatment': c}).loc['A3', 'social_cost'] - lcc({**p, 'cost_discharge_treatment': c}).loc['A2', 'social_cost']
+    discharge_be = brentq(gap, 0.0, 3.0)
+    rows.append(['A3 costs society the same as A2: resource cost of discharged blowdown, S$/m³', fmt(p['cost_discharge_treatment']), fmt(discharge_be)])
+    q['discharge_breakeven'] = fmt(discharge_be)
     q['table_breakeven'] = mdtable(['Question', 'Base value', 'Break-even value'], rows)
     q['dpue_operator_breakeven'] = f'{op_row.operator_cost_equal_dpue:.4f}'
     q['a4_cost_zero_pue'] = fmt(lcc({**p, 'dpue_dry': 0.0}).loc['A4', 'social_cost'])
@@ -115,6 +120,7 @@ def context():
     q['horizon_fixed_charge'] = fmt(adv / pv_mw_years, 0)
     q['horizon_per_mwh'] = fmt(adv / nop.loc['A3', 'pv_mwh'], 2)
     q['a3_withdrawal_saving'] = fmt(L.loc['A2', 'wue'] - L.loc['A3', 'wue'])
+    q['cycles_saving'] = fmt(L.loc['A2', 'wue'] - VC.wue_m3_per_mwh[1])
     # per-year weather exposure
     ymin, ymax = VY.loc[VY.share_above_threshold.idxmin()], VY.loc[VY.share_above_threshold.idxmax()]
     q['trim_year_min'], q['trim_year_min_share'] = str(int(ymin.year)), fmt(ymin.share_above_threshold * 100, 1)

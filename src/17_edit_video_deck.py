@@ -23,6 +23,8 @@ def replace_paragraphs(frame_owner, old, new, size=None, exact=False):
     for para in frame_owner.text_frame.paragraphs:
         full = ''.join(r.text for r in para.runs)
         match = full == old if exact else old in full
+        if match and not exact and old in new and new in full:
+            continue  # already in its final form (the new text extends the old text)
         if match and para.runs:
             para.runs[0].text = full.replace(old, new)
             for r in para.runs[1:]:
@@ -80,8 +82,8 @@ EDITS = [
     (18, 'text', 'per MWh as a screening condition for new wet-cooled sites', 'per MWh as a level to test new wet-cooled sites against, pending site evidence', None),
     (18, 'text', 'per MWh saved by blowdown recovery at today', 'per MWh saved by recovery, before maintenance, at today', None),
     (18, 'text', 'Check it against supplier quotes and measured recovery rates', 'Higher cycles alone give 78% of the saving; check recovery against quotes', None),
-    (18, 'notes', 'a screening condition of about 1.5 cubic metres per MWh for new wet-cooled sites is achievable with known equipment',
-     'about 1.5 cubic metres per MWh is a level to test new wet-cooled sites against, pending site evidence; it is achievable with known equipment', None),
+    (18, 'notes', 'a screening condition of about 1.5 cubic metres per MWh for new wet-cooled sites is achievable with known equipment: towers with recovery reach 1.46 under our assumptions, against the Roadmap target of 2.0. It should be followed by checks of measured performance and water quality.',
+     'about 1.5 cubic metres per MWh is a level to test new wet-cooled sites against, pending site evidence: towers with recovery reach 1.46 under our assumptions, against the Roadmap target of 2.0. The modelled performance should be tested against site measurements and water quality before it becomes a requirement.', None),
     (19, 'text', 'About 1.37 °C cooler than the nearest station record; shown as a range, not corrected',
      'About 1.37 °C cooler than the Changi station series, a cross-location gap; shown as a range, not corrected', None),
     (19, 'notes', 'The weather record runs cooler than the nearest station.', 'The weather record runs cooler than the Changi station, a cross-location comparison.', None),
@@ -89,15 +91,83 @@ EDITS = [
      'Saves the most water, but matches A2 only below an extra PUE of about 0.008 for cost and 0.002 for carbon', None),
     (20, 'notes', 'Dry cooling saves the most water but only pays off with a far smaller electricity penalty.',
      'Dry cooling saves the most water but matches A2 on the operator bill only below an extra PUE of about 0.008, and on carbon below 0.002.', None),
+    # ---- repair of suffixes doubled by an earlier non-idempotent run
+    (6, 'text', 'plus water-system non-energy emissions, plus water-system non-energy emissions', 'plus water-system non-energy emissions', None),
+    (10, 'text', 'before recovery maintenance, chemicals and membranes, at mature utilisation and before recovery maintenance, chemicals and membranes', 'before recovery maintenance, chemicals and membranes', None),
+    (13, 'text', 'under linear scoring under linear scoring', 'under linear scoring', None),
+    # ---- layout tightening after the second round
+    (7, 'text', 'Higher cycles plus recovery save 30% of water; dry cooling 76%', 'Cycles plus recovery save 30% of water; dry cooling 76%', None),
+    (10, 'text', 'A3 saves the operator S$0.42 per MWh against A2, at mature utilisation and before recovery maintenance, chemicals and membranes',
+     'A3 saves the operator S$0.42/MWh vs A2, at mature utilisation and before recovery O&M', None),
+    # ---- second review round (8 November)
+    (6, 'text', 'Electricity for water and fans × grid factor 0.3896 kg CO₂/kWh',
+     'Electricity for water and fans × grid factor 0.3896 kg CO₂/kWh, plus water-system non-energy emissions', None),
+    (7, 'text', 'Recovery saves 30% of water; dry cooling 76%', 'Higher cycles plus recovery save 30% of water; dry cooling 76%', None),
+    (7, 'text', 'A1 and A2 sit on the PUB benchmark of 2.10. Higher cycles alone flatten near 1.60 at 8 cycles, so A3 also recovers blowdown.',
+     'A1 and A2 sit on the PUB benchmark of 2.10. Higher cycles alone take this to 1.60 at 8 cycles, and recovery to 1.46: 2.10 → 1.60 → 1.46.', None),
+    (7, 'notes', 'which is why A3 also recovers blowdown and reaches 1.46, a 30 percent saving.',
+     'and recovering blowdown takes it to 1.46. Higher cycles plus recovery together save 30 percent, and most of that comes from the cycles.', None),
+    (8, 'text', 'Warmed by 1.37 °C', 'Hypothetical +1.37 °C (Jurong grid vs Changi station gap)', None),
+    (10, 'text', 'A3 saves the operator S$0.42 per MWh against A2',
+     'A3 saves the operator S$0.42 per MWh against A2, at mature utilisation and before recovery maintenance, chemicals and membranes', None),
+    (13, 'text', 'A3 leads in four of five viewpoints', 'A3 leads in four of five viewpoints under linear scoring', None),
+    (14, 'text', '2,000 TRIALS · RANDOM WEIGHTS AND JUDGEMENTS', '2,000 TRIALS · VARYING PARAMETERS AND PREFERENCES', None),
+    (14, 'text', 'ratio rule the operator view ties A2 and A3 at 0.309. The other four views do not change.',
+     'ratio rule the operator view is a near tie, with A2 numerically first (0.3092 vs 0.3087). The other four views do not change.', None),
+    (14, 'notes', 'We ran 2,000 trials with random weights and perturbed pairwise judgements.',
+     'We ran 2,000 trials that vary both the model inputs and the weights and pairwise judgements.', None),
+    (14, 'notes', 'turns the operator view into a tie between A2 and A3, and leaves the others unchanged.',
+     'turns the operator view into a near tie, with A2 numerically first, and leaves the others unchanged.', None),
+    (15, 'text', 'The operator saving from A3 is likely, not certain.',
+     'A3 was cheaper for the operator in 60.5% of sampled combinations, before omitted O&M.', None),
+    (15, 'notes', 'so we call that saving likely, not certain.',
+     'before the recovery maintenance we could not cost, so that saving is conditional.', None),
+    (16, 'notes', 'For the operator, recovery stops paying only if the NEWater tariff falls below 1.84 dollars per cubic metre.',
+     'For the operator, at the base equipment cost and mature utilisation and before omitted maintenance, the A3 bundle breaks even against A2 at a NEWater tariff of about 1.84 dollars per cubic metre.', None),
+    (17, 'text', 'All draws, unless blowdown discharge is priced (then A3 is cheaper)',
+     'All draws; reversed if discharge is priced above about S$0.85/m³ or in a joint boundary case', None),
+    (17, 'text', 'All draws, unless A3 must use desalinated water (0.74 rises to 2.44 kg)',
+     'All draws; reversed with desalinated water (0.74 rises to 2.44 kg) or in a joint boundary case', None),
+    (17, 'text', 'True in 60.5% of the 10,000 draws', 'Cheaper for the operator in 60.5% of sampled combinations, before omitted O&M', None),
+    (17, 'text', '4 of 5 views; one tie under the ratio rule; second past 0.46 water-security weight',
+     '4 of 5 views under linear scoring; near tie under the ratio rule; second past 0.46 water-security weight', None),
+    (17, 'notes', 'A3’s operator saving is likely, at 60.5 percent of draws.',
+     'A3 was cheaper for the operator in 60.5 percent of sampled combinations, before the maintenance we could not cost.', None),
+    (18, 'text', 'Higher cycles alone give 78% of the saving; check recovery against quotes',
+     'Higher cycles alone give 78% of the water reduction; check recovery against quotes', None),
+    (18, 'notes', 'pending site evidence; it is achievable with known equipment: towers with recovery reach 1.46 under our assumptions, against the Roadmap target of 2.0. It should be followed by checks of measured performance and water quality.',
+     'pending site evidence: towers with recovery reach 1.46 under our assumptions, against the Roadmap target of 2.0. The modelled performance should be tested against site measurements and water quality before it becomes a requirement.', None),
+    (19, 'text', 'No embodied emissions or upstream wastewater treatment; climate change and water only',
+     'Cooling-equipment embodied emissions, upstream wastewater treatment and recovery O&M omitted; climate change and water only', None),
+    (20, 'text', 'dry cooling (A4); about 0.90 if the weather record runs cool', 'dry cooling (A4); 0.90 under hypothetical +1.37 °C warming', None),
+    (20, 'text', 'Saves the most water, but matches A2 only below an extra PUE of about 0.008 for cost and 0.002 for carbon',
+     'Saves the most water; matches A2 only below an extra PUE of 0.0084 (operator cost) or 0.0019 (carbon)', None),
+    (20, 'text', 'Discharge S$1.09/m³', 'Discharge ≈ S$0.85/m³', None),
+    (20, 'text', '80/20 wet share', '80/20 heat split', None),
+    (20, 'notes', 'or about 0.90 if the weather record understates the heat.', 'or about 0.90 under a hypothetical warming of 1.37 degrees.', None),
+    (20, 'notes', 'only below an extra PUE of about 0.008, and on carbon below 0.002.', 'only below an extra PUE of about 0.0084, and on carbon below 0.0019.', None),
+    (20, 'notes', 'the NEWater tariff, the discharge price and the wet share.', 'the NEWater tariff, a discharge price near 85 cents per cubic metre, and the 80/20 heat split.', None),
 ]
 
 
 # Edits the team made by hand before this script existed; any of these phrases
 # counts as "already applied" for the corresponding entry.
 MARKERS = {
+    (6, 'plus water-system non-energy emissions, plus'): 'plus water-system non-energy emissions',
+    (10, 'before recovery maintenance, chemicals and membranes, at mature'): 'before recovery',
+    (13, 'under linear scoring under linear scoring'): 'under linear scoring',
     (16, 'Impossible: A4 never matches A2 on cost'): 'electricity advantage',
     (15, 'Two results are firm'): 'Two rankings held',
     (15, 'joint boundary cases inside the ranges can reverse them: A2'): 'Two rankings held',
+    (18, 'a screening condition of about 1.5'): 'The modelled performance should be tested',
+    (18, 'pending site evidence; it is achievable'): 'The modelled performance should be tested',
+    (18, 'Check it against supplier quotes'): 'check recovery against quotes',
+    (20, 'Saves the most water, but pays off only'): 'matches A2 only below',
+    (20, 'Dry cooling saves the most water but only pays off'): 'matches A2 on the operator bill only below',
+    (10, 'A3 saves the operator S$0.42 per MWh against A2'): 'before recovery',
+    (10, 'A3 saves the operator S$0.42 per MWh against A2, at mature'): 'before recovery O&M',
+    (7, 'Higher cycles plus recovery save 30%'): 'Cycles plus recovery save 30%',
+    (7, 'Recovery saves 30% of water'): 'Cycles plus recovery save 30%',
 }
 
 
@@ -138,6 +208,15 @@ def main():
                 if ''.join(r.text for r in para.runs).startswith('Two rankings held'):
                     for r in para.runs:
                         r.font.size = Pt(32)
+    # slide 17: the A2 and A3 rows held in all draws, the A4 row in all tests
+    seen = 0
+    for sh in slides[16].shapes:
+        if sh.has_text_frame and sh.text_frame.text.strip() in ('Held in all tests', 'Held in all draws'):
+            seen += 1
+            if seen >= 2:
+                replace_paragraphs(sh, sh.text_frame.text.strip(), 'Held in all draws', exact=True)
+        if sh.has_text_frame and sh.text_frame.text.strip() == 'Likely':
+            replace_paragraphs(sh, 'Likely', '60.5% of draws', exact=True)
     # slide 16: keep the resource-cost reading to two lines
     for sh in slides[15].shapes:
         if sh.has_text_frame and 'electricity advantage' in sh.text_frame.text:

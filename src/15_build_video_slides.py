@@ -20,7 +20,9 @@ from report_data_final import context
 
 ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / 'outputs/figures'
-OUT = ROOT / 'deliverables/DSS5202_Group29_Video_Slides.pptx'
+# Legacy generated deck. The submitted deck is the team's 20-slide PowerPoint file in
+# deliverables/, patched by 17_edit_video_deck.py; this builder writes to .build/legacy/ only.
+OUT = ROOT / '.build/legacy/DSS5202_Group29_Video_Slides_generated.pptx'
 NAVY, TEAL, INK, GREY, PALE = RGBColor(0x1D, 0x2D, 0x50), RGBColor(0x16, 0x7C, 0x80), RGBColor(0x25, 0x28, 0x2C), RGBColor(0x68, 0x70, 0x80), RGBColor(0xF2, 0xF5, 0xF8)
 W, H = Inches(13.333), Inches(7.5)
 MARGIN = Inches(0.55)
@@ -136,6 +138,7 @@ class Deck:
         total = len(self.prs.slides)
         for k, s in enumerate(self.prs.slides, 1):
             self.text(s, W - MARGIN - Inches(1.4), H - Inches(0.45), Inches(1.4), Inches(0.3), f'{k} / {total}', size=11, color=GREY, align=PP_ALIGN.RIGHT)
+        OUT.parent.mkdir(parents=True, exist_ok=True)
         self.prs.save(OUT)
         print(OUT, total, 'slides')
 

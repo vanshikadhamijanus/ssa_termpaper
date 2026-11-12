@@ -99,8 +99,11 @@ the module template. Every later hand edit is recorded in
 `src/14_edit_presentations.py`, which only needs python-pptx and matplotlib; it
 also redraws the poster's AHP figure from the current scores. The 20-slide
 video deck was prepared in PowerPoint; `src/17_edit_video_deck.py` records the
-wording edits made after the 7 November review. The earlier generated 17-slide
-deck (`src/15_build_video_slides.py`) is kept in `.build/` and is not a deliverable. Packaging
+wording edits made after the 7 November review. Script 17 patches the
+manually revised deck; it does not refresh every number after a model input
+changes, so re-check the slide figures by hand after any rerun. The earlier
+generated 17-slide deck (`src/15_build_video_slides.py`) now writes to
+`.build/legacy/` and is not a deliverable. Packaging
 excludes the proposal, supplied style reference, Office lock files and private
 `.build/` files, and reruns the numerical validation first.
 

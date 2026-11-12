@@ -88,7 +88,7 @@ def edit_poster(v):
     slide = prs.slides[0]
     figure = draw_ahp_figure(v['scores'])
     ids = 'Aditya Vijindra Pandhari (A0328872R)   Apurwa Kumari (A0333260R)   Vanshika Dhamija (A0333989H)'
-    tie_note = ' (operator view ties under a ratio rule).' if v['ratio_tie'] else '.'
+    tie_note = ' (operator view a near tie, A2 first, ratio rule).' if v['ratio_tie'] else '.'
     chart_box = None
     summary_box = None
     for sh in list(slide.shapes):
@@ -109,9 +109,9 @@ def edit_poster(v):
                 set_text(sh, f'AHP: A3 first in {v["a3_first"]} of {v["n_views"]} views; A4 first only on water security.', paragraph=1)
             elif t.startswith('A2'):
                 set_text(sh, f'A2: lowest resource cost. A3: top balanced AHP score{tie_note} '
-                             f'A4: least water; matches A2 on carbon only below extra PUE {v["ghg_threshold"]}.')
+                             f'A4: least water; carbon parity needs extra PUE ≤ {v["ghg_threshold"]}.')
                 for r in sh.text_frame.paragraphs[0].runs:
-                    r.font.size = Pt(11.5)
+                    r.font.size = Pt(11)
                 summary_box = sh
             elif t.startswith('4. Cost of reducing water use') or t.startswith('4. AHP ranking'):
                 set_text(sh, '4. AHP ranking under five viewpoints')
